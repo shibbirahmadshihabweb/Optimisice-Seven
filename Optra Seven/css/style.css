@@ -1,0 +1,167 @@
+.service-wapper {
+    max-width: 1600px;
+    margin: 120px auto 0;
+}
+
+.bullet-pointer {
+    width: 10px;
+    height: 10px;
+    background: #7CE3AC;
+    padding: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.mini-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 0%;
+    color: #202020;
+    display: flex;
+    align-items: center;
+}
+
+.mini-title-and-header-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.Service-header-and-btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-header {
+    font-size: 56px;
+    font-weight: 400;
+    color: #202020;
+}
+
+.content-veiw-btn {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 14px 30px;
+    color: #202020;
+    background-color: #7CE3AC;
+    border-radius: 25px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+} 
+
+.content-card-wrapper {
+    max-width: 1600px;
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.mini-italic-title {
+    margin: 36px 0 0 10px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 2%;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+.content-card-header {
+    max-width: 600px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 46px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.content-sub-card-wrapper-one {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.content-sub-card-wrapper-two {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 180px;
+}
+
+.testomonial {
+    margin-top: 120px;
+}
+
+.testomonial-wrapper {
+    max-width: 1600px;
+    background-color: #E7E7E7;
+    border-radius: 20px;
+    padding: 75px;
+}
+
+.mini-title-and-header-wrap.testomonial-header-wrap {
+    margin-left: 75px;
+}
+
+.mini-title-and-header-wrap.testomonial-header-wrap {
+    margin-left: 75px;
+}
+
+.testomonial-card-container-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testomonial-card-container {
+    max-width: 450px;
+    padding: 50px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.testomonial-card-customer-img-and-name-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testomonial-client-name {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.testomonial-client-title {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 0;
+}
+
+.testomonial-card-para {
+    margin-top: 30px;
+}
+
+.testomonial-card-para p {
+    width: 290px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.testomonial-card-para-right-vector {
+    float: right;
+}
+
+img.testomonial-client-company-logo {
+    width: 40%;
+    margin-top: 50px;
+}
