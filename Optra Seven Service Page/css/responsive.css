@@ -1,0 +1,112 @@
+/* 1400px and below */
+@media (max-width: 1400px) {
+    body {
+        padding: 0 50px;
+    }
+
+    .container-list-and-image {
+        gap: 100px;
+    }
+
+    .cotainer-header {
+        font-size: 80px;
+    }
+
+    .container-list a {
+        font-size: 24px;
+    }
+}
+
+/* 1200px and below */
+@media (max-width: 1200px) {
+
+    .hero-title {
+        font-size: 44px;
+    }
+
+    .container-list-and-image {
+        gap: 60px;
+    }
+
+    .container-list a {
+        font-size: 22px;
+    }
+
+    .container-section-white-bg {
+        padding: 50px;
+    }
+}
+
+/* 992px and below */
+@media (max-width: 992px) {
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .container-list-and-image,
+    .container-list-and-image.black-bg {
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .container-list-wrapper {
+        text-align: left;
+        align-self: flex-start;
+    }
+
+    .container-image-wrap {
+        align-self: center;
+        text-align: center;
+    }
+
+    .cotainer-header {
+        font-size: 56px;
+    }
+
+    .container-title,
+    .container-title.black-bg {
+        text-align: left;
+    }
+
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+
+    body {
+        padding: 0 20px;
+    }
+
+    .hero-title {
+        font-size: 26px;
+    }
+
+}
+
+/* 576px and below */
+@media (max-width: 576px) {
+
+    .mini-title {
+        font-size: 20px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    .cotainer-header {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .container-list a {
+        font-size: 18px;
+    }
+
+    .container-title {
+        font-size: 18px;
+    }
+
+}

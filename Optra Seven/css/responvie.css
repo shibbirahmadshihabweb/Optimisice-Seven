@@ -1,0 +1,201 @@
+/* Base styles already defined above */
+
+/* 1400px and below */
+@media (max-width: 1400px) {
+
+    /* ========service card start======== */
+
+    .mini-title-and-header-wrap {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .content-header {
+        max-width: 65.6rem;
+        font-size: 3rem;
+    }
+
+    .content-card-wrapper {
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* ========service card end======== */
+
+    .testimonial-card-container {
+        min-width: 380px;
+        padding: 40px;
+    }
+
+    .testimonial-client-img {
+        width: 25%;
+    }
+
+}
+
+/* 1200px and below */
+@media (max-width: 1200px) {
+
+    /* ========service card start======== */
+
+    .mini-title-and-header-wrap {
+        max-width: 1024px;
+    }
+
+    .content-header {
+        max-width: 52.6rem;
+        font-size: 2.5rem;
+    }
+
+    .content-card-wrapper {
+        max-width: 1024px;
+    }
+
+    /* ========service card end======== */
+
+    .testimonial-client-img {
+        width: 25%;
+    }
+
+    .testimonial-card-container {
+        min-width: 340px;
+        padding: 25px;
+    }
+
+    .testimonial-card-container-wrapper {
+        column-gap: 8px;
+        row-gap: 50px;
+    }
+}
+
+/* 992px and below */
+@media (max-width: 992px) {
+
+    /* ========service card start======== */
+
+    .mini-title-and-header-wrap {
+        max-width: 890px;
+    }
+
+    .mini-title {
+        font-size: 22px;
+    }
+
+    .content-header {
+        max-width: 46.6rem;
+        font-size: 2rem;
+    }
+
+    .content-card-wrapper {
+        max-width: 890px;
+    }
+
+    .mini-italic-title {
+        margin: 24px 0 0 10px;
+        font-size: 22px;
+    }
+
+    .content-card-header {
+        max-width: 385px;
+        font-size: 24px;
+    }
+
+    /* ========service card end======== */
+
+    .testimonial-wrapper {
+        padding: 40px;
+    }
+
+    .testimonial-card-container-wrapper {
+        column-gap: 50px;
+        row-gap: 50px;
+    }
+
+    .testimonial-card-container {
+        max-width: 450px;
+        padding: 50px;
+    }
+
+    .mini-title-and-header-wrap.testimonial-header-wrap {
+        align-items: center;
+        margin-left: 0;
+    }
+
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+
+    /* ========service card start======== */
+
+    .mini-title-and-header-wrap {
+        max-width: 665px;
+    }
+
+    .content-header {
+        max-width: 30.6rem;
+        font-size: 2.5rem;
+    }
+
+    .content-card-wrapper {
+        max-width: 665px;
+        flex-direction: column;
+        gap: 100px;
+
+    }
+
+    .content-sub-card-wrapper-two {
+        margin-top: 0;
+    }
+
+    .content-card-header {
+        max-width: 100%;
+        font-size: 22px;
+    }
+
+    /* ========service card end======== */
+
+
+}
+
+/* 576px and below */
+@media (max-width: 576px) {
+
+    /* ========service card start======== */
+
+    .service-wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .mini-title-and-header-wrap {
+        align-items: center;
+    }
+
+    .service-header-and-btn-wrap {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .content-header {
+        text-align: center;
+    }
+
+    .content-card-wrapper {
+        margin-top: 100px;
+    }
+
+    .content-sub-card-wrapper-one {
+        gap: 80px;
+
+    }
+
+    .content-sub-card-wrapper-two {
+        gap: 80px;
+    }
+
+    /* ========service card end======== */
+
+
+}
