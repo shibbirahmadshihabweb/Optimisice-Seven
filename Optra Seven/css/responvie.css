@@ -1,0 +1,513 @@
+/* Base styles already defined above */
+
+/* 1400px and below */
+@media (max-width: 1400px) {
+
+    /* our works */
+
+    .upper-right-corner-arrow {
+        width: 3vw;
+        top: 40px;
+        right: 40px;
+    }
+
+    /* ========service card start======== */
+
+    .mini-title-and-header-wrap {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .content-card-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* ========service card end======== */
+
+
+    /* blog section START */
+
+    .blog-content-wrapper {
+        flex-wrap: nowrap;
+    }
+
+    /* blog section END */
+
+    /* ========footer START======== */
+
+    .footer-section {
+        max-width: 1200px;
+        padding: 130px 100px 60px 100px;
+    }
+
+    .site-wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+    .footer-logo-header {
+        flex: 1 1 45%;
+        order: 1;
+    }
+
+    .list-address-wrapper {
+        flex: 1 1 45%;
+        order: 2;
+    }
+
+    .list-learn-wrapper {
+        flex: 1 1 45%;
+        order: 3;
+    }
+
+    .list-explore-wrapper {
+        flex: 1 1 45%;
+        order: 4;
+    }
+
+    .copyright-othor-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    /* ========footer END======== */
+
+
+}
+
+/* 1200px and below */
+@media (max-width: 1200px) {
+
+    /* our works */
+
+    .upper-right-corner-arrow {
+        top: 30px;
+        right: 30px;
+    }
+
+
+    /* ========service card start======== */
+
+    .mini-title-and-header-wrap {
+        max-width: 1024px;
+    }
+
+    /* ========service card end======== */
+
+
+    /* case study START */
+
+    .mini-italic-title.semi-bold-mini-title.case-study-mini-title {
+        font-size: 17px;
+    }
+
+    /* case study END */
+
+    /* ================Service Page START================ */
+
+
+
+
+    /* ================Service Page END================ */
+}
+
+/* 992px and below */
+@media (max-width: 992px) {
+
+    /* our works  */
+
+    .upper-right-corner-arrow {
+        width: 4vw;
+        top: 25px;
+        right: 25px;
+    }
+
+
+    /* ========service card start======== */
+
+    .mini-title-and-header-wrap {
+        max-width: 890px;
+    }
+
+    .mini-title {
+        font-size: 22px;
+    }
+
+    .mini-italic-title {
+        margin: 24px 0 0 10px;
+        font-size: 22px;
+    }
+
+    /* ========service card end======== */
+
+    /* ================testimonial START================ */
+
+    .mini-title-and-header-wrap.testimonial-header-wrap {
+        align-items: center;
+        margin-left: 0;
+    }
+
+    /* ================testimonial END================ */
+
+    /* case study START */
+
+    .mini-title-wrapper {
+        margin-top: 36px;
+        gap: 10px;
+    }
+
+    .mini-italic-title.semi-bold-mini-title.case-study-mini-title {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    /* case study END */
+
+    /* blog section START */
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap .content-header {
+        max-width: 33.3rem;
+    }
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap .content-header {
+        max-width: 100%;
+    }
+
+    .content-card-wrapper.blogs-content-card-wrapper {
+        flex-direction: column;
+    }
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap {
+        flex-direction: row;
+    }
+
+    /* blog section END */
+
+    /* ================footer START================ */
+
+    .footer-section {
+        padding: 130px 45px 60px 45px;
+    }
+
+    .site-wrapper {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .footer-all-details-container {
+        justify-content: space-evenly;
+    }
+
+    /* ================footer END================ */
+    /* ================Service Page START================ */
+
+    .container-list-and-image,
+    .container-list-and-image.black-bg {
+        flex-direction: column;
+    }
+
+    .container-image-wrap,
+    .container-section-white-bg .black-bg {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* ================Service Page END================ */
+
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+
+    /* our works  */
+
+    .upper-right-corner-arrow {
+        width: 6vw;
+        top: 45px;
+        right: 40px;
+    }
+
+    /* ========service card start======== */
+
+    .mini-title-and-header-wrap {
+        max-width: 665px;
+    }
+
+    .content-card-wrapper {
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    .content-sub-card-wrapper-two {
+        margin-top: 0;
+    }
+
+    /* ========service card end======== */
+
+    /* case study START */
+
+    .mini-italic-title.semi-bold-mini-title {
+        font-size: 18px;
+    }
+
+    .content-card-wrapper.case-study-content-card-wrapper {
+        flex-direction: column;
+    }
+
+    /* case study END */
+
+    /* blog section START */
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap {
+        flex-direction: row;
+    }
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap .content-header {
+        max-width: 20.3rem;
+    }
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap {
+        align-items: center;
+    }
+
+    .blog-content-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap .content-header {
+        max-width: 100%;
+        font-size: 1.8rem;
+    }
+
+    .content-veiw-btn.blog-veiw-btn {
+        flex-shrink: 0;
+        white-space: nowrap;
+
+    }
+
+
+    /* blog section END */
+
+    /* ================footer START================ */
+
+    .footer-section {
+        padding: 130px 27px 60px 27px;
+    }
+
+    .footer-all-details-container {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .footer-paragraph {
+        max-width: 250px;
+        font-size: 18px;
+        margin: 20px 0 0 0;
+    }
+
+    .list-header {
+        font-size: 24px;
+    }
+
+    .content-veiw-btn.footer-btn {
+        margin-top: 20px;
+    }
+
+    .list-header-wrapper a,
+    .list-header-wrapper ul li {
+        font-size: 18px;
+    }
+
+    .footer-page-ending-link {
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    /* ================footer END================ */
+
+}
+
+
+
+
+/* 576px and below */
+@media (max-width: 576px) {
+
+    /* our works  */
+
+    .upper-right-corner-arrow {
+        width: 8vw;
+        top: 38px;
+        right: 30px;
+    }
+
+    /* ========service card start======== */
+
+    .service-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .mini-title-and-header-wrap {
+        align-items: center;
+    }
+
+    .service-header-and-btn-wrap {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .content-header {
+        text-align: center;
+        max-width: 29.6rem;
+    }
+
+    .content-card-wrapper {
+        margin-top: 60px;
+    }
+
+    .content-sub-card-wrapper-one {
+        gap: 80px;
+    }
+
+    .content-sub-card-wrapper-two {
+        gap: 80px;
+    }
+
+    /* ========service card end======== */
+
+    /* ========Tetimonial START======== */
+
+    .testimonial-wrapper {
+        padding: 30px 15px;
+    }
+
+    .testimonial-card-container {
+        padding: 20px;
+    }
+
+    .testimonial-card-customer-img-and-name-wrap {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .testimonial-client-name-and-title-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .testimonial-card-container-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .testimonial-client-company-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* ========Tetimonial END======== */
+
+    /* case study START */
+
+    .mini-title-wrapper {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+        margin-top: 36px;
+    }
+
+    .mini-italic-title.semi-bold-mini-title.case-study-mini-title {
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    /* case study END */
+
+    /* blog section START */
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    /* blog section END */
+
+    /* ========footer START======== */
+    .footer-logo-header,
+    .list-address-wrapper,
+    .list-learn-wrapper,
+    .list-explore-wrapper {
+        flex: 1 1 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .address-details-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-paragraph {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .list-header-wrapper.list-address-wrapper ul {
+        max-width: 300px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content-veiw-btn.footer-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .list-header-wrapper a,
+    .list-header-wrapper ul li {
+        font-size: 16px;
+    }
+
+    .footer-page-ending-link {
+        gap: 15px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* ========footer END======== */
+
+    /* ================Service Page START================ */
+
+
+
+
+
+    /* ================Service Page END================ */
+}
