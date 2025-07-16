@@ -1,0 +1,596 @@
+/* Base styles already defined above */
+
+/* 1400px and below */
+@media (max-width: 1400px) {
+
+    /* our works */
+
+    .upper-right-corner-arrow {
+        width: 3vw;
+        top: 40px;
+        right: 40px;
+    }
+
+    /* ========service card start======== */
+
+    .mini-title-and-header-wrap {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .content-card-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* ========service card end======== */
+
+
+    /* blog section START */
+
+    .blog-content-wrapper {
+        flex-wrap: nowrap;
+    }
+
+    .blog-vector {
+        position: absolute;
+        bottom: 203px;
+        left: 0px;
+    }
+
+    /* blog section END */
+
+    /* ========footer START======== */
+
+    .footer-section {
+        max-width: 1200px;
+        padding: 130px 100px 60px 100px;
+    }
+
+    .site-wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+    .footer-logo-header {
+        flex: 1 1 45%;
+        order: 1;
+    }
+
+    .list-address-wrapper {
+        flex: 1 1 45%;
+        order: 2;
+    }
+
+    .list-learn-wrapper {
+        flex: 1 1 45%;
+        order: 3;
+    }
+
+    .list-explore-wrapper {
+        flex: 1 1 45%;
+        order: 4;
+    }
+
+    .copyright-othor-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    /* ========footer END======== */
+
+
+}
+
+/* 1200px and below */
+@media (max-width: 1200px) {
+
+    /* our works */
+
+    .upper-right-corner-arrow {
+        top: 30px;
+        right: 30px;
+    }
+
+
+    /* ========service card start======== */
+
+    .mini-title-and-header-wrap {
+        max-width: 1024px;
+    }
+
+    /* ========service card end======== */
+
+    /* case study START  */
+
+    .mini-title-wrapper {
+        gap: 5px;
+    }
+
+    /* case study END  */
+
+}
+
+/* 992px and below */
+@media (max-width: 992px) {
+
+    /* our works  */
+
+    .upper-right-corner-arrow {
+        width: 4vw;
+        top: 25px;
+        right: 25px;
+    }
+
+
+    /* ========service card start======== */
+
+    .mini-title-and-header-wrap {
+        max-width: 890px;
+    }
+
+    .mini-title {
+        font-size: 22px;
+    }
+
+    .mini-italic-title {
+        margin: 24px 0 0 10px;
+    }
+
+    /* ========service card end======== */
+
+    /* ================testimonial START================ */
+
+    .mini-title-and-header-wrap.testimonial-header-wrap {
+        align-items: center;
+        margin-left: 0;
+    }
+
+    /* ================testimonial END================ */
+
+    /* case study START */
+
+    .mini-title-wrapper {
+        margin-top: 36px;
+        gap: 0px;
+    }
+
+    .mini-italic-title.semi-bold-mini-title.case-study-mini-title {
+        margin-top: 0;
+    }
+
+    /* case study END */
+
+    /* blog section START */
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap .content-header {
+        max-width: 33.3rem;
+    }
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap .content-header {
+        max-width: 100%;
+    }
+
+    .content-card-wrapper.blogs-content-card-wrapper {
+        flex-direction: column;
+    }
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap {
+        flex-direction: row;
+    }
+
+    /* blog section END */
+
+    /* ================footer START================ */
+
+    .footer-section {
+        padding: 130px 35px 60px 35px;
+    }
+
+    .site-wrapper {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .footer-all-details-container {
+        justify-content: space-evenly;
+    }
+
+    /* ================footer END================ */
+
+
+    /* ================Service Page START================ */
+
+    .container-list-and-image,
+    .container-list-and-image.black-bg {
+        flex-direction: column;
+        order: 1;
+        transition: all 0.3s ease;
+    }
+
+    .container-list-wrapper {
+        order: 2;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 0.3s ease;
+    }
+
+    .container-list-and-image {
+        gap: 40px;
+        margin-top: 30px;
+    }
+
+    .service-cart-image-wrapper,
+    .service-cart-arrow-icon-wrapper {
+        opacity: 1 !important;
+        visibility: visible !important;
+        position: static;
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .container-list {
+        gap: 20px;
+    }
+
+    .container-list a {
+        transform: none !important;
+        margin-left: 0;
+    }
+
+    .service-cart-image,
+    .service-cart-image-arrow {
+        width: 30px;
+    }
+
+    .service-cart-arrow-icon-wrapper {
+        margin-left: auto;
+    }
+
+    .service-cart-image,
+    .service-cart-image-arrow {
+        width: 30px;
+    }
+
+    .container-list a:active,
+    .black-bg a:active {
+        opacity: 1;
+    }
+
+
+
+    /* ================Service Page END================ */
+
+}
+
+/* 768px and below */
+@media (max-width: 768px) {
+
+    /* our works  */
+
+    .upper-right-corner-arrow {
+        width: 6vw;
+        top: 45px;
+        right: 40px;
+    }
+
+    /* ========service card start======== */
+
+    .service-wrapper {
+        margin-top: 80px;
+    }
+
+    .mini-title-and-header-wrap {
+        max-width: 665px;
+    }
+
+    .content-card-wrapper {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .content-sub-card-wrapper-one {
+        gap: 40px;
+    }
+
+    .content-sub-card-wrapper-two {
+        margin-top: 0;
+        gap: 40px;
+    }
+
+    /* ========service card end======== */
+
+    /* case study START */
+
+    .content-card-wrapper.case-study-content-card-wrapper {
+        flex-direction: column;
+    }
+
+    .mini-italic-title.semi-bold-mini-title {
+        margin-left: 10px;
+    }
+
+    /* case study END */
+
+    /* blog section START */
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap {
+        flex-direction: row;
+    }
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap .content-header {
+        max-width: 20.3rem;
+    }
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap {
+        align-items: center;
+    }
+
+    .blog-content-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap .content-header {
+        max-width: 100%;
+        font-size: 1.8rem;
+    }
+
+    .content-veiw-btn.blog-veiw-btn {
+        flex-shrink: 0;
+        white-space: nowrap;
+
+    }
+
+
+    /* blog section END */
+
+    /* ================footer START================ */
+
+    .footer-section {
+        padding: 80px 25px 60px 25px;
+    }
+
+    .footer-all-details-container {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .footer-paragraph {
+        max-width: 250px;
+        font-size: 18px;
+        margin: 20px 0 0 0;
+    }
+
+    .list-header {
+        font-size: 24px;
+    }
+
+    .content-veiw-btn.footer-btn {
+        margin-top: 20px;
+    }
+
+    .list-header-wrapper a,
+    .list-header-wrapper ul li {
+        font-size: 18px;
+    }
+
+    .footer-page-ending-link {
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    /* ================footer END================ */
+
+    /* service page START */
+
+    .hero-title-wrap {
+        transition: all 0.3s ease;
+        padding: 60px 15px 40px;
+    }
+
+    /* service page END */
+
+}
+
+
+
+
+/* 576px and below */
+@media (max-width: 576px) {
+
+    /* our works  */
+
+    .upper-right-corner-arrow {
+        width: 8vw;
+        top: 38px;
+        right: 30px;
+    }
+
+    /* ========service card start======== */
+
+    .service-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .mini-title-and-header-wrap {
+        align-items: center;
+    }
+
+    .service-header-and-btn-wrap {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .content-header {
+        text-align: center;
+        max-width: 29.6rem;
+    }
+
+    /* ========service card end======== */
+
+    /* ========Tetimonial START======== */
+
+    .testimonial-wrapper {
+        padding: 30px 15px;
+    }
+
+    .testimonial-card-container {
+        padding: 20px;
+    }
+
+    .testimonial-card-customer-img-and-name-wrap {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .testimonial-client-name-and-title-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .testimonial-card-container-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .testimonial-client-company-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* ========Tetimonial END======== */
+
+    /* case study START */
+
+    .mini-title-wrapper {
+        align-items: flex-start;
+        margin-top: 36px;
+    }
+
+    .mini-italic-title.semi-bold-mini-title {
+        margin-left: 5px;
+    }
+
+    /* case study END */
+
+    /* blog section START */
+
+    .service-header-and-btn-wrap.blog-header-and-btn-wrap {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    /* blog section END */
+
+    /* ========footer START======== */
+
+    .footer-logo-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-logo-header {
+        order: 1;
+        flex: 1 1 100%;
+    }
+
+    .list-learn-wrapper,
+    .list-explore-wrapper {
+        order: 2;
+        flex: 1 1 45%;
+        text-align: center;
+    }
+
+    .list-address-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        order: 3;
+        flex: 1 1 100%;
+    }
+
+    .footer-all-details-container {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .address-details-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-paragraph {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .list-header-wrapper.list-address-wrapper ul {
+        max-width: 300px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content-veiw-btn.footer-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .list-header-wrapper a,
+    .list-header-wrapper ul li {
+        font-size: 16px;
+    }
+
+    .copyright-othor-wrapper {
+        margin-top: 50px;
+    }
+
+    .footer-page-ending-link {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .copyright-para {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* ========footer END======== */
+
+    /* ================Service Page START================ */
+
+    .hero-title-wrap {
+        padding: 60px 10px 15px;
+    }
+
+    /* ================Service Page END================ */
+}
