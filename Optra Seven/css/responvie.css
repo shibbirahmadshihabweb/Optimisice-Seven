@@ -1,5 +1,35 @@
 /* 1400px and below */
 @media (max-width: 1400px) {
+    /*section Hero Start */
+.hero__title{
+    font-size: 66px; 
+} 
+.hero__content-image img{
+    max-width: 838px;
+    height: 362px;
+}
+
+.hero__curve-container-image-one{
+    max-width: 140px;
+}
+.hero__curve-container-two{
+    top: 89px;
+}
+.hero__button {
+    width: 160px;
+    padding: 14px 20px;
+}
+/*section Hero End */  
+
+/*section Infinity logo Slider Start */
+.logo-slider::before{
+    width: 20px;
+}
+.logo-slider::after{
+    width: 20px;
+}
+/*section Infinity logo Slider End */
+
 
     /* our works */
 
@@ -23,6 +53,15 @@
     }
 
     /* ========service card end======== */
+
+/*Section Faq START */
+.heading__sub-title {
+    font-size: 52px;
+}
+.accordion__question {
+    gap: 100px;
+}
+/*Section Faq End */
 
 
     /* blog section START */
@@ -85,6 +124,27 @@
 /* 1200px and below */
 @media (max-width: 1200px) {
 
+/*section Hero Start */
+.hero__content-wraper{
+    padding: 0 10px 0;
+}
+.hero__title{
+    font-size: 56px; 
+} 
+.hero__content-image img{
+    max-width: 730px;
+    height: 325px;
+}
+
+.hero__curve-container-image-one{
+    max-width: 100px;
+}
+.hero__button {
+    width: 145px;
+    padding: 12px 12px;
+}
+/*section Hero End */ 
+
     /* ========service card start======== */
 
     .mini-title-and-header-wrap {
@@ -101,6 +161,18 @@
 
     /* case study END  */
 
+/*Section Faq START */
+.faq__block-left{
+    max-width: 425px;
+}
+.heading__sub-title {
+    font-size: 42px;
+}
+.accordion__question {
+    gap: 20px;
+}
+/*Section Faq End */
+
     /* news letter START */
 
     .news-letter-content-header {
@@ -114,6 +186,65 @@
 
 /* 992px and below */
 @media (max-width: 1024px) {
+
+.section{
+    margin: 80px auto 0;
+}
+/*section Hero Start */
+.hero__content{
+    position: relative;
+    bottom: 8px;
+}
+.hero__content-wraper{
+    padding: 0;
+}
+.hero__title{
+    font-size: 48px; 
+} 
+.hero__content-image img{
+    max-width: 679px;
+    height: 290px;
+}
+.hero__curve-container-image-one{
+    display: none;
+}
+.hero__curve-container-two{
+    display: none;
+}
+.hero__button {
+    width: 155px;
+    padding: 12px 15px;
+} 
+.hero__review-chip{
+    max-width: 216px;
+    column-gap: 5px;
+    padding: 7px 10px;
+}
+.hero__review-chip-inner{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.hero__rating{
+    font-size: 22px;
+
+}
+.hero__rating-img{
+    max-width: 14px;
+    max-height: 14px;
+}
+/*section Hero End */
+
+/*section Infinity logo Slider Start */
+.section-infinity-logo-slider{
+    margin: 80px auto 0;
+}
+.logo-slider__logos img{
+    width: 150px;
+    margin: 0 30px;
+}
+/*section Infinity logo Slider End */
 
     .main {
         padding-left: 3vw;
@@ -161,6 +292,34 @@
     }
 
     /* ========service card end======== */
+
+/*Section Faq START */
+.faq__block-left{
+    max-width: 625px;
+}
+.faq__container {
+    display: flex;
+    flex-direction: column;
+}
+.heading__sub-title {
+    font-size: 36px;
+}
+.accordion__question {
+    padding: 20px;
+    border-radius: 16px;
+}
+.accordion__item.active .accordion__question{
+       border-radius: 16px 16px 0 0; 
+}
+.accordion__answer {
+    padding: 0 20px 20px;
+    border-radius: 0 0 16px 16px;
+}
+.button {
+    width: 140px;
+    padding: 14px 20px;
+}
+/*Section Faq End */
 
     /* ================testimonial START================ */
 
@@ -318,8 +477,62 @@
 
 }
 
+@media only screen and (max-width: 992px) {
+/*section Hero Start */
+.hero__content{
+    bottom: 4px;
+}
+
+.hero__title{
+    font-size: 42px; 
+} 
+.hero__content-image img{
+    max-width: 525px;
+    height: 275px;
+}
+/*section Hero End */ 
+
+}
+
 /* 768px and below */
 @media (max-width: 767px) {
+.section{
+    margin: 60px auto 0;
+}
+/*section Hero Start */
+.hero__content{
+    top: 40px;
+}
+.hero__review-chip{
+    margin-bottom: 10px;
+}
+
+.hero__title{
+    max-width: 275px;
+    font-size: 20px;
+    line-height: 180%;
+        margin-bottom: 15px; 
+}
+.hero__title--text{
+    font-size: 24px;
+}
+.hero__title--highlight{
+    font-size: 36px;
+}
+.hero__content-image img{
+    max-width: 285px;
+    height: 245px;
+}
+.hero__image img{
+    min-height: 440px;
+}
+/*section Hero End */ 
+
+/*section Infinity logo Slider Start */
+.section-infinity-logo-slider{
+    margin: 60px auto 0;
+}
+/*section Infinity logo Slider End */
 
     /* our works  */
 
@@ -517,6 +730,12 @@
 
 /* 576px and below */
 @media (max-width: 576px) {
+/*section Infinity logo Slider Start */
+.logo-slider__logos img{
+    width: 100px;
+    margin: 0 15px;
+}
+/*section Infinity logo Slider End */
 
     .main {
         padding-left: 15px;
@@ -564,6 +783,41 @@
     }
 
     /* ========service card end======== */
+
+/*Section Faq START */
+.faq__block-left{
+    max-width: 300px;
+}
+.heading__title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.heading__sub-title {
+    font-size: 28px;
+}
+.accordion__question {
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.accordion__question-text {
+    font-weight: 500;
+    font-size: 20px;
+}
+.accordion__answer-text {
+    font-size: 16px;
+    font-weight: 400;
+}
+.accordion__icon {
+  width: 30px;
+  height: 30px;
+}
+.button {
+    width: 140px;
+    padding: 10px 15px;
+}
+/*Section Faq End */   
 
     /* ========Tetimonial START======== */
 
