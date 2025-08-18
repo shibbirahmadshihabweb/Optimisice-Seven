@@ -18,9 +18,10 @@ body {
 
 /* HOME PAGE START */
 .section{
+    max-width: 1600px;
     margin: 120px auto 0;
-    padding: 0 20px;
 }
+
 /*Section Hero START */
 .section-hero{
     max-width: 1600px;
@@ -171,11 +172,6 @@ body {
 
 /* our works START */
 
-.section__inner {
-    max-width: 1600px;
-    margin: 120px auto 0;
-}
-
 .title__pointer--middle {
     margin-left: 15px;
 }
@@ -258,7 +254,7 @@ body {
     align-items: center;
 }
 
-.button {
+/* .button {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -285,7 +281,7 @@ body {
     color: #202020;
     text-decoration: none;
     transform: scale(1.1);
-}
+} */
 
 /* section headings card END  */
 
@@ -304,7 +300,6 @@ body {
 /* solution we porvide START */
 
 .card__container {
-    max-width: 1600px;
     display: flex;
     gap: 40px;
     margin-top: 40px;
@@ -440,7 +435,7 @@ body {
 
 /* button    */
 .button {
-    width: 160px;
+    width: 165px;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
