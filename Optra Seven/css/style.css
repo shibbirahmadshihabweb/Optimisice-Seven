@@ -1,0 +1,271 @@
+/* font family (manrope and roboto linkup) */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Manrope", "Roboto", sans-serif;
+}
+
+.main {
+    padding-left: 50px;
+    padding-right: 50px;
+    scroll-margin-top: 160px;
+}
+
+/* HOME PAGE START */
+
+/* our works START */
+
+.section__inner {
+    max-width: 1600px;
+    margin: 120px auto 0;
+}
+
+.title__pointer--middle {
+    margin-left: 15px;
+}
+
+.card__title {
+    margin: 36px 0 0 10px;
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: 400;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+.mini__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.content__card {
+    position: relative;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.circle__arrow {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-shrink: 0;
+}
+
+/* section headings card START  */
+
+.title__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    color: #202020;
+}
+
+.sub__title {
+    font-family: "Manrope", sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: normal;
+    color: #202020;
+}
+
+.title__pointer {
+    width: 10px;
+    height: 10px;
+    background: #7CE3AC;
+    padding: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.header__button--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 14px 30px;
+    color: #202020;
+    background-color: #7CE3AC;
+    border-radius: 25px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.button_arrow {
+    width: 10px;
+    height: 10px;
+    color: #202020;
+}
+
+.button:hover {
+    color: #202020;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+/* section headings card END  */
+
+.card__header {
+    max-width: 600px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 130%;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+
+/* our works END */
+
+/* solution we porvide START */
+
+.card__container {
+    max-width: 1600px;
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portflio__container--one {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.portflio__container--two {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 180px;
+}
+
+/* solution we porvide END */
+
+/* case study START */
+
+.mini__title--container {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+/* case study END */
+
+/* testimonial START  */
+
+.testimonial {
+    margin-top: 120px;
+}
+
+.testimonial__inner {
+    max-width: 1600px;
+    background-color: #E7E7E7;
+    border-radius: 20px;
+    padding: 75px;
+    margin: 0 auto;
+}
+
+.testimonial__header--container {
+    margin-left: 75px;
+}
+
+.testimonial__card--container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    gap: 50px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonial__card {
+    max-width: 450px;
+    width: 100%;
+    padding: 50px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+
+.testimonial__customer--card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial__client--name {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+.testimonial__client--title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.testimonial__para {
+    margin-top: 30px;
+}
+
+.testimonial__para p {
+    max-width: 290px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.testimonial__para--right-vector {
+    float: right;
+}
+
+.testimonial__company--logo {
+    width: 40%;
+    margin-top: 50px;
+}
+
+/* testimonial END  */
+
+
+/* HOME PAGE END */
