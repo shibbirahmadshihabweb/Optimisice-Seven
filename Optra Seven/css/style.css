@@ -11,6 +11,7 @@ body {
 }
 
 .main {
+    width: 100%;
     padding-left: 50px;
     padding-right: 50px;
     scroll-margin-top: 160px;
@@ -195,6 +196,10 @@ body {
     position: relative;
 }
 
+.card__image {
+    width: 100%;
+}
+
 .circle {
     width: 60px;
     height: 60px;
@@ -302,9 +307,7 @@ body {
 .card__container {
     display: flex;
     gap: 40px;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto 0 auto;
 }
 
 .portflio__container--one {
@@ -445,6 +448,7 @@ body {
     border-radius: 25px;
     border: none;
     display: flex;
+    flex-shrink: 0;
     gap: 10px;
     align-items: center;
     justify-content: center;

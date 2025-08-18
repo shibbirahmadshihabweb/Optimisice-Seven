@@ -1,82 +1,43 @@
 /* 1400px and below */
 @media (max-width: 1400px) {
+
     /*section Hero Start */
-.hero__title{
-    font-size: 66px; 
-} 
-.hero__content-image img{
-    max-width: 838px;
-    height: 362px;
-}
-
-.hero__curve-container-image-one{
-    max-width: 140px;
-}
-.hero__curve-container-two{
-    top: 89px;
-}
-.hero__button {
-    width: 160px;
-    padding: 14px 20px;
-}
-/*section Hero End */  
-
-/*section Infinity logo Slider Start */
-.logo-slider::before{
-    width: 20px;
-}
-.logo-slider::after{
-    width: 20px;
-}
-/*section Infinity logo Slider End */
-
-
-    /* our works */
-
-    .arrow-wrapper {
-        width: 50px;
-        height: 50px;
-        top: 30px;
-        right: 30px;
+    .hero__title {
+        font-size: 66px;
     }
 
-    /* ========service card start======== */
-
-    .mini-title-and-header-wrap {
-        max-width: 1300px;
-        margin: 0 auto;
+    .hero__content-image img {
+        max-width: 838px;
+        height: 362px;
     }
 
-    .content-card-wrapper {
-        margin-left: auto;
-        margin-right: auto;
+    .hero__curve-container-image-one {
+        max-width: 140px;
     }
 
-    /* ========service card end======== */
-
-/*Section Faq START */
-.heading__sub-title {
-    font-size: 52px;
-}
-.accordion__question {
-    gap: 100px;
-}
-/*Section Faq End */
-
-
-    /* blog section START */
-
-    .blog-content-wrapper {
-        flex-wrap: nowrap;
+    .hero__curve-container-two {
+        top: 89px;
     }
 
-    .blog-vector {
-        position: absolute;
-        bottom: 203px;
-        left: 0px;
+    .hero__button {
+        width: 160px;
+        padding: 14px 20px;
     }
 
-    /* blog section END */
+    /*section Hero End */
+
+    /*section Infinity logo Slider Start */
+    .logo-slider::before {
+        width: 20px;
+    }
+
+    .logo-slider::after {
+        width: 20px;
+    }
+
+    /*section Infinity logo Slider End */
+
+
 
     /* ========footer START======== */
 
@@ -124,26 +85,30 @@
 /* 1200px and below */
 @media (max-width: 1200px) {
 
-/*section Hero Start */
-.hero__content-wraper{
-    padding: 0 10px 0;
-}
-.hero__title{
-    font-size: 56px; 
-} 
-.hero__content-image img{
-    max-width: 730px;
-    height: 325px;
-}
+    /*section Hero Start */
+    .hero__content-wraper {
+        padding: 0 10px 0;
+    }
 
-.hero__curve-container-image-one{
-    max-width: 100px;
-}
-.hero__button {
-    width: 145px;
-    padding: 12px 12px;
-}
-/*section Hero End */ 
+    .hero__title {
+        font-size: 56px;
+    }
+
+    .hero__content-image img {
+        max-width: 730px;
+        height: 325px;
+    }
+
+    .hero__curve-container-image-one {
+        max-width: 100px;
+    }
+
+    .hero__button {
+        width: 145px;
+        padding: 12px 12px;
+    }
+
+    /*section Hero End */
 
     /* ========service card start======== */
 
@@ -161,17 +126,20 @@
 
     /* case study END  */
 
-/*Section Faq START */
-.faq__block-left{
-    max-width: 425px;
-}
-.heading__sub-title {
-    font-size: 42px;
-}
-.accordion__question {
-    gap: 20px;
-}
-/*Section Faq End */
+    /*Section Faq START */
+    .faq__block-left {
+        max-width: 425px;
+    }
+
+    .heading__sub-title {
+        font-size: 42px;
+    }
+
+    .accordion__question {
+        gap: 20px;
+    }
+
+    /*Section Faq End */
 
     /* news letter START */
 
@@ -187,188 +155,199 @@
 /* 992px and below */
 @media (max-width: 1024px) {
 
-.section{
-    margin: 80px auto 0;
-}
-/*section Hero Start */
-.hero__content{
-    position: relative;
-    bottom: 8px;
-}
-.hero__content-wraper{
-    padding: 0;
-}
-.hero__title{
-    font-size: 48px; 
-} 
-.hero__content-image img{
-    max-width: 679px;
-    height: 290px;
-}
-.hero__curve-container-image-one{
-    display: none;
-}
-.hero__curve-container-two{
-    display: none;
-}
-.hero__button {
-    width: 155px;
-    padding: 12px 15px;
-} 
-.hero__review-chip{
-    max-width: 216px;
-    column-gap: 5px;
-    padding: 7px 10px;
-}
-.hero__review-chip-inner{
-    display: flex;
-    column-gap: 5px;
-    align-items: center;
-}
+    .section {
+        margin: 80px auto 0;
+    }
 
-.hero__rating{
-    font-size: 22px;
+    /*section Hero Start */
+    .hero__content {
+        position: relative;
+        bottom: 8px;
+    }
 
-}
-.hero__rating-img{
-    max-width: 14px;
-    max-height: 14px;
-}
-/*section Hero End */
+    .hero__content-wraper {
+        padding: 0;
+    }
 
-/*section Infinity logo Slider Start */
-.section-infinity-logo-slider{
-    margin: 80px auto 0;
-}
-.logo-slider__logos img{
-    width: 150px;
-    margin: 0 30px;
-}
-/*section Infinity logo Slider End */
+    .hero__title {
+        font-size: 48px;
+    }
+
+    .hero__content-image img {
+        max-width: 679px;
+        height: 290px;
+    }
+
+    .hero__curve-container-image-one {
+        display: none;
+    }
+
+    .hero__curve-container-two {
+        display: none;
+    }
+
+    .hero__button {
+        width: 155px;
+        padding: 12px 15px;
+    }
+
+    .hero__review-chip {
+        max-width: 216px;
+        column-gap: 5px;
+        padding: 7px 10px;
+    }
+
+    .hero__review-chip-inner {
+        display: flex;
+        column-gap: 5px;
+        align-items: center;
+    }
+
+    .hero__rating {
+        font-size: 22px;
+
+    }
+
+    .hero__rating-img {
+        max-width: 14px;
+        max-height: 14px;
+    }
+
+    /*section Hero End */
+
+    /*section Infinity logo Slider Start */
+    .section-infinity-logo-slider {
+        margin: 80px auto 0;
+    }
+
+    .logo-slider__logos img {
+        width: 150px;
+        margin: 0 30px;
+    }
+
+    /*section Infinity logo Slider End */
 
     .main {
         padding-left: 3vw;
         padding-right: 3vw;
     }
 
-    /* our works  */
+    /* our works  START*/
 
-    .mini-italic-title.semi-bold-mini-title {
-        font-size: 16px;
+    .title {
+        font-size: 20px;
     }
 
-    .upper-right-corner-arrow {
-        width: 23px;
-        height: 20px;
+    .sub__title {
+        font-size: 36px;
     }
 
-    .arrow-wrapper {
+    .mini__title {
+        font-size: 14px;
+    }
+
+    .card__header {
+        font-size: 28px;
+    }
+
+    .card__title {
+        margin-top: 20px;
+    }
+
+    .card__header {
+        margin-top: 5px;
+    }
+
+    /* our works  START*/
+
+    /*Section Faq START */
+    .faq__block-left {
+        max-width: 625px;
+    }
+
+    .faq__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading__sub-title {
+        font-size: 36px;
+    }
+
+    .accordion__question {
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .accordion__item.active .accordion__question {
+        border-radius: 16px 16px 0 0;
+    }
+
+    .accordion__answer {
+        padding: 0 20px 20px;
+        border-radius: 0 0 16px 16px;
+    }
+
+    .button {
+        width: 165px;
+    }
+
+    /*Section Faq End */
+
+    /* ================testimonial START================ */
+
+
+    /* ================testimonial END================ */
+
+    /* case study START */
+
+    .slider__button {
+        background-color: #7CE3AC;
+    }
+
+    .circle {
         width: 50px;
         height: 50px;
         top: 30px;
         right: 30px;
     }
 
-    /* solution we provide START */
-
-    .content-header {
-        font-size: 38px;
+    .circle__arrow {
+        width: 22px;
+        height: 20px;
     }
 
-    /* solution we provide END */
-
-    /* ========service card start======== */
-
-    .mini-title-and-header-wrap {
-        max-width: 890px;
-    }
-
-    .mini-title {
-        font-size: 22px;
-    }
-
-    .mini-italic-title {
-        margin: 24px 0 0 10px;
-    }
-
-    /* ========service card end======== */
-
-/*Section Faq START */
-.faq__block-left{
-    max-width: 625px;
-}
-.faq__container {
-    display: flex;
-    flex-direction: column;
-}
-.heading__sub-title {
-    font-size: 36px;
-}
-.accordion__question {
-    padding: 20px;
-    border-radius: 16px;
-}
-.accordion__item.active .accordion__question{
-       border-radius: 16px 16px 0 0; 
-}
-.accordion__answer {
-    padding: 0 20px 20px;
-    border-radius: 0 0 16px 16px;
-}
-.button {
-    width: 140px;
-    padding: 14px 20px;
-}
-/*Section Faq End */
-
-    /* ================testimonial START================ */
-
-    .mini-title-and-header-wrap.testimonial-header-wrap {
-        align-items: center;
-        margin-left: 0;
-    }
-
-    /* ================testimonial END================ */
-
-    /* case study START */
-
-    .mini-title-wrapper {
-        margin-top: 36px;
-        gap: 0px;
-    }
-
-    .mini-italic-title.semi-bold-mini-title.case-study-mini-title {
-        margin-top: 0;
+    .mini__title--container {
+        gap: 10px;
     }
 
     /* case study END */
 
     /* blog section START */
 
-    .service-header-and-btn-wrap.blog-header-and-btn-wrap .content-header {
-        max-width: 33.3rem;
-    }
-
-    .service-header-and-btn-wrap.blog-header-and-btn-wrap .content-header {
-        max-width: 100%;
-    }
-
-    .content-card-wrapper.blogs-content-card-wrapper {
+    .blog__container {
         flex-direction: column;
     }
 
-    .service-header-and-btn-wrap.blog-header-and-btn-wrap {
+    .blog__header--button {
+        max-width: 100%;
         flex-direction: row;
+        align-items: flex-end;
+        margin-top: 0;
+    }
+
+    .blog__container--header {
+        max-width: 315px;
+    }
+
+    .blog__content--wrapper {
+        margin-top: 40px;
     }
 
     /* blog section END */
 
     /* news letter START */
 
-    .news-letter-content-header {
-        max-width: 370px;
-
-    }
 
     /* news letter END */
 
@@ -478,61 +457,72 @@
 }
 
 @media only screen and (max-width: 992px) {
-/*section Hero Start */
-.hero__content{
-    bottom: 4px;
-}
 
-.hero__title{
-    font-size: 42px; 
-} 
-.hero__content-image img{
-    max-width: 525px;
-    height: 275px;
-}
-/*section Hero End */ 
+    /*section Hero Start */
+    .hero__content {
+        bottom: 4px;
+    }
+
+    .hero__title {
+        font-size: 42px;
+    }
+
+    .hero__content-image img {
+        max-width: 525px;
+        height: 275px;
+    }
+
+    /*section Hero End */
 
 }
 
 /* 768px and below */
 @media (max-width: 767px) {
-.section{
-    margin: 60px auto 0;
-}
-/*section Hero Start */
-.hero__content{
-    top: 40px;
-}
-.hero__review-chip{
-    margin-bottom: 10px;
-}
+    .section {
+        margin: 60px auto 0;
+    }
 
-.hero__title{
-    max-width: 275px;
-    font-size: 20px;
-    line-height: 180%;
-        margin-bottom: 15px; 
-}
-.hero__title--text{
-    font-size: 24px;
-}
-.hero__title--highlight{
-    font-size: 36px;
-}
-.hero__content-image img{
-    max-width: 285px;
-    height: 245px;
-}
-.hero__image img{
-    min-height: 440px;
-}
-/*section Hero End */ 
+    /*section Hero Start */
+    .hero__content {
+        top: 40px;
+    }
 
-/*section Infinity logo Slider Start */
-.section-infinity-logo-slider{
-    margin: 60px auto 0;
-}
-/*section Infinity logo Slider End */
+    .hero__review-chip {
+        margin-bottom: 10px;
+    }
+
+    .hero__title {
+        max-width: 275px;
+        font-size: 20px;
+        line-height: 180%;
+        margin-bottom: 15px;
+    }
+
+    .hero__title--text {
+        font-size: 24px;
+    }
+
+    .hero__title--highlight {
+        font-size: 36px;
+    }
+
+    .hero__content-image img {
+        max-width: 285px;
+        height: 245px;
+    }
+
+    .hero__image img {
+        min-height: 440px;
+    }
+
+    /*section Hero End */
+
+    /*section Infinity logo Slider Start */
+    .section-infinity-logo-slider {
+        margin: 60px auto 0;
+    }
+
+    /*section Infinity logo Slider End */
 
     /* our works  */
 
@@ -635,11 +625,8 @@
 
     /* news letter START */
 
-    .check-list-wrapper {
-        gap: 15px;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        align-items: center;
+    .check__list--container {
+        display: none;
     }
 
     /* news letter END */
@@ -730,12 +717,14 @@
 
 /* 576px and below */
 @media (max-width: 576px) {
-/*section Infinity logo Slider Start */
-.logo-slider__logos img{
-    width: 100px;
-    margin: 0 15px;
-}
-/*section Infinity logo Slider End */
+
+    /*section Infinity logo Slider Start */
+    .logo-slider__logos img {
+        width: 100px;
+        margin: 0 15px;
+    }
+
+    /*section Infinity logo Slider End */
 
     .main {
         padding-left: 15px;
@@ -757,7 +746,7 @@
         right: 20px;
     }
 
-        .content-header {
+    .content-header {
         font-size: 28px;
     }
 
@@ -784,40 +773,47 @@
 
     /* ========service card end======== */
 
-/*Section Faq START */
-.faq__block-left{
-    max-width: 300px;
-}
-.heading__title {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 5px;
-}
-.heading__sub-title {
-    font-size: 28px;
-}
-.accordion__question {
-    padding: 20px;
-    border-radius: 16px;
-}
+    /*Section Faq START */
+    .faq__block-left {
+        max-width: 300px;
+    }
 
-.accordion__question-text {
-    font-weight: 500;
-    font-size: 20px;
-}
-.accordion__answer-text {
-    font-size: 16px;
-    font-weight: 400;
-}
-.accordion__icon {
-  width: 30px;
-  height: 30px;
-}
-.button {
-    width: 140px;
-    padding: 10px 15px;
-}
-/*Section Faq End */   
+    .heading__title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+
+    .heading__sub-title {
+        font-size: 28px;
+    }
+
+    .accordion__question {
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .accordion__question-text {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .accordion__answer-text {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .accordion__icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .button {
+        width: 140px;
+        padding: 10px 15px;
+    }
+
+    /*Section Faq End */
 
     /* ========Tetimonial START======== */
 
