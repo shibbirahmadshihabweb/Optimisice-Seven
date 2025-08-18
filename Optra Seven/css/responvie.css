@@ -38,47 +38,12 @@
     /*section Infinity logo Slider End */
 
 
-
-    /* ========footer START======== */
-
-    .footer-section {
-        max-width: 1200px;
-        padding: 130px 100px 60px 100px;
-    }
-
-    .site-wrapper {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-
-    .footer-logo-header {
-        flex: 1 1 45%;
-        order: 1;
-    }
-
-    .list-address-wrapper {
-        flex: 1 1 45%;
-        order: 2;
-    }
-
-    .list-learn-wrapper {
-        flex: 1 1 45%;
-        order: 3;
-    }
-
-    .list-explore-wrapper {
-        flex: 1 1 45%;
-        order: 4;
-    }
-
-    .copyright-othor-wrapper {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    /* ========footer END======== */
-
+/*Section Footer Start */
+.footer__menu-container{
+    flex-wrap: wrap;
+    padding: 80px 40px 0px 100px;
+}
+/*Section Footer End */
 
 }
 
@@ -152,7 +117,7 @@
 
 }
 
-/* 992px and below */
+/* 1024px and below */
 @media (max-width: 1024px) {
 
     .section {
@@ -351,23 +316,7 @@
 
     /* news letter END */
 
-    /* ================footer START================ */
-
-    .footer-section {
-        padding: 130px 35px 60px 35px;
-    }
-
-    .site-wrapper {
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-
-    .footer-all-details-container {
-        justify-content: space-evenly;
-    }
-
-    /* ================footer END================ */
-
+ 
 
     /* ================Service Page START================ */
 
@@ -454,6 +403,61 @@
 
     /* policy page  END */
 
+/*Section Footer Start */
+.footer__menu-container{
+    flex-wrap: wrap;
+    column-gap: 160px;
+    row-gap: 80px;
+    padding: 100px 100px 0px 120px;
+}
+.footer__link-title--align-right{
+    text-align: right;
+}
+.footer__menu-links-ul--align-right li {
+ text-align: right;
+}
+.footer__address--reverse{
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.footer__address-icon--flip-horizontal{
+      transform: scaleX(-1);
+}
+
+/* logo container */
+.footer__logo-text{
+    font-size: 50px;
+}
+.footer__subtitle-wraper{
+    max-width: 330px;
+    margin: 35px 0 25px;
+}
+.footer__subtitle{
+    font-size: 20px;  
+}
+
+/* Menu Links */
+footer{
+    padding:0 20px;
+}
+
+.footer__link-title{
+    font-size: 32px;
+}
+
+/* Footer copyright Container */
+.footer__copyright-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 50px 40px 50px;
+}
+
+.footer__policy-pages-link{
+    gap: 40px;
+}
+
+/*Section Footer End */
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -474,6 +478,14 @@
 
     /*section Hero End */
 
+
+/*Section Footer Start */
+.footer__menu-container{
+    column-gap: 75px;
+    row-gap: 80px;
+    padding: 100px 80px 0px 100px;
+}
+/*Section Footer Start */
 }
 
 /* 768px and below */
@@ -709,6 +721,36 @@
     }
 
     /* portfolio details page END */
+
+
+/*Section Footer Start */
+.footer__menu-container{
+    justify-content: center;
+    column-gap: 100px;
+    row-gap: 60px;
+    padding: 100px 80px 0px 80px;
+}
+.footer__logo-container{
+    align-items: center;
+}
+.footer__subtitle{
+    text-align: center;
+}
+
+.footer__link-title--align-right{
+    text-align: left;
+}
+.footer__menu-links-ul--align-right li {
+ text-align: left;
+}
+.footer__address--reverse{
+    flex-direction: row-reverse;
+    text-align: left;
+}
+.footer__address-icon--flip-horizontal{
+      transform: scaleX(-1);
+}
+/*Section Footer End */
 
 }
 
