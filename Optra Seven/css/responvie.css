@@ -369,6 +369,7 @@
     /* ================testimonial START================ */
 
 
+
     /* ================testimonial END================ */
 
     /* case study START */
@@ -541,11 +542,11 @@
 
     /* Footer copyright Container */
     .footer__copyright-container{
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 30px;
-    align-items: center;
-    padding: 60px 30px 30px 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        align-items: center;
+        padding: 60px 30px 30px 30px;
     }
 
     .footer__logo-container{
@@ -607,22 +608,30 @@
 
     /* our works  */
 
-
-    .upper-right-corner-arrow {
-        width: 20px;
-        height: 16px;
+    .sub__title {
+        font-size: 28px;
     }
 
-    .arrow-wrapper {
-        width: 50px;
-        height: 50px;
-        top: 30px;
-        right: 30px;
+    .card__header {
+        font-size: 20px;
     }
 
-    .content-header {
-        font-size: 32px;
+    .card__container.scrolling__card--container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        overflow-x: hidden;
+        /* scrollbar লুকানো */
+        scroll-snap-type: x mandatory;
     }
+
+    .scrolling__card {
+        flex: 0 0 85%;
+        /* প্রতি slide এ একেকটা card দেখাবে */
+        scroll-snap-align: start;
+    }
+
+    /* our works END */
 
     /* ========service card start======== */
 
@@ -653,44 +662,19 @@
 
     /* case study END */
 
+    /* testimonial START */
+
+    .testimonial__inner {
+        padding: 46px;
+    }
+
+    .testimonial__header--container {
+        margin-left: 0px;
+    }
+
+    /* testimonial END */
+
     /* blog section START */
-
-    .service-header-and-btn-wrap.blog-header-and-btn-wrap {
-        flex-direction: row;
-    }
-
-    .service-header-and-btn-wrap.blog-header-and-btn-wrap .content-header {
-        max-width: 20.3rem;
-    }
-
-    .service-header-and-btn-wrap.blog-header-and-btn-wrap {
-        align-items: center;
-    }
-
-    .blog-content-wrapper {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .service-header-and-btn-wrap.blog-header-and-btn-wrap {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        gap: 0;
-    }
-
-    .service-header-and-btn-wrap.blog-header-and-btn-wrap .content-header {
-        max-width: 100%;
-        font-size: 1.8rem;
-    }
-
-    .content-veiw-btn.blog-veiw-btn {
-        flex-shrink: 0;
-        white-space: nowrap;
-
-    }
 
 
     /* blog section END */
@@ -703,7 +687,7 @@
 
     /* news letter END */
 
- 
+
     /* service page START */
 
     .hero-title-wrap {
@@ -749,8 +733,8 @@
 
     /*Section Footer Start */
     .section-footer{
-    border-radius: 16px;
-    margin-bottom: 40px;
+        border-radius: 16px;
+        margin-bottom: 40px;
     }
     .footer__menu-container {
         justify-content: center;
@@ -758,9 +742,11 @@
         row-gap: 60px;
         padding: 100px 80px 0px 80px;
     }
+
     .footer__logo-container {
         align-items: center;
     }
+
     .footer__subtitle {
         text-align: center;
     }
@@ -768,50 +754,56 @@
     .footer__link-title--align-right {
         text-align: left;
     }
-    .footer__link-title--align-center{
+
+    .footer__link-title--align-center {
         text-align: center;
     }
+
     .footer__menu-links-ul--align-right li {
         text-align: left;
     }
+
     .footer__address--reverse {
         flex-direction: row;
         text-align: left;
     }
+
     .footer__address-icon--flip-horizontal {
         transform: scaleX(1);
     }
 
 
-    .footer__logo-text{
-    font-size: 50px;
+    .footer__logo-text {
+        font-size: 50px;
     }
 
-    .footer__menu-links-ul li{
-    padding: 0 0 20px 0;
+    .footer__menu-links-ul li {
+        padding: 0 0 20px 0;
     }
 
-    .footer__menu-links-ul li a{
-    font-size: 20px;
+    .footer__menu-links-ul li a {
+        font-size: 20px;
     }
-    .footer__policy-pages-link li a{
-    font-size: 14px;   
+
+    .footer__policy-pages-link li a {
+        font-size: 14px;
     }
 
     /* Footer copyright Container */
-    .footer__copyright-container{
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 30px;
-    align-items: center;
-    padding: 60px 30px 30px 30px;
+    .footer__copyright-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        align-items: center;
+        padding: 60px 30px 30px 30px;
     }
 
-    .footer__link-title--align-right-mobile{
-    text-align: right;
+    .footer__link-title--align-right-mobile {
+        text-align: right;
     }
-    .footer__menu-links-ul--align-right-mobile{
-    text-align: right;
+
+    .footer__menu-links-ul--align-right-mobile {
+        text-align: right;
     }
     .footer__logo-container{
         flex-grow: 0;
@@ -823,6 +815,7 @@
 
 /* 576px and below */
 @media (max-width: 576px) {
+
     /*section Infinity logo Slider Start */
     .logo-slider__logos img {
         width: 100px;
@@ -921,38 +914,8 @@
 
     /* ========Tetimonial START======== */
 
-    .testimonial-wrapper {
-        padding: 30px 15px;
-    }
-
-    .testimonial-card-container {
-        padding: 20px;
-    }
-
-    .testimonial-card-customer-img-and-name-wrap {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .testimonial-client-name-and-title-wrapper {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .testimonial-card-container-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 50px;
-    }
-
-    .testimonial-client-company-logo {
-        margin-left: auto;
-        margin-right: auto;
+    .testimonial__inner {
+        padding: 20px 15px;
     }
 
     /* ========Tetimonial END======== */
@@ -1016,11 +979,11 @@
         height: 42px;
     }
 
-    .Footer__back-to-top{
+    .Footer__back-to-top {
         display: none;
     }
 
-    .footer__policy-pages-link{
+    .footer__policy-pages-link {
         display: flex;
         gap: 25px;
         margin: 0;
@@ -1039,7 +1002,7 @@
         line-height: 30px;
     }
     /* Footer copyright Container */
-    .footer__copyright-container{
+    .footer__copyright-container {
         display: flex;
         flex-direction: column-reverse;
         gap: 30px;
@@ -1047,18 +1010,20 @@
         padding: 60px 10px 30px 10px;
     }
 
-    .footer__link-title--align-right-mobile{
+    .footer__link-title--align-right-mobile {
         text-align: right;
     }
-    .footer__menu-links-ul--align-right-mobile{
+
+    .footer__menu-links-ul--align-right-mobile {
         text-align: right;
     }
 
 
-    .footer__copyright{
+    .footer__copyright {
         flex-direction: column;
         gap: 5px;
     }
+
     /*Section Footer End */
 
 
