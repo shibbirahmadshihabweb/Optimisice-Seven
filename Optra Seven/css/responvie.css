@@ -966,12 +966,8 @@
     row-gap: 60px;
     padding: 100px 20px 0px 40px;
     }
-    .footer__icon-box{
-    width: 45px;
-    height: 45px;
-    }
     .footer__icon-column-bg-image img{
-    width: 80px;
+    width: 85px;
     }
 
     .Footer__back-to-top{

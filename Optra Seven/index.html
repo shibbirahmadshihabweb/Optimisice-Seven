@@ -763,10 +763,15 @@
                     <!-- Footer-Icon column -->
                     <div class="footer__icon-column">
                         <div class="footer__icon-column-bg-image">
-                            <img
-                                src="./images/homepage/footer-icon-bg-image.png"
-                                alt=""
-                            />
+                            <picture>
+                                <source media="(min-width:992px)" srcset="
+                                            ./images/homepage/footer-icon-bg-image.png
+                                        " />
+                                <source media="(min-width:300px)" srcset="
+                                            ./images/homepage/footer-icon-bg-image-mobile.png
+                                        " />
+                                <img src="./images/homepage/footer-icon-bg-image.png" alt="icon-bg-image" />
+                            </picture>
                         </div>
                         <div class="footer__icon-wraper">
                             <div class="footer__icon-box">
@@ -829,9 +834,16 @@
                     <!-- Footer Back-to-top-button -->
                     <div class="Footer__back-to-top">
                         <div class="footer__back-to-top-bg-image">
-                            <img src="./images/homepage/footer-back-to-top-bg-img.png" alt="">
+                            <picture>
+                                <source media="(min-width:992px)" srcset="
+                                            ./images/homepage/footer-back-to-top-bg-img.png
+                                        " />
+                                <source media="(min-width:576px)" srcset="
+                                            ./images/homepage/footer-back-to-top-bg-img-mobile.png
+                                        " />
+                                <img src="./images/homepage/footer-back-to-top-bg-img.png" alt="button-bg-image" />
+                            </picture>
                         </div>
-
                         <button class="footer__back-to-top-button">Back To Top <span class="footer__back-to-top-icon"><img src="./images/homepage/back-to-top-icon.png" alt=""></span></button>
                     </div>
 

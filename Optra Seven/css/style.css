@@ -806,6 +806,9 @@ body {
     top: 0px;
     right: 0px;
 }
+.footer__back-to-top-bg-image picture{
+z-index: 1;
+}
 
 .footer__back-to-top-button {
     width: 205px;
