@@ -43,10 +43,11 @@ body {
 }
 
 .hero__review-chip {
-    max-width: 281px;
+    max-width: 280px;
     border: 1px solid #202020;
     border-radius: 50px;
     display: flex;
+    justify-content: center;
     column-gap: 10px;
     padding: 12px 28px;
 }
@@ -112,7 +113,7 @@ body {
 
 .hero__curve-container-two {
     position: relative;
-    top: 89px;
+    top: 90px;
 }
 
 .hero__image img {
