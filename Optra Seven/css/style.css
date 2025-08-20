@@ -229,6 +229,7 @@ body {
 
 .content__card {
     position: relative;
+    overflow: hidden;
 }
 
 .card__image {
@@ -710,7 +711,7 @@ body {
     align-items: center;
     gap: 10px;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .slider__button {

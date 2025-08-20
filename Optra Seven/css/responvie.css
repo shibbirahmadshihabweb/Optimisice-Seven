@@ -785,6 +785,7 @@
     .slider__button--container.slider__button--visible {
         display: inline;
         display: flex;
+        margin-top: 30px;
     }
 
     .blog-content-card-para {
