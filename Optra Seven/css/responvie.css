@@ -83,10 +83,19 @@
 
     /*section Hero End */
 
+    /* Portfolio START */
+
+    .sub__title {
+        font-size: 42px;
+    }
+
+    /* Portfolio END */
+
     /* ========service card start======== */
 
-    .mini-title-and-header-wrap {
-        max-width: 1024px;
+
+    .mini__title {
+        font-size: 16px;
     }
 
     /* Hover Chip Responsive style Start */
@@ -96,16 +105,32 @@
     /* Hover Chip Responsive style End */
     /* ========service card end======== */
 
-
-
     /* case study START  */
+
+
+    .circle {
+        width: 50px;
+        height: 50px;
+        top: 30px;
+        right: 30px;
+    }
+
+    .circle__arrow {
+        width: 22px;
+        height: 20px;
+    }
 
     .mini-title-wrapper {
         gap: 5px;
     }
 
+    .scrolling__card {
+        flex: 0 0 calc(50% - 20px);
+    }
+
+
+
     /* case study END  */
-    
 
     /*Section Faq START */
     .faq__block-left {
@@ -125,8 +150,7 @@
     /* news letter START */
 
     .news-letter-content-header {
-        max-width: 500px;
-
+        max-width: 815px;
     }
 
     /* news letter END */
@@ -314,7 +338,7 @@
         padding-right: 3vw;
     }
 
-    /* our works  START*/
+    /* Portfolio START  START*/
 
     .title {
         font-size: 20px;
@@ -340,11 +364,19 @@
         margin-top: 5px;
     }
 
-    /* our works  END*/
+    /* Portfolio START  END*/
+
+    /* case study START */
+
+    .scrolling__card {
+        flex: 0 0 calc(50% - 20px);
+    }
+
+    /* case study END */
 
     /*Section Faq START */
     .faq__block-left {
-        max-width: 625px;
+        max-width: 100%;
     }
 
     .faq__container {
@@ -370,10 +402,6 @@
         border-radius: 0 0 16px 16px;
     }
 
-    .button {
-        width: 165px;
-    }
-
     /*Section Faq End */
 
     /* ================testimonial START================ */
@@ -386,18 +414,6 @@
 
     .slider__button {
         background-color: #7CE3AC;
-    }
-
-    .circle {
-        width: 50px;
-        height: 50px;
-        top: 30px;
-        right: 30px;
-    }
-
-    .circle__arrow {
-        width: 22px;
-        height: 20px;
     }
 
     .mini__title--container {
@@ -419,18 +435,22 @@
         margin-top: 0;
     }
 
-    .blog__container--header {
-        max-width: 315px;
-    }
-
     .blog__content--wrapper {
         margin-top: 40px;
+    }
+
+    .blog-content-card-para {
+        font-size: 20px;
     }
 
     /* blog section END */
 
     /* news letter START */
 
+    .news-letter-content-header {
+        max-width: 475px;
+        font-size: 42px;
+    }
 
     /* news letter END */
 
@@ -640,6 +660,10 @@
         font-size: 20px;
     }
 
+    .card__title {
+        margin-top: 14px;
+    }
+
     .card__container.scrolling__card--container {
         display: flex;
         flex-direction: row;
@@ -647,6 +671,8 @@
         overflow-x: hidden;
         scroll-snap-type: x mandatory;
     }
+
+
 
     .scrolling__card {
         flex: 0 0 85%;
@@ -693,7 +719,7 @@
 
     .service__container--two {
         gap: 40px;
-        margin-top: 40px;
+        margin-top: 0px;
     }
 
 
@@ -712,10 +738,17 @@
 
     /* ========service card end======== */
 
-
-
-
     /* case study START */
+
+    .circle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .circle__arrow {
+        width: 12px;
+        height: 10px;
+    }
 
     .content-card-wrapper.case-study-content-card-wrapper {
         flex-direction: column;
@@ -745,9 +778,30 @@
         max-width: 100%;
     }
 
+    .slider__button--container.slider__button--invisible {
+        display: none;
+    }
+
+    .slider__button--container.slider__button--visible {
+        display: inline;
+        display: flex;
+    }
+
+    .blog-content-card-para {
+        font-size: 16px;
+    }
+
     /* blog section END */
 
     /* news letter START */
+
+    .news__letter--container {
+        padding: 50px 20px;
+    }
+
+    .news-letter-content-header {
+        max-width: 360px;
+    }
 
     .check__list--container {
         display: none;
@@ -900,7 +954,7 @@
         padding-right: 15px;
     }
 
-    /* our works  */
+    /* Portfolio START  */
 
     .upper-right-corner-arrow {
         width: 18px;
@@ -922,6 +976,12 @@
         flex: 0 0 100%;
         scroll-snap-align: start;
     }
+
+    .title {
+        font-size: 16px;
+    }
+
+    /* Portfolio END  */
 
     /* ========service card start======== */
 
@@ -1006,6 +1066,10 @@
         padding: 20px 15px;
     }
 
+    .testimonial__card {
+        padding: 20px 15px;
+    }
+
     /* ========Tetimonial END======== */
 
     /* case study START */
@@ -1032,10 +1096,6 @@
     /* blog section END */
 
     /* news letter START */
-
-    .news-letter-content-header {
-        max-width: 420px;
-    }
 
     .check-list-wrapper {
         justify-content: start;

@@ -229,7 +229,6 @@ body {
 
 .content__card {
     position: relative;
-    overflow: hidden;
 }
 
 .card__image {
@@ -257,13 +256,22 @@ body {
 }
 
 .scrolling__card--container {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrolling__card--container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
 }
 
 .scrolling__card {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
 }
 
 .card__container.scrolling__card--container {
@@ -337,9 +345,13 @@ body {
 /* service section START */
 
 .card__container {
-    display: flex;
-    gap: 40px;
-    margin: 40px auto 0 auto;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+  margin: 40px auto 0 auto;
 }
 
 .service__container--one {
@@ -417,8 +429,6 @@ body {
 
 /* service section END */
 
-
-
 /* case study START */
 
 .mini__title--container {
@@ -461,6 +471,7 @@ body {
 .heading__sub-title-wraper {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .heading__sub-title {
@@ -713,6 +724,10 @@ body {
     flex-shrink: 0;
 }
 
+.slider__button--container.slider__button--visible {
+    display: none;
+}
+
 .slider__button--container a {
     display: flex;
     justify-content: center;
@@ -737,9 +752,10 @@ body {
 }
 
 .news-letter-content-header {
-    max-width: 635px;
+    max-width: 815px;
     text-align: center;
     font-weight: 500;
+    font-size: 72px;
 }
 
 .news__letter--container {
@@ -761,9 +777,9 @@ body {
 .form__input--field {
     width: 100%;
     padding: 14px 20px 14px 50px;
+    border: 1px solid #787878;
     border-radius: 8px;
-    background-color: #C7C7C7;
-    border: none;
+    background-color: #E7E7E7;
     height: 48px;
     box-sizing: border-box;
     margin-top: 60px;
@@ -819,6 +835,10 @@ body {
     gap: 30px;
     margin-top: 45px;
     justify-content: center;
+}
+
+.check-list-option {
+    font-size: 16px;
 }
 
 /* news letter END */
