@@ -257,39 +257,43 @@ body {
 }
 
 .scrolling__card--container {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -ms-overflow-style: none; /* IE/Edge */
-  scrollbar-width: none; /* Firefox */
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    /* IE/Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .scrolling__card--container::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+    display: none;
+    /* Chrome/Safari */
 }
 
 .scrolling__card {
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-  transition: transform 0.3s ease;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
 }
 
 .card__container.scrolling__card--container {
-  display: flex;
-  gap: 20px;
-  overflow-x: hidden;
-  scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
 }
 
 .scrolling__card {
-  flex: 0 0 calc(50% - 20px);
-  scroll-snap-align: start;
+    flex: 0 0 calc(50% - 20px);
+    scroll-snap-align: start;
 }
 
 .button.button__mobile--visible {
     display: none;
 }
+
 /* section headings card START  */
 
 .title__card {
@@ -346,13 +350,13 @@ body {
 /* service section START */
 
 .card__container {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -ms-overflow-style: none;
-  scrollbar-width: none; 
-  margin: 40px auto 0 auto;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 40px auto 0 auto;
 }
 
 .service__container--one {
@@ -371,45 +375,49 @@ body {
 /* Hover Chip Design Start */
 /* need to do position:relative and overflow:hidden in parent div  */
 
-.hover-chip{
+.hover-chip {
     position: absolute;
     top: -38px;
     right: 0px;
     transition: all 0.3s ease;
 }
-.hover-chip__bg{
+
+.hover-chip__bg {
     position: relative;
     display: flex;
     justify-content: space-between;
 }
-.hover-chip__icon{
+
+.hover-chip__icon {
     width: 15px;
-    height: 15px;  
+    height: 15px;
 }
 
-.hover-chip__bg-span{
+.hover-chip__bg-span {
     display: block;
     width: 320px;
     height: 38px;
     background-color: #f5f5f5;
     border-radius: 0 0 0 25px;
 }
-.hover-chip__bg-span-icon{
+
+.hover-chip__bg-span-icon {
     width: 15px;
-    height: 15px; 
+    height: 15px;
     position: absolute;
-    right: 0; 
+    right: 0;
 }
 
 
-.hover-chip__inner{
+.hover-chip__inner {
     display: flex;
     gap: 12px;
     position: absolute;
     top: 0px;
     right: 4px;
 }
-.hover-chip__buton{
+
+.hover-chip__buton {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -417,14 +425,16 @@ body {
     padding: 5px 15px;
     border-radius: 25px;
 }
-.hover-chip__buton--hidden-pc{
+
+.hover-chip__buton--hidden-pc {
     display: none;
 }
 
-.content__card:hover .hover-chip{
+.content__card:hover .hover-chip {
     top: 0px;
     right: 0px;
 }
+
 /* Hover Chip Design End */
 
 
@@ -586,14 +596,13 @@ body {
 
 .testimonial__card--container {
     display: flex;
-    justify-content: space-evenly;
     margin-top: 40px;
-    gap: 50px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    gap: 30px;
 }
 
+
 .testimonial__card {
+    flex: 0 0 auto;
     max-width: 450px;
     width: 100%;
     padding: 50px;
@@ -601,7 +610,6 @@ body {
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    flex: 0 0 auto;
     scroll-snap-align: start;
 }
 
@@ -860,44 +868,47 @@ body {
 
 
 /* Social Icon Chip Design Start */
-.footer__icon-chip{
+.footer__icon-chip {
     position: absolute;
     top: 0px;
     left: 0px;
 }
-.footer__icon-chip-bg{
+
+.footer__icon-chip-bg {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.footer__icon-chip-bg-span-wraper{
+.footer__icon-chip-bg-span-wraper {
     display: flex;
     flex-direction: column;
 }
-.footer__icon-chip-bg-icon{
+
+.footer__icon-chip-bg-icon {
     position: absolute;
     top: 0;
     left: 60px;
     width: 25px;
-    height: 25px;  
+    height: 25px;
 }
 
-.footer__icon-chip-bg-span{
+.footer__icon-chip-bg-span {
     display: block;
     width: 60px;
     height: 385px;
     background-color: #f5f5f5;
     border-radius: 0 0 25px 0;
 }
-.footer__icon-chip-bg-span-icon{
+
+.footer__icon-chip-bg-span-icon {
     width: 25px;
-    height: 25px; 
+    height: 25px;
 }
 
 
-.footer__icon-chip-icon-wraper{
+.footer__icon-chip-icon-wraper {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -905,66 +916,73 @@ body {
     top: 10px;
     left: 0px;
 }
-.footer__icon-chip-icon-box{
+
+.footer__icon-chip-icon-box {
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #202020;
-    border-radius: 50px;    
+    border-radius: 50px;
 }
+
 .footer__icon-chip-icon-box:hover {
     background-color: #7CE3AC;
     transition: all 300ms ease-out 0s;
 }
 
-.footer__icon-chip-icon-fb{
+.footer__icon-chip-icon-fb {
     width: 15px;
     height: 24px;
 }
-.footer__icon-chip-icon{
+
+.footer__icon-chip-icon {
     width: 25px;
     height: 24px;
 }
-/* Social Icon Chip Design End */ 
+
+/* Social Icon Chip Design End */
 
 
 /* Back-to-top Button */
-.footer__button-chip{
+.footer__button-chip {
     position: absolute;
     top: 0px;
     right: 0px;
 }
-.footer__button-chip-bg{
+
+.footer__button-chip-bg {
     position: relative;
     display: flex;
 }
 
-.footer__button-chip-bg-span-wraper{
+.footer__button-chip-bg-span-wraper {
     display: flex;
     flex-direction: column;
 }
-.footer__button-chip-bg-icon{
+
+.footer__button-chip-bg-icon {
     width: 25px;
     height: 25px;
-    transform: rotate(90deg);  
+    transform: rotate(90deg);
 }
 
-.footer__button-chip-bg-span{
+.footer__button-chip-bg-span {
     display: block;
     width: 225px;
     height: 60px;
     background-color: #f5f5f5;
     border-radius: 0 0 0 25px;
 }
-.footer__button-chip-bg-span-icon{
+
+.footer__button-chip-bg-span-icon {
     position: absolute;
     top: 60px;
     right: 0px;
     width: 25px;
-    height: 25px; 
-    transform: rotate(90deg); 
+    height: 25px;
+    transform: rotate(90deg);
 }
 
 
@@ -994,7 +1012,8 @@ body {
     border-radius: 50px;
     background-color: #7CE3AC;
 }
-.footer__back-to-top-icon-wraper .fee-icon{
+
+.footer__back-to-top-icon-wraper .fee-icon {
     width: 20px;
 }
 

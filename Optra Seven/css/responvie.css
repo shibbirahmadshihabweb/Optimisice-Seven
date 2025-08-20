@@ -99,9 +99,10 @@
     }
 
     /* Hover Chip Responsive style Start */
-    .hover-chip{
+    .hover-chip {
         top: 0px;
     }
+
     /* Hover Chip Responsive style End */
     /* ========service card end======== */
 
@@ -128,6 +129,13 @@
         flex: 0 0 calc(50% - 20px);
     }
 
+    /* testimonial card  */
+
+    .testimonial__card {
+        flex: 0 0 100%;
+    }
+
+    /* testimonial card  */
 
 
     /* case study END  */
@@ -406,7 +414,9 @@
 
     /* ================testimonial START================ */
 
-
+    .testimonial__card {
+        flex: 0 0 100%;
+    }
 
     /* ================testimonial END================ */
 
@@ -564,15 +574,18 @@
 
 
     /* Hover Chip Responsive style Start */
-    .hover-chip__bg-span{
-    width: 245px;
+    .hover-chip__bg-span {
+        width: 245px;
     }
-    .hover-chip__buton--hidden-mobile{
+
+    .hover-chip__buton--hidden-mobile {
         display: none;
     }
-    .hover-chip__buton--hidden-pc{
+
+    .hover-chip__buton--hidden-pc {
         display: block;
     }
+
     /* Hover Chip Responsive style End */
 
 
@@ -725,15 +738,18 @@
 
 
     /* Hover Chip Responsive style Start */
-    .hover-chip__bg-span{
-    width: 320px;
+    .hover-chip__bg-span {
+        width: 320px;
     }
-    .hover-chip__buton--hidden-mobile{
+
+    .hover-chip__buton--hidden-mobile {
         display: block;
     }
-    .hover-chip__buton--hidden-pc{
+
+    .hover-chip__buton--hidden-pc {
         display: none;
     }
+
     /* Hover Chip Responsive style End */
 
     /* ========service card end======== */
@@ -768,6 +784,10 @@
 
     .testimonial__header--container {
         margin-left: 0px;
+    }
+
+    .testimonial__card {
+        flex: 0 0 100%;
     }
 
     /* testimonial END */
@@ -1006,15 +1026,18 @@
     }
 
     /* Hover Chip Responsive style Start */
-    .hover-chip__bg-span{
-    width: 245px;
+    .hover-chip__bg-span {
+        width: 245px;
     }
-    .hover-chip__buton--hidden-mobile{
+
+    .hover-chip__buton--hidden-mobile {
         display: none;
     }
-    .hover-chip__buton--hidden-pc{
+
+    .hover-chip__buton--hidden-pc {
         display: block;
     }
+
     /* Hover Chip Responsive style End */
 
     /* ========service card end======== */
@@ -1068,7 +1091,8 @@
     }
 
     .testimonial__card {
-        padding: 20px 15px;
+        padding: 30px 30px;
+
     }
 
     /* ========Tetimonial END======== */
@@ -1103,6 +1127,7 @@
         flex-wrap: wrap;
         align-items: center;
     }
+
     /* news letter END */
 
     /*Section Footer Start */
@@ -1114,16 +1139,16 @@
     }
 
     /* Icon chip */
-    .footer__icon-chip-bg-icon{
-        left: 50px;  
+    .footer__icon-chip-bg-icon {
+        left: 50px;
     }
 
-    .footer__icon-chip-bg-span{
+    .footer__icon-chip-bg-span {
         width: 50px;
         height: 335px;
     }
 
-    .footer__icon-chip-icon-wraper{
+    .footer__icon-chip-icon-wraper {
         display: flex;
         flex-direction: column;
         gap: 12px;

@@ -54,94 +54,63 @@ filterButtons.forEach(filterBtn => {
 });
 
 // -------------------- card slider --------------------
+
 document.querySelectorAll(".scrolling__card--container").forEach(container => {
   const cards = container.querySelectorAll(".scrolling__card");
-  const prevBtn = container.parentElement.querySelector(".prev__button");
-  const nextBtn = container.parentElement.querySelector(".next__button");
   let index = 0;
 
+  const section = container.closest("section");
+
+  // prev/next buttons section
+  const prevBtns = section.querySelectorAll(".prev__button");
+  const nextBtns = section.querySelectorAll(".next__button");
+
   function showCard(i) {
-    const cardWidth = cards[0].offsetWidth + 20; // card width + gap
+    const cardWidth = cards[0].offsetWidth + 40; // card width + gap
     container.scrollTo({ left: i * cardWidth, behavior: "smooth" });
   }
 
-  // Button click
-  nextBtn.addEventListener("click", e => {
-    e.preventDefault();
-    if (index < cards.length - 1) {
-      index++;
-      showCard(index);
-    }
+  // prev buttons- listener
+  prevBtns.forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.preventDefault();
+      if (index > 0) {
+        index--;
+        showCard(index);
+      }
+    });
   });
 
-  prevBtn.addEventListener("click", e => {
-    e.preventDefault();
-    if (index > 0) {
-      index--;
-      showCard(index);
-    }
+  // next buttons- listener
+  nextBtns.forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.preventDefault();
+      if (index < cards.length - 1) {
+        index++;
+        showCard(index);
+      }
+    });
   });
 
   // Swipe/Drag support
   let startX = 0;
   let isDragging = false;
 
-  // Touch events (mobile)
-  container.addEventListener("touchstart", e => {
-    startX = e.touches[0].clientX;
-    isDragging = true;
-  });
-
+  container.addEventListener("touchstart", e => { startX = e.touches[0].clientX; isDragging = true; });
   container.addEventListener("touchmove", e => {
     if (!isDragging) return;
-    const x = e.touches[0].clientX;
-    const diff = startX - x;
-
-    if (diff > 50 && index < cards.length - 1) { // swipe left
-      index++;
-      showCard(index);
-      isDragging = false;
-    } else if (diff < -50 && index > 0) { // swipe right
-      index--;
-      showCard(index);
-      isDragging = false;
-    }
+    const diff = startX - e.touches[0].clientX;
+    if (diff > 50 && index < cards.length - 1) { index++; showCard(index); isDragging = false; }
+    else if (diff < -50 && index > 0) { index--; showCard(index); isDragging = false; }
   });
-
-  container.addEventListener("touchend", () => {
-    isDragging = false;
-  });
-
-  // Mouse events (desktop)
-  container.addEventListener("mousedown", e => {
-    startX = e.clientX;
-    isDragging = true;
-    container.classList.add("dragging");
-  });
-
+  container.addEventListener("touchend", () => { isDragging = false; });
+  container.addEventListener("mousedown", e => { startX = e.clientX; isDragging = true; container.classList.add("dragging"); });
   container.addEventListener("mousemove", e => {
     if (!isDragging) return;
     const diff = startX - e.clientX;
-
-    if (diff > 50 && index < cards.length - 1) {
-      index++;
-      showCard(index);
-      startX = e.clientX;
-    } else if (diff < -50 && index > 0) {
-      index--;
-      showCard(index);
-      startX = e.clientX;
-    }
+    if (diff > 50 && index < cards.length - 1) { index++; showCard(index); startX = e.clientX; }
+    else if (diff < -50 && index > 0) { index--; showCard(index); startX = e.clientX; }
   });
-
-  container.addEventListener("mouseup", () => {
-    isDragging = false;
-    container.classList.remove("dragging");
-  });
-
-  container.addEventListener("mouseleave", () => {
-    isDragging = false;
-    container.classList.remove("dragging");
-  });
-
+  container.addEventListener("mouseup", () => { isDragging = false; container.classList.remove("dragging"); });
+  container.addEventListener("mouseleave", () => { isDragging = false; container.classList.remove("dragging"); });
 });
