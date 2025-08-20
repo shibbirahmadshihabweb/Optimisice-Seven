@@ -89,7 +89,14 @@
         max-width: 1024px;
     }
 
+    /* Hover Chip Responsive style Start */
+    .hover-chip{
+        top: 0px;
+    }
+    /* Hover Chip Responsive style End */
     /* ========service card end======== */
+
+
 
     /* case study START  */
 
@@ -98,6 +105,7 @@
     }
 
     /* case study END  */
+    
 
     /*Section Faq START */
     .faq__block-left {
@@ -535,6 +543,19 @@
     /*section Hero End */
 
 
+    /* Hover Chip Responsive style Start */
+    .hover-chip__bg-span{
+    width: 245px;
+    }
+    .hover-chip__buton--hidden-mobile{
+        display: none;
+    }
+    .hover-chip__buton--hidden-pc{
+        display: block;
+    }
+    /* Hover Chip Responsive style End */
+
+
     /*Section Footer Start */
     .footer__menu-container {
         column-gap: 75px;
@@ -675,7 +696,24 @@
         margin-top: 40px;
     }
 
+
+
+    /* Hover Chip Responsive style Start */
+    .hover-chip__bg-span{
+    width: 320px;
+    }
+    .hover-chip__buton--hidden-mobile{
+        display: block;
+    }
+    .hover-chip__buton--hidden-pc{
+        display: none;
+    }
+    /* Hover Chip Responsive style End */
+
     /* ========service card end======== */
+
+
+
 
     /* case study START */
 
@@ -905,6 +943,18 @@
         text-align: center;
         max-width: 29.6rem;
     }
+
+    /* Hover Chip Responsive style Start */
+    .hover-chip__bg-span{
+    width: 245px;
+    }
+    .hover-chip__buton--hidden-mobile{
+        display: none;
+    }
+    .hover-chip__buton--hidden-pc{
+        display: block;
+    }
+    /* Hover Chip Responsive style End */
 
     /* ========service card end======== */
 
