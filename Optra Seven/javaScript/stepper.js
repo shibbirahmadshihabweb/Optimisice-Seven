@@ -52,3 +52,38 @@ filterButtons.forEach(filterBtn => {
     });
   });
 });
+
+// -------------------- card slider --------------------
+
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.querySelector(".scrolling__card--container");
+  const cards = document.querySelectorAll(".scrolling__card");
+  const prevBtn = document.querySelector(".prev__button");
+  const nextBtn = document.querySelector(".next__button");
+
+  let index = 0;
+
+  function showCard(i) {
+    const cardWidth = cards[0].offsetWidth + 20; // card width + gap
+    container.scrollTo({
+      left: i * cardWidth,
+      behavior: "smooth"
+    });
+  }
+
+  nextBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (index < cards.length - 1) {
+      index++;
+      showCard(index);
+    }
+  });
+
+  prevBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (index > 0) {
+      index--;
+      showCard(index);
+    }
+  });
+});

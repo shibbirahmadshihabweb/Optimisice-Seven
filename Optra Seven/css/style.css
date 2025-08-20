@@ -265,6 +265,21 @@ body {
     scroll-snap-align: start;
 }
 
+.card__container.scrolling__card--container {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.scrolling__card {
+  flex: 0 0 calc(50% - 20px);
+  scroll-snap-align: start;
+}
+
+.button.button__mobile--visible {
+    display: none;
+}
 /* section headings card START  */
 
 .title__card {
@@ -318,7 +333,7 @@ body {
 
 /* our works END */
 
-/* solution we porvide START */
+/* service section START */
 
 .card__container {
     display: flex;
@@ -339,7 +354,7 @@ body {
     margin-top: 180px;
 }
 
-/* solution we porvide END */
+/* service section END */
 
 /* case study START */
 

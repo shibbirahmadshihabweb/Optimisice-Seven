@@ -143,16 +143,16 @@
         padding: 100px 100px 0px 120px;
     }
 
-    .footer__link-title{
-    margin: 0 0 25px 0;
+    .footer__link-title {
+        margin: 0 0 25px 0;
     }
 
-    .footer__menu-links-ul li{
-    padding: 0 0 22px 0;
+    .footer__menu-links-ul li {
+        padding: 0 0 22px 0;
     }
 
     .footer__link-title--align-right {
-        text-align: right;  
+        text-align: right;
     }
 
     .footer__menu-links-ul--align-right li {
@@ -205,17 +205,19 @@
     /*Section Footer End */
 
 
-    .footer__logo-container{
+    .footer__logo-container {
         flex-grow: 0;
         flex-shrink: 0;
         flex-basis: 40%;
     }
-    .footer__menu-links{
+
+    .footer__menu-links {
         flex-grow: 0;
         flex-shrink: 0;
-        flex-basis: 20%;   
-        max-width: none; 
+        flex-basis: 20%;
+        max-width: none;
     }
+
     /* .footer__address-container{
         flex-grow: 0;
         flex-shrink: 0;
@@ -330,7 +332,7 @@
         margin-top: 5px;
     }
 
-    /* our works  START*/
+    /* our works  END*/
 
     /*Section Faq START */
     .faq__block-left {
@@ -541,7 +543,7 @@
     }
 
     /* Footer copyright Container */
-    .footer__copyright-container{
+    .footer__copyright-container {
         display: flex;
         flex-direction: column-reverse;
         gap: 30px;
@@ -549,11 +551,12 @@
         padding: 60px 30px 30px 30px;
     }
 
-    .footer__logo-container{
+    .footer__logo-container {
         flex-grow: 0;
         flex-shrink: 0;
         flex-basis: 45%;
     }
+
     /*Section Footer Start */
 }
 
@@ -606,7 +609,7 @@
 
     /*section Infinity logo Slider End */
 
-    /* our works  */
+    /* portfolio START  */
 
     .sub__title {
         font-size: 28px;
@@ -621,17 +624,41 @@
         flex-direction: row;
         gap: 20px;
         overflow-x: hidden;
-        /* scrollbar লুকানো */
         scroll-snap-type: x mandatory;
     }
 
     .scrolling__card {
         flex: 0 0 85%;
-        /* প্রতি slide এ একেকটা card দেখাবে */
         scroll-snap-align: start;
     }
 
-    /* our works END */
+    .button.button__mobile--invisible {
+        display: none;
+    }
+
+    .button.button__mobile--visible {
+        display: inline;
+        display: flex;
+        text-align: center;
+        margin: 40px auto 0 auto;
+    }
+
+    .slider__button--invisible {
+        display: none;
+    }
+
+    .slider__button--visible {
+        display: inline;
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .blog__container .button__mobile--visible {
+        margin-top: 0;
+    }
+
+    /* portfolio END */
 
     /* ========service card start======== */
 
@@ -676,6 +703,9 @@
 
     /* blog section START */
 
+    .blog__container--header {
+        max-width: 100%;
+    }
 
     /* blog section END */
 
@@ -732,10 +762,11 @@
 
 
     /*Section Footer Start */
-    .section-footer{
+    .section-footer {
         border-radius: 16px;
         margin-bottom: 40px;
     }
+
     .footer__menu-container {
         justify-content: center;
         column-gap: 125px;
@@ -805,11 +836,13 @@
     .footer__menu-links-ul--align-right-mobile {
         text-align: right;
     }
-    .footer__logo-container{
+
+    .footer__logo-container {
         flex-grow: 0;
         flex-shrink: 0;
         flex-basis: 70%;
     }
+
     /*Section Footer End */
 }
 
@@ -845,6 +878,11 @@
 
     .content-header {
         font-size: 28px;
+    }
+
+    .scrolling__card {
+        flex: 0 0 100%;
+        scroll-snap-align: start;
     }
 
     /* ========service card start======== */
@@ -964,7 +1002,8 @@
         row-gap: 40px;
         padding: 30px 20px 0px 20px;
     }
-    .footer__icon-column-bg-image img{
+
+    .footer__icon-column-bg-image img {
         width: 63px;
     }
 
@@ -997,10 +1036,12 @@
     .footer__logo-text {
         font-size: 38px;
     }
+
     .footer__subtitle {
         font-size: 20px;
         line-height: 30px;
     }
+
     /* Footer copyright Container */
     .footer__copyright-container {
         display: flex;
