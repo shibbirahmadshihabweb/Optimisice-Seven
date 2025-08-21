@@ -20,7 +20,10 @@ accordionItems.forEach(item => {
   });
 });
 
-
-
+/* Script For add class in sticky header*/
+window.addEventListener("scroll", function() {
+  const header = document.querySelector(".site-main-header__container");
+  header.classList.toggle("sticky-header", window.scrollY > 0);
+});
 
 
