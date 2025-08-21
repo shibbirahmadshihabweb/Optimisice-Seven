@@ -78,8 +78,14 @@ body {
 }
 
 .hero__placeholder-icon {
+    position: relative;
+    bottom: 1px;
     width: 15px;
     height: 15px;
+}
+
+.hero__placeholder-icon--rotate{
+    transform: rotate(90deg);
 }
 
 .hero__content-holder{
@@ -176,23 +182,23 @@ body {
 }
 .hero__curve-icon-top-right{
     position: relative;
-    bottom: 347px;
+    bottom: 348px;
     left: 940px;
 }
 .hero__curver-icon-top{
     position: relative;
-    bottom: 244px;
+    bottom: 245px;
     left: 751px;
 }
 
 .hero__curve-icon-middle{
     position: relative;
-    bottom: 152px;
+    bottom: 153px;
     left: 413px;
 }
 .hero__curve-icon-bottom{
     position: relative;
-    bottom: 61px;
+    bottom: 62px;
     left: 123px;
 }
 
