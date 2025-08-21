@@ -786,9 +786,9 @@ body {
 .form__input--field {
     width: 100%;
     padding: 14px 20px 14px 50px;
-    border: 1px solid #787878;
+    border: 1px solid #C7C7C7;
     border-radius: 8px;
-    background-color: #E7E7E7;
+    background-color: #FFFFFF;
     height: 48px;
     box-sizing: border-box;
     margin-top: 60px;
