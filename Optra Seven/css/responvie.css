@@ -724,6 +724,7 @@
 
     .card__container {
         flex-direction: column;
+        gap: 40px;
     }
 
     .service__container--one {

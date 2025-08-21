@@ -54,7 +54,6 @@ filterButtons.forEach(filterBtn => {
 });
 
 // -------------------- card slider --------------------
-
 document.querySelectorAll(".scrolling__card--container").forEach(container => {
   const cards = container.querySelectorAll(".scrolling__card");
   let index = 0;
@@ -70,29 +69,35 @@ document.querySelectorAll(".scrolling__card--container").forEach(container => {
     container.scrollTo({ left: i * cardWidth, behavior: "smooth" });
   }
 
-  // prev buttons- listener
+  // prev buttons - listener
   prevBtns.forEach(btn => {
     btn.addEventListener("click", e => {
       e.preventDefault();
       if (index > 0) {
         index--;
-        showCard(index);
+      } else {
+        // surute thakle sesh card e chole jabe
+        index = cards.length - 1;
       }
+      showCard(index);
     });
   });
 
-  // next buttons- listener
+  // next buttons - listener
   nextBtns.forEach(btn => {
     btn.addEventListener("click", e => {
       e.preventDefault();
       if (index < cards.length - 1) {
         index++;
-        showCard(index);
+      } else {
+        // sesh card e thakle abar surute chole jabe
+        index = 0;
       }
+      showCard(index);
     });
   });
 
-  // Swipe/Drag support
+  // Swipe/Drag support (same thakbe)
   let startX = 0;
   let isDragging = false;
 
@@ -100,16 +105,30 @@ document.querySelectorAll(".scrolling__card--container").forEach(container => {
   container.addEventListener("touchmove", e => {
     if (!isDragging) return;
     const diff = startX - e.touches[0].clientX;
-    if (diff > 50 && index < cards.length - 1) { index++; showCard(index); isDragging = false; }
-    else if (diff < -50 && index > 0) { index--; showCard(index); isDragging = false; }
+    if (diff > 50) {
+      index = (index < cards.length - 1) ? index + 1 : 0;
+      showCard(index);
+      isDragging = false;
+    } else if (diff < -50) {
+      index = (index > 0) ? index - 1 : cards.length - 1;
+      showCard(index);
+      isDragging = false;
+    }
   });
   container.addEventListener("touchend", () => { isDragging = false; });
   container.addEventListener("mousedown", e => { startX = e.clientX; isDragging = true; container.classList.add("dragging"); });
   container.addEventListener("mousemove", e => {
     if (!isDragging) return;
     const diff = startX - e.clientX;
-    if (diff > 50 && index < cards.length - 1) { index++; showCard(index); startX = e.clientX; }
-    else if (diff < -50 && index > 0) { index--; showCard(index); startX = e.clientX; }
+    if (diff > 50) {
+      index = (index < cards.length - 1) ? index + 1 : 0;
+      showCard(index);
+      startX = e.clientX;
+    } else if (diff < -50) {
+      index = (index > 0) ? index - 1 : cards.length - 1;
+      showCard(index);
+      startX = e.clientX;
+    }
   });
   container.addEventListener("mouseup", () => { isDragging = false; container.classList.remove("dragging"); });
   container.addEventListener("mouseleave", () => { isDragging = false; container.classList.remove("dragging"); });
