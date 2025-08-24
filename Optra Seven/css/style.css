@@ -95,10 +95,12 @@ body {
 
 /* review chip */
 .hero__review-chip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 281px;
     border: 1px solid #202020;
     border-radius: 50px;
-    display: flex;
     column-gap: 10px;
     padding: 12px 28px;
     margin: 0 0 5px 20px;

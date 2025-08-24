@@ -1,0 +1,607 @@
+/* font family (manrope and roboto linkup) */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 
+// Variables
+----------------------------- */
+:root {
+    --07-primary: #7CE3AC;
+    --07-primary-100: #E5F9EE;
+    --07-primary-200: #CBF4DE;
+    --07-primary-300: #B0EECD;
+    --07-primary-400: #96E9BD;
+    --07-primary-500: #7CE3AC;
+    --07-primary-600: #63B68A;
+    --07-primary-700: #4A8867;
+    --07-primary-800: #325B45;
+    --07-primary-900: #192D22;
+
+
+    --07-dark: #202020;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Manrope", "Roboto", sans-serif;
+}
+
+.main {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    scroll-margin-top: 160px;
+}
+
+
+
+
+.section {
+    max-width: 1600px;
+    margin: 120px auto 0;
+}
+
+/* Portfolio Hero Start */
+.list-page-hero{
+    padding: 60px 40px;
+    border-radius: 25px;
+    background-color: #E7E7E7;
+}
+
+.list-page-hero__heading {
+    display: flex;
+    flex-direction: column;
+}
+.list-page-hero__title {
+    display: flex; 
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.list-page-hero__decorative-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #7CE3AC;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+.list-page-hero__sub-title {
+    font-size: 56px;
+    font-weight: 400;
+}
+
+.list-page-hero__image img{
+    width: 100%;
+    border-radius: 25px;
+}
+/* Portfolio Hero End */
+
+
+
+
+
+
+
+
+
+
+/* ============== Portfolio Filter START ============== */
+
+/* .filter-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-list {
+    font-size: 32px;
+    font-weight: 400;
+    padding: 6px 20px;
+    border: 1px solid #E7E7E7;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.filter-list:hover {
+    background-color: #E7E7E7;
+
+}
+
+.filter-list:active {
+    background-color: #E7E7E7;
+}
+
+.filter-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+} */
+
+/* ============== Portfolio Filter END ============== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Portfolio List Start */ 
+
+.portfolio-list {
+    display: flex;
+    gap: 40px;
+    margin: 80px auto 0;
+}
+
+.portfolio-list__column-left {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.portfolio-list__column-right {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    margin-top: 220px;
+}
+
+.card__image-wraper{
+    position: relative;
+    overflow: hidden;
+}
+
+.card a{
+    text-decoration: none;
+    color: #202020;
+}
+.card a:hover{
+    text-decoration: none;
+}
+
+.card__image-wraper img{
+    width: 100%;
+    border-radius: 25px;    
+}
+
+
+/* Hover Chip Design Start */
+/* need to do position:relative and overflow:hidden in parent div  */
+.hover-chip {
+    position: absolute;
+    top: -38px;
+    right: 0px;
+    transition: all 0.4s ease;
+}
+
+.hover-chip__bg {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hover-chip__icon {
+    width: 15px;
+    height: 15px;
+}
+
+.hover-chip__bg-span {
+    display: block;
+    width: 320px;
+    height: 38px;
+    background-color: #f5f5f5;
+    border-radius: 0 0 0 25px;
+}
+
+.hover-chip__bg-span-icon {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+}
+
+
+.hover-chip__inner {
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    top: 0px;
+    right: 4px;
+}
+
+.hover-chip__buton {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    background-color: #E7E7E7;
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+
+.hover-chip__buton--hidden-pc {
+    display: none;
+}
+
+.card:hover .hover-chip {
+    top: 0px;
+    right: 0px;
+}
+
+/* Hover Chip Design End */
+
+/* Hover icon Design Start */
+/* need to do position:relative and overflow:hidden in parent div  */
+.hover-icon {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.4s ease;
+}
+
+.hover-icon__bg {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.hover-icon__icon {
+    width: 25px;
+    height: 25px;
+}
+
+.hover-icon__bg-span {
+    display: block;
+    width: 90px;
+    height: 90px;
+    background-color: #f5f5f5;
+    border-radius: 0 25px 0 0;
+}
+
+.hover-icon__bg-span-wraper{
+    display: flex;
+}
+
+.hover-icon__bg-span-icon {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 65px;
+}
+
+
+.hover-icon__inner img {
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+.card:hover .hover-icon {
+    bottom: 0px;
+    left: 0px;
+}
+
+/* Hover icon Design End */
+
+
+.card__title-wraper{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 36px 10px 0px 10px;
+}
+
+.card__category-wraper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.card__catagory-title{
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.card__decorative-dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #7CE3AC;
+    border-radius: 50%;   
+}
+
+.card__tagline{
+    font-size: 32px;
+    font-weight: 500;  
+}
+
+/* Portfolio List END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 1400px){
+    /* portfolio-hero  Start */
+    .list-page-hero__sub-title {
+        font-size: 42px;
+    }
+    /* portfolio-hero  End */
+
+
+    /* portfolio List Start */
+    .portfolio-list__column-left {
+        gap: 100px;
+    }
+}
+
+
+
+@media (max-width: 1200px){
+    .main{
+        padding: 0 20px;
+    }
+
+    /* portfolio-hero  Start */
+    .list-page-hero__sub-title {
+        font-size: 38px;
+    }
+    /* portfolio-hero  End */
+
+
+
+    /* portfolio List Start */
+    .portfolio-list {
+        gap: 20px;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 16px;
+    }
+    .card__title-wraper {
+        gap: 5px;
+        margin: 20px 10px 0px 10px;
+    }
+
+    .card__catagory-title {
+        font-size: 16px;
+    }
+    .card__tagline {
+        font-size: 24px;
+    }
+
+    /* Hover Chip Design Start */
+    .hover-chip {
+        top: 0px;
+    }
+    /* Hover Chip Design End */
+
+
+    /* Hover icon Design Start */
+    .hover-icon {
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .hover-icon__bg-span {
+        width: 70px;
+        height: 70px;
+        border-radius: 0 16px 0 0;
+    }
+
+    .hover-icon__bg-span-icon {
+        top: 45px;
+    }
+
+    .hover-icon__inner img {
+        width: 60px;
+        height: 60px;
+        border-radius: 16px;
+    }
+    /* Hover icon Design End */
+    /* portfolio List  End */
+}
+
+
+
+@media (max-width: 1024px){
+    /* portfolio-hero  Start */
+    .list-page-hero {
+        padding: 30px 30px;
+        border-radius: 16px;
+    }
+    .list-page-hero__title {
+        font-size: 20px;
+    }
+    .list-page-hero__sub-title {
+        font-size: 36px;
+    }
+    .list-page-hero__image img{
+        border-radius: 16px;
+    }
+    /* portfolio-hero  End */
+}
+
+
+
+@media (max-width: 992px){
+    /* portfolio List Start */
+    /* Hover Chip Design Start */
+    .hover-chip__bg-span {
+        width: 245px;
+    }
+
+    .hover-chip__buton--hidden-mobile {
+        display: none;
+    }
+
+    .hover-chip__buton--hidden-pc {
+        display: block;
+    }
+    /* Hover Chip Design End */
+
+
+    /* Hover icon Design Start */
+    /* need to do position:relative and overflow:hidden in parent div  */
+    .hover-icon {
+        bottom: 0px;
+        left: 0px;
+    }
+    .hover-icon__bg-span {
+        width: 55px;
+        height: 55px;
+        border-radius: 0 16px 0 0;
+    }
+    
+    .hover-icon__bg-span-icon {
+        top: 30px;
+    }
+    
+    .hover-icon__inner img {
+        width: 45px;
+        height: 45px;
+        border-radius: 16px;
+    }
+    /* Hover icon Design End */
+    /* portfolio List  End */
+}
+
+
+
+
+
+@media (max-width: 767px){
+    .main{
+        padding: 0 10px;
+    }
+
+    /* portfolio-hero  Start */
+    .list-page-hero {
+        padding: 20px 20px;
+    }
+    .list-page-hero__title {
+        font-size: 16px;
+    }
+    .list-page-hero__sub-title {
+        font-size: 24px;
+    }
+    /* portfolio-hero  End */
+
+
+
+    /* portfolio List Start */
+    .portfolio-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__catagory-title {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .card__tagline {
+        font-size: 20px;
+    }
+
+    /* Hover Chip Design Start */
+    .hover-chip__bg-span {
+        width: 320px;
+    }
+
+    .hover-chip__buton--hidden-mobile {
+        display: block;
+    }
+
+    .hover-chip__buton--hidden-pc {
+        display: none;
+    }
+
+    /* Hover Chip Design End */
+    /* portfolio List  End */
+}
+
+
+
+
+@media (max-width: 576px){
+
+    /* portfolio-hero  Start */
+    .list-page-hero {
+        padding: 15px 15px;
+    }
+    /* portfolio-hero  Start */
+
+
+    /* portfolio List  Start */
+    /* Hover Chip Design Start */
+    .hover-chip__bg-span {
+        width: 245px;
+    }
+
+    .hover-chip__buton--hidden-mobile {
+        display: none;
+    }
+
+    .hover-chip__buton--hidden-pc {
+        display: block;
+    }
+
+    /* Hover Chip Design End */
+    /* portfolio List  End */
+}
+
+
+
+
+
+
