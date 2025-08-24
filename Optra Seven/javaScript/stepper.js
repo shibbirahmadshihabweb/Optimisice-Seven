@@ -54,8 +54,8 @@ filterButtons.forEach(filterBtn => {
 });
 
 // -------------------- card slider --------------------
-document.querySelectorAll(".scrolling__card--container").forEach(container => {
-  const cards = container.querySelectorAll(".scrolling__card");
+document.querySelectorAll(".scrolling__card-container").forEach(container => {
+  const cards = container.querySelectorAll(".scrolling-snap");
   let index = 0;
 
   const section = container.closest("section");
