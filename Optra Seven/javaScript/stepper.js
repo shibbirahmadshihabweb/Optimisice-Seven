@@ -90,14 +90,14 @@ document.querySelectorAll(".scrolling__card-container").forEach(container => {
       if (index < cards.length - 1) {
         index++;
       } else {
-        // sesh card e thakle abar surute chole jabe
+        // loop card
         index = 0;
       }
       showCard(index);
     });
   });
 
-  // Swipe/Drag support (same thakbe)
+  // Swipe/Drag support
   let startX = 0;
   let isDragging = false;
 
