@@ -449,3 +449,47 @@
 /* news letter END */
 
 /*Homepage END*/
+
+
+
+/* service list page START */
+
+/* Page Banner Start */
+.o7-page-banner{
+    padding: 60px 40px;
+    border-radius: 25px;
+    background-color: #E7E7E7;
+}
+
+.o7-page-banner__heading {
+    display: flex;
+    flex-direction: column;
+}
+.o7-page-banner__title {
+    display: flex; 
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.o7-page-banner__decorative-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #7CE3AC;
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+.o7-page-banner__sub-title {
+    font-size: 56px;
+    font-weight: 400;
+}
+
+.o7-page-banner__image img {
+    width: 100%;
+    border-radius: 25px;
+}
+/* Page Banner End */
+
+/* service list page END */
