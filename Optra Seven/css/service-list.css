@@ -1,0 +1,17 @@
+* {
+    img {
+        width: 100%;
+    }
+}
+
+.o7-service-section__icon {
+    max-width: 60px;
+}
+
+.o7-service-section__arrow-icon,
+.button_arrow,
+.slider__arrow,
+img.check__list--checker,
+.mail__svg {
+    max-width: 16px;
+}
