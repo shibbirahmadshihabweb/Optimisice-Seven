@@ -375,13 +375,6 @@ template {
     display: none !important;
 }
 
-.main {
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-    scroll-margin-top: 160px;
-}
-
 .section {
     max-width: 1600px;
     margin: 120px auto 0;

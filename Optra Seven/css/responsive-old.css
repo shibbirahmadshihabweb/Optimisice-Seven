@@ -742,11 +742,11 @@
         scroll-snap-align: start;
     }
 
-    .button.button__mobile--invisible {
+    .btn.button__mobile--invisible {
         display: none;
     }
 
-    .button.button__mobile--visible {
+    .btn.button__mobile--visible {
         display: inline;
         display: flex;
         text-align: center;
