@@ -18,18 +18,9 @@
     --primary-color-800: #325B45;
     --primary-color-900: #192D22;
 
-
     --dark-color: #202020;
     --white-color: #ffffff;
     --white-smoke-color: #f5f5f5;
-
-    /* Typography scale - headings */
-    --font-h1: 4.75rem;
-    --font-h2: 4rem;
-    --font-h3: 3.5rem;
-    --font-h4: 3rem;
-    --font-h5: 2.625rem;
-    --font-h6: 2.25rem;
 
     /* Typography scale - body text */
     --font-xs: 0.875rem;
@@ -64,25 +55,56 @@ body {
     background-color: var(--white-smoke-color);
 }
 
-/* Headings */
-h1 { font-size: var(--font-h1); }
-h2 { font-size: var(--font-h2); }
-h3 { font-size: var(--font-h3); }
-h4 { font-size: var(--font-h4); }
-h5 { font-size: var(--font-h5); }
-h6 { font-size: var(--font-h6); }
+/* ========================================
+// Typography
+===========================================*/ 
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    color: var(--dark-color);
+/* Headings */
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--dark-color);
 }
 
-/* Paragraphs */
+
+h1, .h1 {
+  font-size: 4.75rem;
+}
+@media (max-width: 1200px) {}
+
+h2, .h2 {
+  font-size: 4rem;
+}
+@media (max-width: 1200px) {}
+
+h3, .h3 {
+  font-size: 3.5rem;
+}
+@media (max-width: 1200px) {}
+
+h4, .h4 {
+  font-size: 2.5rem;
+}
+@media (max-width: 1200px) {}
+
+h5, .h5 {
+  font-size: 2rem;
+}
+
+@media (max-width: 1200px) {}
+h6, .h6 {
+  font-size: 1.56rem;
+}
+
+
 p {
     font-size: var(--font-md);
     font-weight: 400;
     color: var(--dark-color);
-    margin: 0;
+    margin: 0 0 1rem;
 }
 
 /* Typography utilities */
@@ -374,6 +396,8 @@ template {
 [hidden] {
     display: none !important;
 }
+
+/*  ======== Typography:end  ======== */
 
 .section {
     max-width: 1600px;

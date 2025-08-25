@@ -47,7 +47,7 @@ body.style-guide-page {
     font-size: 1.5rem;
     padding: .5em 1em;
     background-color: #f9f9f9;
-    margin: 0;
+    margin: 0 0 30px;
     font-weight: 600;
     color: #222;
 }
@@ -64,7 +64,6 @@ body.style-guide-page {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-top: 30px;
 }
 .sg_color-palette__header {
     padding: 20px;
@@ -125,9 +124,14 @@ body.style-guide-page {
 
 /* dark color */
 .dark .sg_color-palette__header {
-    background-color: var(--primary-color);
-    color: #222222;
+    background-color: var(--dark-color);
+    color: #ffffff;
 }
 
 /* white color */
+.white .sg_color-palette__header {
+    background-color: var(--white-color);
+    color: #222222;
+    border: 1px #e5e3e3 solid
+}
 
