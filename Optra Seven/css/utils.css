@@ -1,14 +1,12 @@
-/* button    */
-.button {
-    width: 165px;
+/* button */
+.btn {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     padding: 14px 30px;
     color: #202020;
-    background-color: #7CE3AC;
     border-radius: 25px;
-    border: none;
+    border: 1px solid transparent;
     display: flex;
     flex-shrink: 0;
     gap: 10px;
@@ -16,14 +14,123 @@
     justify-content: center;
     text-decoration: none;
     transition: all 300ms ease-out 0s;
+    cursor: pointer;
 }
 
-.button:hover {
-    color: #ffffff;
-    background-color: #202020;
-    text-decoration: none;
+/* this class needs discussion */
+.btn:focus {
+    outline: none;
+}
+
+.btn--primary {
+    background-color: var(---dark-color);
+    color: white;
+    fill: white;
+}
+
+.btn--primary:hover {
+    background-color: var(--primary-color-500);
+    color: var(---dark-color);
+    fill: var(---dark-color);
+}
+
+.btn--primary:active {
+    background-color: #6BC595;
+    color: var(---dark-color);
+    fill: var(---dark-color);
+}
+
+.btn--primary-outline {
+    background-color: transparent;
+    border: 1px solid var(---dark-color);
+}
+
+.btn--primary-outline:hover {
+    background-color: var(---dark-color);
+    color: white;
+    fill: white;
+}
+
+.btn--primary-outline:active {
+    background-color: black;
+    color: white;
+    fill: white;
+}
+
+.btn--secondary {
+    background-color: #7CE3AC;
+    color: var(---dark-color);
+    fill: var(---dark-color);
+}
+
+
+.btn--secondary:hover {
+    background-color: var(---dark-color);
+    color: white;
+    fill: white;
+}
+
+.btn--secondary:active {
+    background-color: #6BC595;
+    color: var(---dark-color);
+    fill: var(---dark-color);
+}
+
+.btn--secondary-outline {
+    background-color: transparent;
+    color: #6BC595;
+    fill: #6BC595;
+    border: 1px solid #6BC595;
+}
+
+.btn--secondary-outline:hover {
+    background-color: var(---dark-color);
+    color: white;
+    fill: white;
+    border: 1px solid var(---dark-color);
+}
+
+.btn--secondary-outline:active {
+    background-color: black;
+    color: white;
+    fill: white;
+    border: 1px solid black;
+}
+
+.btn--primary:disabled,
+.btn--primary-outline:disabled,
+.btn--secondary:disabled,
+.btn--secondary-outline:disabled {
+    background-color: #e7e7e7;
+    color: #adadad;
+    fill: #adadad;
+    border: 1px solid transparent;
+}
+
+.btn--x-small {
+    padding: 5px 15px;
+}
+
+.btn--small {
+    padding: 9px 20px;
+}
+
+.btn--medium {
+    padding: 14px 30px;
+}
+
+.btn--large {
+    padding: 21px 36px;
+    border-radius: 34px;
 }
 
 .button:hover .button_arrow {
     filter: brightness(0) invert(1);
 }
+
+.btn .fee-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/*  */

@@ -134,13 +134,13 @@ a.main-menu__link:focus-visible {
     font-size: 14px;
 }
 
-.megamenu:hover .megamenu__content-wrapper,
-.megamenu:focus-within .megamenu__content-wrapper {
+/* .megamenu:hover .megamenu__content-wrapper, */
+/* .megamenu:focus-within .megamenu__content-wrapper {
     display: block;
-}
+} */
 
 /* Show on hover or focus */
-.megamenu:hover .megamenu__content-wrapper,
+/* .megamenu:hover .megamenu__content-wrapper, */
 .megamenu:focus-within .megamenu__content-wrapper,
 .main-menu__link:focus+.megamenu__content-wrapper {
     display: block;
