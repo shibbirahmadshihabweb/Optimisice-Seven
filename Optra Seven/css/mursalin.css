@@ -1,8 +1,5 @@
 
-
-
-
-/* HOME PAGE START */
+/* == HOME PAGE START == */
 
 /*Section Hero START */
 .section-hero{
@@ -642,7 +639,7 @@
 
 /* Section Footer End */
 
-/* HOME PAGE END */
+/* == HOME PAGE END  == */
 
 
 
@@ -672,25 +669,27 @@
 
 
 
-/* Portfolio Hero Start */
-.list-page-hero{
+
+/* == Portfolio page Start == */
+/* Page Banner Start */
+.o7-page-banner{
     padding: 60px 40px;
     border-radius: 25px;
     background-color: #E7E7E7;
 }
 
-.list-page-hero__heading {
+.o7-page-banner__heading {
     display: flex;
     flex-direction: column;
 }
-.list-page-hero__title {
+.o7-page-banner__title {
     display: flex; 
     align-items: center;
     font-size: 24px;
     font-weight: 400;
 }
 
-.list-page-hero__decorative-dot {
+.o7-page-banner__decorative-dot {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -699,27 +698,32 @@
     margin: 0 10px 0 0;
 }
 
-.list-page-hero__sub-title {
+.o7-page-banner__sub-title {
     font-size: 56px;
     font-weight: 400;
 }
 
-.list-page-hero__image img{
+.o7-page-banner__image img{
     width: 100%;
     border-radius: 25px;
 }
-/* Portfolio Hero End */
+/* Page Banner End */
 
 
 
 
 
-/* Filter Start */
-.filter {
+/* List Page Filter Start */
+.o7-list-page-filter{
+    display: flex;
+    flex-direction: column;
+}
+
+.o7-list-page-filter__filter-wrapper {
   max-width: 1400px;
   margin: 0 auto;
 }
-.filter__list {
+.o7-list-page-filter__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -730,61 +734,56 @@
   align-items: center;
 }
 
-.filter__item {
+.o7-list-page-filter__filter-item {
   font-size: 32px;
   font-weight: 400;
   padding: 6px 20px;
   border: 1px solid #E7E7E7;
   border-radius: 100px;
   cursor: pointer;
-  white-space: nowrap; 
 }
 
-.filter__item:hover {
+.o7-list-page-filter__filter-item:hover {
   background-color: #E7E7E7;
 }
-/* Filter End */
+/* List Page Filter End */
 
 
 
-
-
-
-/* Portfolio List Start */ 
-
-.portfolio-list {
+/* Filter Data List Start */
+.o7-list-page-filter__data-list {
     display: flex;
     gap: 40px;
     margin: 80px auto 0;
 }
 
-.portfolio-list__column-left {
+.o7-list-page-filter__column-left {
     display: flex;
     flex-direction: column;
     gap: 150px;
 }
 
-.portfolio-list__column-right {
+.o7-list-page-filter__column-right {
     display: flex;
     flex-direction: column;
     gap: 150px;
     margin-top: 220px;
 }
 
-.card__image-wraper{
+.o7-list-page-filter__card a{
+    text-decoration: none;
+    color: #202020;
+}
+.o7-list-page-filter__card a:hover{
+    text-decoration: none;
+}
+
+.o7-list-page-filter__card-image-wrapper{
     position: relative;
     overflow: hidden;
 }
 
-.card a{
-    text-decoration: none;
-    color: #202020;
-}
-.card a:hover{
-    text-decoration: none;
-}
-
-.card__image-wraper img{
+.o7-list-page-filter__card-image-wrapper img{
     width: 100%;
     border-radius: 25px;    
 }
@@ -792,25 +791,25 @@
 
 /* Hover Chip Design Start */
 /* need to do position:relative and overflow:hidden in parent div  */
-.hover-chip {
+.o7-hover-chip {
     position: absolute;
     top: -38px;
     right: 0px;
     transition: all 0.4s ease;
 }
 
-.hover-chip__bg {
+.o7-hover-chip__bg {
     position: relative;
     display: flex;
     justify-content: space-between;
 }
 
-.hover-chip__icon {
+.o7-hover-chip__icon {
     width: 15px;
     height: 15px;
 }
 
-.hover-chip__bg-span {
+.o7-hover-chip__bg-span {
     display: block;
     width: 320px;
     height: 38px;
@@ -818,7 +817,7 @@
     border-radius: 0 0 0 25px;
 }
 
-.hover-chip__bg-span-icon {
+.o7-hover-chip__bg-span-icon {
     width: 15px;
     height: 15px;
     position: absolute;
@@ -826,7 +825,7 @@
 }
 
 
-.hover-chip__inner {
+.o7-hover-chip__inner {
     display: flex;
     gap: 12px;
     position: absolute;
@@ -834,7 +833,7 @@
     right: 4px;
 }
 
-.hover-chip__buton {
+.o7-hover-chip__buton {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -843,11 +842,11 @@
     border-radius: 25px;
 }
 
-.hover-chip__buton--hidden-pc {
+.o7-hover-chip__buton--hidden-pc {
     display: none;
 }
 
-.card:hover .hover-chip {
+.o7-list-page-filter__card:hover .o7-hover-chip {
     top: 0px;
     right: 0px;
 }
@@ -856,25 +855,25 @@
 
 /* Hover icon Design Start */
 /* need to do position:relative and overflow:hidden in parent div  */
-.hover-icon {
+.o7-hover-icon {
     position: absolute;
     bottom: 0px;
     left: 0px;
     transition: all 0.4s ease;
 }
 
-.hover-icon__bg {
+.o7-hover-icon__bg {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.hover-icon__icon {
+.o7-hover-icon__icon {
     width: 25px;
     height: 25px;
 }
 
-.hover-icon__bg-span {
+.o7-hover-icon__bg-span {
     display: block;
     width: 90px;
     height: 90px;
@@ -882,11 +881,11 @@
     border-radius: 0 25px 0 0;
 }
 
-.hover-icon__bg-span-wraper{
+.o7-hover-icon__bg-span-wrapper{
     display: flex;
 }
 
-.hover-icon__bg-span-icon {
+.o7-hover-icon__bg-span-icon {
     width: 25px;
     height: 25px;
     position: relative;
@@ -894,7 +893,7 @@
 }
 
 
-.hover-icon__inner img {
+.o7-hover-icon__inner img {
     width: 80px;
     height: 80px;
     border-radius: 25px;
@@ -902,36 +901,29 @@
     bottom: 0px;
     left: 0px;
 }
-
-
-.card:hover .hover-icon {
-    bottom: 0px;
-    left: 0px;
-}
-
 /* Hover icon Design End */
 
 
-.card__title-wraper{
+.o7-list-page-filter__card-title-wrapper{
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin: 36px 10px 0px 10px;
 }
 
-.card__category-wraper{
+.o7-list-page-filter__card-category-wrapper{
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.card__catagory-title{
+.o7-list-page-filter__card-catagory-title{
     font-size: 20px;
     font-weight: 600;
-    
+    margin: 0;
 }
 
-.card__decorative-dot{
+.o7-list-page-filter__card-decorative-dot{
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -939,13 +931,13 @@
     border-radius: 50%;   
 }
 
-.card__tagline{
+.o7-list-page-filter__card-tagline{
     font-size: 32px;
     font-weight: 500;  
 }
 
-/* Portfolio List END */
-
+/* Filter Data List End */
+/* == Portfolio page End == */
 
 
 
@@ -977,11 +969,11 @@
 
 /* Responsive Design */
 @media (max-width: 1400px){
-    /* portfolio-hero  Start */
-    .list-page-hero__sub-title {
+    /* Page Banner Start */
+    .o7-page-banner__sub-title {
         font-size: 42px;
     }
-    /* portfolio-hero  End */
+    /* Page Banner  End */
 
 
 }
@@ -989,69 +981,65 @@
 
 
 @media (max-width: 1200px){
-    .main{
-        padding: 0 20px;
-    }
-
-    /* portfolio-hero  Start */
-    .list-page-hero__sub-title {
+    /* Page Banner Start */
+    .o7-page-banner__sub-title {
         font-size: 38px;
     }
-    /* portfolio-hero  End */
+    /* Page Banner End */
 
 
 
-    /* portfolio List Start */
-    .portfolio-list {
+    /* Filter Data List Start */
+    .o7-list-page-filter__data-list {
         gap: 20px;
     }
 
-    .card img {
+    .o7-list-page-filter__card img {
         width: 100%;
         border-radius: 16px;
     }
-    .card__title-wraper {
+    .o7-list-page-filter__card__title-wrapper {
         gap: 5px;
         margin: 20px 10px 0px 10px;
     }
 
-    .card__catagory-title {
+    .o7-list-page-filter__card__catagory-title {
         font-size: 16px;
     }
-    .card__tagline {
+    .o7-list-page-filter__card-tagline {
         font-size: 24px;
     }
 
     /* Hover Chip Design Start */
-    .hover-chip {
+    .o7-hover-chip {
         top: 0px;
     }
     /* Hover Chip Design End */
 
 
     /* Hover icon Design Start */
-    .hover-icon {
+    .o7-hover-icon {
         bottom: 0px;
         left: 0px;
     }
 
-    .hover-icon__bg-span {
+    .o7-hover-icon__bg-span {
         width: 70px;
         height: 70px;
         border-radius: 0 16px 0 0;
     }
 
-    .hover-icon__bg-span-icon {
+    .o7-hover-icon__bg-span-icon {
         top: 45px;
     }
 
-    .hover-icon__inner img {
+    .o7-hover-icon__inner img {
         width: 60px;
         height: 60px;
         border-radius: 16px;
     }
     /* Hover icon Design End */
-    /* portfolio List  End */
+    /* Filter Data List End */
 }
 
 
@@ -1063,66 +1051,71 @@
     }
 
 
-
-    /* portfolio-hero  Start */
-    .list-page-hero {
+    /* Page Banner Start */
+    .o7-page-banner {
         padding: 30px 30px;
         border-radius: 16px;
     }
-    .list-page-hero__title {
+    .o7-page-banner__sub-title {
         font-size: 20px;
     }
-    .list-page-hero__sub-title {
+    .o7-page-banner__sub-title {
         font-size: 36px;
     }
-    .list-page-hero__image img{
+    .o7-page-banner__image img{
         border-radius: 16px;
     }
-    /* portfolio-hero  End */
+    /* Page Banner End */
 
 
 
-    /* Filter Start */
-    .filter__item {
+    /* List page Filter Start */
+    .o7-list-page-filter__filter-item {
         font-size: 28px;
     }
-    /* Filter End */
+    /*list Page Filter End */
 
-    /* portfolio List */
-    .portfolio-list {
+    /* Filter Data List Start */
+    .o7-list-page-filter__data-list {
         margin: 40px auto 0;
     }
 
-    .portfolio-list__column-left {
+    .o7-list-page-filter__column-left {
         gap: 80px;
     }
-    .portfolio-list__column-right {
+    .o7-list-page-filter__column-right {
         gap: 80px;
         margin-top: 160px;
     }
+
+    .o7-list-page-filter__card-catagory-title{
+        font-size: 16px;
+    }
+    /* Filter Data List End */
+
 }
 
 
 
 @media (max-width: 992px){
-    /* Filter Start */
-    .filter__item {
+    /* List Page Filter Start */
+    .o7-list-page-filter__filter-item {
       font-size: 24px;
     }
-    /* Filter End */
+    /* List Page Filter End */
 
 
-    /* portfolio List Start */
+    /* Filter Data List Start */
     /* Hover Chip Design Start */
-    .hover-chip__bg-span {
+    .o7-hover-chip__bg-span {
         width: 245px;
     }
 
-    .hover-chip__buton--hidden-mobile {
+    .o7-hover-chip__buton--hidden-mobile {
         display: none;
     }
 
-    .hover-chip__buton--hidden-pc {
+    .o7-hover-chip__buton--hidden-pc {
         display: block;
     }
     /* Hover Chip Design End */
@@ -1130,27 +1123,27 @@
 
     /* Hover icon Design Start */
     /* need to do position:relative and overflow:hidden in parent div  */
-    .hover-icon {
+    .o7-hover-icon {
         bottom: 0px;
         left: 0px;
     }
-    .hover-icon__bg-span {
+    .o7-hover-icon__bg-span {
         width: 55px;
         height: 55px;
         border-radius: 0 16px 0 0;
     }
     
-    .hover-icon__bg-span-icon {
+    .o7-hover-icon__bg-span-icon {
         top: 30px;
     }
     
-    .hover-icon__inner img {
+    .o7-hover-icon__inner img {
         width: 45px;
         height: 45px;
         border-radius: 16px;
     }
     /* Hover icon Design End */
-    /* portfolio List  End */
+    /* Filter Data List End */
 }
 
 
@@ -1158,79 +1151,85 @@
 
 
 @media (max-width: 767px){
-    .main{
+    .section {
+        margin: 60px auto 0;
         padding: 0 10px;
     }
 
-    .section {
-        max-width: 1600px;
-        margin: 60px auto 0;
-    }
 
-
-    /* portfolio-hero  Start */
-    .list-page-hero {
+    /* Page Banner Start */
+    .o7-page-banner {
         padding: 20px 20px;
     }
-    .list-page-hero__title {
+    .o7-page-banner__title {
         font-size: 16px;
     }
-    .list-page-hero__sub-title {
+    .o7-page-banner__sub-title {
         font-size: 24px;
     }
-    /* portfolio-hero  End */
+    /* Page Banner End */
 
 
 
 
-    /* Filter Start */
-    .filter__list {
-        flex-wrap: nowrap;         
-        overflow: auto;
-        justify-content: flex-start;
+    /* List Page Filter Start */
+    .o7-list-page-filter__list {
         gap: 12px;
-        padding: 0 12px;
-        scrollbar-width: none;     
+        padding: 0 12px; 
     }
 
-    .filter__item {
+    .o7-list-page-filter__filter-item {
         font-size: 20px;
         padding: 5px 15px;
-        white-space: nowrap; 
     }
-    /* Filter End */    
+    /* List Page Filter End */    
 
 
 
-    /* portfolio List Start */
-    .portfolio-list {
+    /* Filter Data List Start */
+    .o7-list-page-filter__data-list {
         display: flex;
         flex-direction: column;
+        gap: 60px;
+    }
+    
+    .o7-list-page-filter__column-left {
+        gap: 60px;
     }
 
-    .card__catagory-title {
+    .o7-list-page-filter__column-right {
+        gap: 60px;
+        margin: 0;
+    }
+
+    .o7-list-page-filter__column-right {
+        gap: 60px;
+        /* margin-top: 160px; */
+    }
+
+    .o7-list-page-filter__card-catagory-title {
         font-size: 14px;
         font-weight: 500;
     }
-    .card__tagline {
+    .o7-list-page-filter__card-tagline {
         font-size: 20px;
     }
 
     /* Hover Chip Design Start */
-    .hover-chip__bg-span {
+    .o7-hover-chip__bg-span {
         width: 320px;
     }
 
-    .hover-chip__buton--hidden-mobile {
+    .o7-hover-chip__buton--hidden-mobile {
         display: block;
     }
 
-    .hover-chip__buton--hidden-pc {
+    .o7-hover-chip__buton--hidden-pc {
         display: none;
     }
 
     /* Hover Chip Design End */
-    /* portfolio List  End */
+    /* Filter Data List End */
 }
 
 
@@ -1238,32 +1237,40 @@
 
 @media (max-width: 576px){
 
-    /* portfolio-hero  Start */
-    .list-page-hero {
+    /* Page Banner Start */
+    .o7-page-banner {
         padding: 15px 15px;
     }
-    /* portfolio-hero  Start */
+    /* Page Banner Start */
 
 
-    /* portfolio List  Start */
+    /*Filter Data List Start */
+    .o7-list-page-filter__data-list {
+        gap: 50px;
+    }
+    .o7-list-page-filter__column-left {
+        gap: 50px;
+    }
+    .o7-list-page-filter__column-right {
+        gap: 50px;
+        margin: 0;
+    }
     /* Hover Chip Design Start */
-    .hover-chip__bg-span {
+    .o7-hover-chip__bg-span {
         width: 245px;
     }
 
-    .hover-chip__buton--hidden-mobile {
+    .o7-hover-chip__buton--hidden-mobile {
         display: none;
     }
 
-    .hover-chip__buton--hidden-pc {
+    .o7-hover-chip__buton--hidden-pc {
         display: block;
     }
 
     /* Hover Chip Design End */
-    /* portfolio List  End */
+    /* Filter Data List End */
 }
-
-
 
 
 
