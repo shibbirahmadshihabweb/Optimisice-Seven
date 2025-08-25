@@ -5,6 +5,8 @@
 // Variables
 ----------------------------- */
 :root {
+    /* Colors */
+
     --primary-color: #7CE3AC;
     --primary-color-100: #E5F9EE;
     --primary-color-200: #CBF4DE;
@@ -20,6 +22,23 @@
     ---dark-color: #202020;
     ---white-color: #ffffff;
     ---white-smoke-color: #f5f5f5;
+
+    /* Typography scale - headings */
+    --font-h1: 76px;
+    --font-h2: 64px;
+    --font-h3: 56px;
+    --font-h4: 48px;
+    --font-h5: 42px;
+    --font-h6: 36px;
+
+    /* Typography scale - body text */
+    --font-xs: 14px;
+    --font-sm: 16px;
+    --font-md: 20px; /* default */
+    --font-lg: 24px;
+    --font-xl: 32px;
+    --font-2xl: 72px;
+    --font-3xl: 100px;
 }
 
 *,
@@ -38,55 +57,49 @@ html {
 
 body {
     margin: 0;
-    font-size: 20px;
+    font-size: var(--font-md);
     color: var(---dark-color);
     font-weight: normal;
     text-align: left;
     background-color: var(---white-smoke-color);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-top: 0;
-    margin-bottom: 0;
+/* Headings */
+h1 { font-size: var(--font-h1); }
+h2 { font-size: var(--font-h2); }
+h3 { font-size: var(--font-h3); }
+h4 { font-size: var(--font-h4); }
+h5 { font-size: var(--font-h5); }
+h6 { font-size: var(--font-h6); }
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
     color: var(---dark-color);
 }
 
-/* By default, `<h1>`-`<h6>` all receive from headings*/
-
-h1 {
-    font-size: 76px;
-}
-h2 {
-    font-size: 64px;
-}
-h3 {
-    font-size: 56px;
-}
-h4 {
-    font-size: 48px;
-}
-h5 {
-    font-size: 42px;
-}
-h6 {
-    font-size: 36px;
-}
-
-/*
-By default, `<p>` all receive from paragraphs.
-*/
+/* Paragraphs */
 p {
-    font-size: 20px;
+    font-size: var(--font-md);
     font-weight: 400;
     color: var(---dark-color);
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
+
+/* Typography utilities */
+.text-xs   { font-size: var(--font-xs); }
+.text-sm   { font-size: var(--font-sm); }
+.text-md   { font-size: var(--font-md); }
+.text-lg   { font-size: var(--font-lg); }
+.text-xl   { font-size: var(--font-xl); }
+.text-2xl  { font-size: var(--font-2xl); }
+.text-3xl  { font-size: var(--font-3xl); }
+
+/* Optional font-weight helpers */
+.font-light    { font-weight: 300; }
+.font-normal   { font-weight: 400; }
+.font-medium   { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold     { font-weight: 700; }
 
 address {
     margin-bottom: 0;
