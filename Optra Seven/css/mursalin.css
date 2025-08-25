@@ -379,7 +379,7 @@
 
 
 /* Section Footer Start */
-.section-footer {
+.o7-section-footer {
     margin: 100px auto 0;
     max-width: 1840px;
     background-color: #202020;
@@ -387,7 +387,7 @@
     margin-bottom: 40px;
 }
 
-.footer {
+.o7-section-footer__wrapper {
     position: relative;
 }
 
