@@ -670,7 +670,12 @@
 
 
 
-/* == Portfolio page Start == */
+/* ========== Portfolio List Page Start ========== */
+
+
+
+
+
 /* Page Banner Start */
 .o7-page-banner{
     padding: 60px 40px;
@@ -681,6 +686,7 @@
 .o7-page-banner__heading {
     display: flex;
     flex-direction: column;
+    margin: 0 0 50px 0;
 }
 .o7-page-banner__title {
     display: flex; 
@@ -706,6 +712,70 @@
 .o7-page-banner__image img{
     width: 100%;
     border-radius: 25px;
+}
+.o7-page-banner__image-wrapper{
+    position: relative;
+
+}
+.o7-page-banner__image-overlay{
+    position: absolute; 
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    opacity:1;
+    border-radius: 25px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1400px){
+    .o7-page-banner__sub-title {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 1200px){
+    .o7-page-banner__sub-title {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 1024px){
+    .o7-page-banner {
+        padding: 30px 30px;
+        border-radius: 16px;
+    }
+    .o7-page-banner__title {
+        font-size: 20px;
+    }
+    .o7-page-banner__sub-title {
+        font-size: 36px;
+    }
+    .o7-page-banner__image img{
+        border-radius: 16px;
+    }
+    .o7-page-banner__image-overlay{
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 767px){
+    .o7-page-banner {
+        padding: 20px 20px;
+    }
+    .o7-page-banner__title {
+        font-size: 16px;
+    }
+    .o7-page-banner__sub-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px){
+    .o7-page-banner {
+        padding: 15px 15px;
+    }
 }
 /* Page Banner End */
 
@@ -746,7 +816,39 @@
 .o7-list-page-filter__filter-item:hover {
   background-color: #E7E7E7;
 }
+
+
+
+/* Responsive Design */
+
+@media (max-width: 1024px){
+    .o7-list-page-filter__filter-item {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 992px){
+    .o7-list-page-filter__filter-item {
+      font-size: 24px;
+    }
+}
+
+@media (max-width: 767px){
+    .o7-list-page-filter__list {
+        gap: 12px;
+        padding: 0 12px; 
+    }
+
+    .o7-list-page-filter__filter-item {
+        font-size: 20px;
+        padding: 5px 15px;
+    }
+}
 /* List Page Filter End */
+
+
+
+
 
 
 
@@ -761,12 +863,14 @@
     display: flex;
     flex-direction: column;
     gap: 150px;
+    max-width: 50%;
 }
 
 .o7-list-page-filter__column-right {
     display: flex;
     flex-direction: column;
     gap: 150px;
+    max-width: 50%;
     margin-top: 220px;
 }
 
@@ -781,12 +885,123 @@
 .o7-list-page-filter__card-image-wrapper{
     position: relative;
     overflow: hidden;
+   
 }
 
 .o7-list-page-filter__card-image-wrapper img{
     width: 100%;
-    border-radius: 25px;    
+    border-radius: 25px; 
 }
+
+
+.o7-list-page-filter__card-title-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 36px 10px 0px 10px;
+}
+
+.o7-list-page-filter__card-category-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.o7-list-page-filter__card-catagory-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.o7-list-page-filter__card-decorative-dot{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #7CE3AC;
+    border-radius: 50%;   
+}
+
+.o7-list-page-filter__card-tagline{
+    font-size: 32px;
+    font-weight: 500;  
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1200px){
+    .o7-list-page-filter__data-list {
+        gap: 20px;
+    }
+    .o7-list-page-filter__card-image-wrapper {
+        border-radius: 16px;
+    }
+    .o7-list-page-filter__card__title-wrapper {
+        gap: 5px;
+        margin: 20px 10px 0px 10px;
+    }
+
+    .o7-list-page-filter__card__catagory-title {
+        font-size: 16px;
+    }
+    .o7-list-page-filter__card-tagline {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1024px){
+    .o7-list-page-filter__data-list {
+        margin: 40px auto 0;
+    }
+    .o7-list-page-filter__column-left {
+        gap: 80px;
+    }
+    .o7-list-page-filter__column-right {
+        gap: 80px;
+        margin-top: 160px;
+    }
+    .o7-list-page-filter__card-catagory-title{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px){
+    .o7-list-page-filter__data-list {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .o7-list-page-filter__column-left {
+        gap: 60px;
+    }
+    .o7-list-page-filter__column-right {
+        gap: 60px;
+        margin: 0;
+    }
+    .o7-list-page-filter__card-catagory-title {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .o7-list-page-filter__card-tagline {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px){
+    .o7-list-page-filter__data-list {
+        gap: 50px;
+    }
+    .o7-list-page-filter__column-left {
+        gap: 50px;
+    }
+    .o7-list-page-filter__column-right {
+        gap: 50px;
+        margin: 0;
+    }
+}
+
+/* Filter Data List End */
+
 
 
 /* Hover Chip Design Start */
@@ -833,6 +1048,7 @@
     right: 4px;
 }
 
+
 .o7-hover-chip__buton {
     font-size: 14px;
     font-weight: 500;
@@ -851,7 +1067,55 @@
     right: 0px;
 }
 
+
+/* Responsive Design */
+@media (max-width: 1200px){
+    .o7-hover-chip {
+        top: 0px;
+    }
+}
+
+@media (max-width: 992px){
+    .o7-hover-chip__bg-span {
+        width: 245px;
+    }
+    .o7-hover-chip__buton--hidden-mobile {
+        display: none;
+    }
+    .o7-hover-chip__buton--hidden-pc {
+        display: block;
+    }
+}
+
+@media (max-width: 767px){
+    .o7-hover-chip__bg-span {
+        width: 320px;
+    }
+    .o7-hover-chip__buton--hidden-mobile {
+        display: block;
+    }
+    .o7-hover-chip__buton--hidden-pc {
+        display: none;
+    }
+}
+
+@media (max-width: 576px){
+    .o7-hover-chip__bg-span {
+        width: 245px;
+    }
+    .o7-hover-chip__buton--hidden-mobile {
+        display: none;
+    }
+    .o7-hover-chip__buton--hidden-pc {
+        display: block;
+    }
+}
+
 /* Hover Chip Design End */
+
+
+
+
 
 /* Hover icon Design Start */
 /* need to do position:relative and overflow:hidden in parent div  */
@@ -901,228 +1165,30 @@
     bottom: 0px;
     left: 0px;
 }
-/* Hover icon Design End */
-
-
-.o7-list-page-filter__card-title-wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin: 36px 10px 0px 10px;
-}
-
-.o7-list-page-filter__card-category-wrapper{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.o7-list-page-filter__card-catagory-title{
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0;
-}
-
-.o7-list-page-filter__card-decorative-dot{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #7CE3AC;
-    border-radius: 50%;   
-}
-
-.o7-list-page-filter__card-tagline{
-    font-size: 32px;
-    font-weight: 500;  
-}
-
-/* Filter Data List End */
-/* == Portfolio page End == */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Responsive Design */
-@media (max-width: 1400px){
-    /* Page Banner Start */
-    .o7-page-banner__sub-title {
-        font-size: 42px;
-    }
-    /* Page Banner  End */
-
-
-}
-
-
-
 @media (max-width: 1200px){
-    /* Page Banner Start */
-    .o7-page-banner__sub-title {
-        font-size: 38px;
-    }
-    /* Page Banner End */
-
-
-
-    /* Filter Data List Start */
-    .o7-list-page-filter__data-list {
-        gap: 20px;
-    }
-
-    .o7-list-page-filter__card img {
-        width: 100%;
-        border-radius: 16px;
-    }
-    .o7-list-page-filter__card__title-wrapper {
-        gap: 5px;
-        margin: 20px 10px 0px 10px;
-    }
-
-    .o7-list-page-filter__card__catagory-title {
-        font-size: 16px;
-    }
-    .o7-list-page-filter__card-tagline {
-        font-size: 24px;
-    }
-
-    /* Hover Chip Design Start */
-    .o7-hover-chip {
-        top: 0px;
-    }
-    /* Hover Chip Design End */
-
-
-    /* Hover icon Design Start */
     .o7-hover-icon {
         bottom: 0px;
         left: 0px;
     }
-
     .o7-hover-icon__bg-span {
         width: 70px;
         height: 70px;
         border-radius: 0 16px 0 0;
     }
-
     .o7-hover-icon__bg-span-icon {
         top: 45px;
     }
-
     .o7-hover-icon__inner img {
         width: 60px;
         height: 60px;
         border-radius: 16px;
     }
-    /* Hover icon Design End */
-    /* Filter Data List End */
 }
-
-
-
-@media (max-width: 1024px){
-    .section {
-        max-width: 1600px;
-        margin: 80px auto 0;
-    }
-
-
-    /* Page Banner Start */
-    .o7-page-banner {
-        padding: 30px 30px;
-        border-radius: 16px;
-    }
-    .o7-page-banner__sub-title {
-        font-size: 20px;
-    }
-    .o7-page-banner__sub-title {
-        font-size: 36px;
-    }
-    .o7-page-banner__image img{
-        border-radius: 16px;
-    }
-    /* Page Banner End */
-
-
-
-    /* List page Filter Start */
-    .o7-list-page-filter__filter-item {
-        font-size: 28px;
-    }
-    /*list Page Filter End */
-
-    /* Filter Data List Start */
-    .o7-list-page-filter__data-list {
-        margin: 40px auto 0;
-    }
-
-    .o7-list-page-filter__column-left {
-        gap: 80px;
-    }
-    .o7-list-page-filter__column-right {
-        gap: 80px;
-        margin-top: 160px;
-    }
-
-    .o7-list-page-filter__card-catagory-title{
-        font-size: 16px;
-    }
-    /* Filter Data List End */
-
-}
-
-
 
 @media (max-width: 992px){
-    /* List Page Filter Start */
-    .o7-list-page-filter__filter-item {
-      font-size: 24px;
-    }
-    /* List Page Filter End */
-
-
-    /* Filter Data List Start */
-    /* Hover Chip Design Start */
-    .o7-hover-chip__bg-span {
-        width: 245px;
-    }
-
-    .o7-hover-chip__buton--hidden-mobile {
-        display: none;
-    }
-
-    .o7-hover-chip__buton--hidden-pc {
-        display: block;
-    }
-    /* Hover Chip Design End */
-
-
-    /* Hover icon Design Start */
-    /* need to do position:relative and overflow:hidden in parent div  */
     .o7-hover-icon {
         bottom: 0px;
         left: 0px;
@@ -1132,145 +1198,377 @@
         height: 55px;
         border-radius: 0 16px 0 0;
     }
-    
     .o7-hover-icon__bg-span-icon {
         top: 30px;
     }
-    
     .o7-hover-icon__inner img {
         width: 45px;
         height: 45px;
         border-radius: 16px;
     }
-    /* Hover icon Design End */
-    /* Filter Data List End */
+}
+/* Hover icon Design End */
+
+
+/* ========== Portfolio List Page End ========== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== Case Study List Page Start ========== */
+/* Hover icon design for case-study page */
+.o7-hover-icon--case-study .o7-hover-icon__bg{
+    display: none;
+}
+.o7-hover-icon--case-study{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.o7-hover-icon__inner--case-study img {
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px){
+.o7-hover-icon__inner--case-study img {
+    top: 20px;
+    left: 20px;
+} 
+}
+/* Hover icon design for case-study page */
+/* ========== Case Study List Page End ========== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== Blog List Page Start ========== */
+/* Filter Data List Start */
+.o7-list-page-filter__card-catagory-title--blog-list{
+    display: none;
+}
+
+.post-excerpt{
+    font-size: 20px;
+    font-weight: 400;
+}
+/* Filter Data List End */
+
+
+/* Hover chip design for blog-list page */
+.o7-hover-chip--blog-list{
+    display: none;
+}
+/* Hover chip design for blog-list page */
+
+
+/* Hover icon design for blog-list page */
+.o7-hover-icon--blog-list{
+    position: absolute;
+    bottom: -90px;
+    left: -90px;    
+}
+.o7-list-page-filter__card:hover .o7-hover-icon--blog-list{
+    bottom: 0px;
+    left: 0px;    
+}
+/* Hover icon design for blog-list page */
+/* ========== Blog List Page End ========== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== Portfolio Details Page Start ========== */
+/* Page Banner Start */
+.o7-details-page-banner__image img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px){
+.o7-details-page-banner__image img{
+    width: 100%;
+    border-radius: 16px;
+}
+}
+/* Page Banner End */
+
+
+
+/* sidebar Start */
+.o7-details-page-sidebar{
+    max-width: 180px;
+    width: 100%;
+    margin: 285px 0 0;
+}
+
+.o7-details-page-sidebar__info-wrapper{
+    margin: 0 0 50px;
+}
+
+.o7-details-page-sidebar__title{
+    font-size: 24px;
+    font-weight: 400; 
+    margin: 0 0 15px;  
+}
+.o7-details-page-sidebar__item{
+    font-size: 20px;
+    font-weight: 600; 
+    margin: 0 0 5px;    
+}
+/* sidebar End */
+
+
+
+
+
+/* Page post Start */
+.o7-details-page-post-wrapper{
+    display: flex;
+    gap: 180px;
+}
+.o7-details-page-post__title{
+    font-size: 76px;
+    font-weight: 400;
+    margin: 0 0 60px;
+}
+
+.o7-details-page-post__sub-title{
+    font-size: 56px;
+    font-weight: 400;
+    margin: 0 0 50px;
+}
+
+
+
+.o7-details-page-post__image img{
+    width: 100%;
+    border-radius: 25px;
+    margin: 0 0 50px;
+}
+
+.o7-details-page-post__details{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 50px 0 100px;
+}
+
+
+/* Responsive design */
+@media (max-width: 767px){
+    .o7-details-page-post-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 180px;
+    }
+}
+
+/* Page post End */
+
+
+
+
+
+/* Page explore more Start */
+.o7-details-explore-more__title{
+    text-align: center;
+    font-size: 56px;
+    font-weight: 400;
+    margin: 0 0 60px;
+}
+
+.o7-details-explore-more__card a{
+    text-decoration: none;
+    color: #202020;    
+}
+.o7-details-explore-more__card-wrapper{
+    display: flex;
+    gap: 40px;
+}
+.o7-details-explore-more__card-image-wrapper img{
+    border-radius: 25px;
+    width: 100%;
+}
+
+.o7-details-explore-more__card-image-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.o7-details-explore-more__card-hover-chip svg{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    transition: all 0.4s ease;
+}
+
+.o7-details-explore-more__card:hover .o7-details-explore-more__card-hover-chip svg{
+    top: 30px;
+    right: 30px;
+}
+
+.o7-details-explore-more__card-title-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 36px 10px 0;
+}
+.o7-details-explore-more__card-category-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.o7-details-explore-more__card-decorative-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #7CE3AC;
+}
+
+.o7-details-explore-more__card-catagory-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;    
+}
+.o7-details-explore-more__card-tagline{
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;    
 }
 
 
 
 
+/* Responsive Design */
+@media (max-width: 1400px){
+    .o7-details-explore-more__title{
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 1200px){
+    .o7-details-explore-more__title{
+        font-size: 38px;
+    }
+    .o7-details-explore-more__card-tagline{
+        font-size: 24px;   
+    }
+}
+
+@media (max-width: 1024px){
+    .o7-details-explore-more__title{
+        font-size: 36px;
+    }
+    .o7-details-explore-more__card-wrapper{
+        display: flex;
+        gap: 20px;
+    }
+    .o7-details-explore-more__card-image-wrapper img{
+        border-radius: 16px;
+    }
+
+    .o7-details-explore-more__card-catagory-title{
+        font-size: 16px;   
+    }
+}
 
 @media (max-width: 767px){
-    .section {
-        margin: 60px auto 0;
-        padding: 0 10px;
-    }
-
-
-    /* Page Banner Start */
-    .o7-page-banner {
-        padding: 20px 20px;
-    }
-    .o7-page-banner__title {
-        font-size: 16px;
-    }
-    .o7-page-banner__sub-title {
+    .o7-details-explore-more__title{
         font-size: 24px;
     }
-    /* Page Banner End */
 
 
-
-
-    /* List Page Filter Start */
-    .o7-list-page-filter__list {
-        gap: 12px;
-        padding: 0 12px; 
+    .o7-details-explore-more__card-tagline{
+        font-size: 20px;   
     }
-
-    .o7-list-page-filter__filter-item {
-        font-size: 20px;
-        padding: 5px 15px;
+    .o7-details-explore-more__card-catagory-title{
+        font-size: 14px;   
+        font-weight: 500;
     }
-    /* List Page Filter End */    
+}
 
-
-
-    /* Filter Data List Start */
-    .o7-list-page-filter__data-list {
+@media (max-width: 767px){
+    .o7-details-explore-more__card-wrapper{
         display: flex;
         flex-direction: column;
         gap: 60px;
     }
-    
-    .o7-list-page-filter__column-left {
-        gap: 60px;
-    }
-
-    .o7-list-page-filter__column-right {
-        gap: 60px;
-        margin: 0;
-    }
-
-    .o7-list-page-filter__column-right {
-        gap: 60px;
-        /* margin-top: 160px; */
-    }
-
-    .o7-list-page-filter__card-catagory-title {
-        font-size: 14px;
-        font-weight: 500;
-    }
-    .o7-list-page-filter__card-tagline {
-        font-size: 20px;
-    }
-
-    /* Hover Chip Design Start */
-    .o7-hover-chip__bg-span {
-        width: 320px;
-    }
-
-    .o7-hover-chip__buton--hidden-mobile {
-        display: block;
-    }
-
-    .o7-hover-chip__buton--hidden-pc {
-        display: none;
-    }
-
-    /* Hover Chip Design End */
-    /* Filter Data List End */
 }
 
+/* Page explore more End */
+
+/* ========== Portfolio Details Page End ========== */
 
 
 
-@media (max-width: 576px){
-
-    /* Page Banner Start */
-    .o7-page-banner {
-        padding: 15px 15px;
-    }
-    /* Page Banner Start */
 
 
-    /*Filter Data List Start */
-    .o7-list-page-filter__data-list {
-        gap: 50px;
-    }
-    .o7-list-page-filter__column-left {
-        gap: 50px;
-    }
-    .o7-list-page-filter__column-right {
-        gap: 50px;
-        margin: 0;
-    }
-    /* Hover Chip Design Start */
-    .o7-hover-chip__bg-span {
-        width: 245px;
-    }
-
-    .o7-hover-chip__buton--hidden-mobile {
-        display: none;
-    }
-
-    .o7-hover-chip__buton--hidden-pc {
-        display: block;
-    }
-
-    /* Hover Chip Design End */
-    /* Filter Data List End */
-}
 
 
 

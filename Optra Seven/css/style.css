@@ -399,7 +399,32 @@ template {
 
 /*  ======== Typography:end  ======== */
 
+
+
+/* Common Class */
 .section {
-    max-width: 1600px;
-    margin: 120px auto 0;
+    margin: 120px auto 0;   
+    padding: 0 30px;
 }
+
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (max-width: 1024px){
+    .section {
+        margin: 80px auto 0;   
+        padding: 0 20px;  
+    }
+}
+
+
+@media (max-width: 767px){
+    .section {
+        margin: 60px auto 0;   
+        padding: 0 15px;  
+    }
+}
+/* Common Class */
