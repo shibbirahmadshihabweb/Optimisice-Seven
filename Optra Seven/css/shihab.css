@@ -763,3 +763,184 @@
 }
 
 /* Service list page media query END*/
+
+/* ============== Privacy Policy, Terms of Use, DSAR START============== */
+
+.o7-stepper__page-wrapper {
+    max-width: 1490px;
+    margin: 0 auto;
+    padding: 0 50px 100px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.o7-stepper__header {
+    margin-top: 140px;
+}
+
+.o7-stepper__header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.o7-stepper__page-title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: normal;
+    color: #202020;
+}
+
+.o7-stepper__subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    color: #202020;
+}
+
+.o7-stepper__intro {
+    display: flex;
+    gap: 64px;
+}
+
+.o7-stepper__text.o7-stepper__intro-text--one {
+    max-width: 530px;
+}
+
+.o7-stepper__text.o7-stepper__intro-text--two {
+    max-width: 560px;
+}
+
+.o7-stepper__section-title.o7-stepper__section-title--first {
+    margin-top: 0;
+}
+
+.o7-stepper__section-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    color: #202020;
+    margin-top: 50px;
+}
+
+.o7-stepper__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    color: #787878;
+}
+
+.o7-stepper__main {
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+}
+
+.o7-stepper__sidebar {
+    max-width: 350px;
+    width: 100%;
+    flex-shrink: 0;
+    position: sticky;
+    top: 50px;
+    align-self: flex-start;
+}
+
+.o7-stepper__nav {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.o7-stepper__nav-item {
+    padding: 14px 0;
+    border-bottom: 0.5px solid #C7C7C7;
+}
+
+.o7-stepper__nav-item a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    color: #202020;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.o7-stepper__nav-item a:hover {
+    text-decoration: none;
+}
+
+.o7-para__container .o7-stepper__text {
+    margin-top: 40px;
+}
+
+.o7-para__container {
+    display: block;
+    scroll-margin-top: 50px;
+
+}
+
+.o7-stepper__nav-bullet--white {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    border: 0.5px solid #7CE3AC;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+
+.o7-stepper__nav-item.o7-stepper__nav-item--active {
+    background-color: transparent;
+}
+
+.o7-stepper__nav-item.o7-stepper__nav-item--active .o7-stepper__nav-bullet--white {
+    background-color: #7CE3AC;
+}
+
+.pointer {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #787878;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+/* Privacy Policy, Terms of Use, DSAR responsive START */
+
+@media (max-width: 1024px) {
+
+    .o7-stepper__main {
+        flex-direction: column;
+    }
+
+    .o7-stepper__intro {
+        flex-direction: column;
+        gap: 64px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .o7-stepper__text.o7-stepper__intro-text--one,
+    .o7-stepper__text.o7-stepper__intro-text--two {
+        max-width: 100%;
+    }
+
+    .o7-stepper__sidebar {
+        max-width: 100%;
+        width: 100%;
+        position: unset;
+    }
+}
+
+/* Privacy Policy, Terms of Use, DSAR responsive  END */
+
+/* ============== Privacy Policy, Terms of Use, DSAR END============== */

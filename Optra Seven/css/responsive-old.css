@@ -571,33 +571,6 @@
     }
 
     /* ================Service Page END================ */
-
-    /* policy page START */
-    .details-para-and-sub-header-wrapper {
-        flex-direction: column;
-    }
-
-    .header-para-wrapper {
-        flex-direction: column;
-        gap: 64px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .container-para.header-container-para-one,
-    .container-para.header-container-para-two {
-        max-width: 100%;
-    }
-
-    .sub-header-list-container {
-        max-width: 100%;
-        width: 100%;
-        position: unset;
-    }
-
-    /* policy page  END */
-
-
 }
 
 @media only screen and (max-width: 992px) {
