@@ -973,10 +973,12 @@
     }
     .o7-list-page-filter__column-left {
         gap: 60px;
+        max-width: 100%;
     }
     .o7-list-page-filter__column-right {
         gap: 60px;
         margin: 0;
+        max-width: 100%;
     }
     .o7-list-page-filter__card-catagory-title {
         font-size: 14px;
@@ -1247,7 +1249,7 @@
 .o7-hover-icon__inner--case-study img {
     width: 80px;
     height: 80px;
-    border-radius: 25px;
+    border-radius: 50px;
     position: absolute;
     top: 30px;
     left: 30px;
@@ -1255,12 +1257,27 @@
 
 
 /* Responsive Design */
-@media (max-width: 1024px){
-.o7-hover-icon__inner--case-study img {
-    top: 20px;
-    left: 20px;
-} 
+@media (max-width: 1200px){
+    .o7-hover-icon__inner--case-study img {
+        width: 60px;
+        height: 60px;
+    }
 }
+
+@media (max-width: 1024px){
+    .o7-hover-icon__inner--case-study img {
+        top: 20px;
+        left: 20px;
+    } 
+}
+
+@media (max-width: 992px){
+    .o7-hover-icon__inner--case-study img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
 /* Hover icon design for case-study page */
 /* ========== Case Study List Page End ========== */
 
