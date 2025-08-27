@@ -693,6 +693,7 @@
     align-items: center;
     font-size: 24px;
     font-weight: 400;
+    margin: 0;
 }
 
 .o7-page-banner__decorative-dot {
@@ -707,6 +708,7 @@
 .o7-page-banner__sub-title {
     font-size: 56px;
     font-weight: 400;
+    margin: 0;
 }
 
 .o7-page-banner__image img{
@@ -745,6 +747,9 @@
     .o7-page-banner {
         padding: 30px 30px;
         border-radius: 16px;
+    }
+    .o7-page-banner__heading {
+        margin: 0 0 20px 0;
     }
     .o7-page-banner__title {
         font-size: 20px;
@@ -789,7 +794,7 @@
     flex-direction: column;
 }
 
-.o7-list-page-filter__filter-wrapper {
+.o7-list-page-filter__list-wrapper {
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -909,7 +914,7 @@
 
 .o7-list-page-filter__card-catagory-title{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -982,7 +987,6 @@
     }
     .o7-list-page-filter__card-catagory-title {
         font-size: 14px;
-        font-weight: 500;
     }
     .o7-list-page-filter__card-tagline {
         font-size: 20px;
@@ -1351,13 +1355,6 @@
 
 
 
-
-
-
-
-
-
-
 /* ========== Portfolio Details Page Start ========== */
 /* Page Banner Start */
 .o7-details-page-banner__image img{
@@ -1381,16 +1378,15 @@
 
 /* sidebar Start */
 .o7-details-page-sidebar{
-    max-width: 180px;
-    width: 100%;
+    min-width: 180px;
     display: flex;
     flex-direction: column;
-    margin: 285px 0 0;
+    margin: 260px 0 0;
 }
 
 .o7-details-page-sidebar__inner{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 .o7-details-page-sidebar__item-wrapper{
@@ -1411,51 +1407,80 @@
 
 
 /* Responsive design */
+@media (max-width: 1400px){
+    .o7-details-page-sidebar {
+        margin: 200px 0 0;
+    }    
+}
 @media (max-width: 1200px){
-.o7-details-page-sidebar{
-    margin: 190px 0 0;
-}
-}
-
-@media (max-width: 767px){
     .o7-details-page-sidebar{
-        max-width: 700px;
-        width: 100%;
-        justify-content: space-between;
-        margin: 0;
+        margin: 170px 0 0;
     }
-
-    .o7-details-page-sidebar__inner{
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 30px;
-    }
-    .o7-details-page-sidebar__item-wrapper {
-        margin: 0 0 30px;
-    }
-    .btn{
-        align-self: center;
-    }
-}
-
-@media (max-width: 576px){
     .o7-details-page-sidebar__title{
         font-size: 20px;
     }
     .o7-details-page-sidebar__item{
         font-size: 16px;
     }
+}
 
+@media (max-width: 1024px){
+    .o7-details-page-sidebar{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .o7-details-page-sidebar__inner{
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-between;  
+        gap: 20px;
+        width: 42%;
+    }
+
+    .o7-details-page-sidebar__item-wrapper {
+        margin: 0;
+    }
+    .btn{
+        align-self: center;
+    }
+}
+@media (max-width: 767px){
+    .o7-details-page-sidebar{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    .o7-details-page-sidebar__inner{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 576px){
+    .o7-details-page-sidebar__inner{
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 /* sidebar End */
 
 
 
-/* Page post Start */
+
+
+/* Details Page post Start */
 .o7-details-page-post-wrapper{
     display: flex;
-    gap: 180px;
+    justify-content: space-between;
+    gap: 40px;
 }
+
+.o7-details-page-post{
+    max-width: 1200px;
+    flex-grow: 0;
+}
+
 .o7-details-page-post__title{
     font-size: 76px;
     font-weight: 400;
@@ -1499,7 +1524,6 @@
 }
 
 
-
 /* Responsive Design */
 @media (max-width: 1400px){
     .o7-details-page-post-wrapper{
@@ -1539,6 +1563,10 @@
 }
 
 @media (max-width: 1024px){
+    .o7-details-page-post-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
     .o7-details-page-post__title{
         font-size: 48px;
         margin: 0 0 20px;
@@ -1558,20 +1586,15 @@
     .o7-details-page-post__sub-title{
         font-size: 24px;
     }
-
-    .o7-details-page-post-wrapper{
-        display: flex;
-        flex-direction: column;
-    }
 }
 
-/* Page post End */
+/* Details Page post End */
 
 
 
 
 
-/* Page explore more Start */
+/* Details Page explore more Start */
 .o7-details-explore-more__title{
     text-align: center;
     font-size: 56px;
@@ -1630,7 +1653,7 @@
 
 .o7-details-explore-more__card-catagory-title{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     margin: 0;    
 }
 .o7-details-explore-more__card-tagline{
@@ -1697,7 +1720,6 @@
     }
     .o7-details-explore-more__card-catagory-title{
         font-size: 14px;   
-        font-weight: 500;
     }
 }
 
@@ -1707,7 +1729,7 @@
     }
 }
 
-/* Page explore more End */
+/* Details Page explore more End */
 
 /* ========== Portfolio Details Page End ========== */
 
