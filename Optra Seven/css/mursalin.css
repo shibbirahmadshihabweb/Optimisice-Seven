@@ -1360,14 +1360,23 @@
 
 
 
+
+
 /* sidebar Start */
 .o7-details-page-sidebar{
     max-width: 180px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 285px 0 0;
 }
 
-.o7-details-page-sidebar__info-wrapper{
+.o7-details-page-sidebar__inner{
+    display: flex;
+    flex-direction: column;
+}
+
+.o7-details-page-sidebar__item-wrapper{
     margin: 0 0 50px;
 }
 
@@ -1381,9 +1390,47 @@
     font-weight: 600; 
     margin: 0 0 5px;    
 }
+
+
+
+/* Responsive design */
+@media (max-width: 1200px){
+.o7-details-page-sidebar{
+    margin: 190px 0 0;
+}
+}
+
+@media (max-width: 767px){
+    .o7-details-page-sidebar{
+        max-width: 700px;
+        width: 100%;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .o7-details-page-sidebar__inner{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .o7-details-page-sidebar__item-wrapper {
+        margin: 0 0 30px;
+    }
+    .btn{
+        align-self: center;
+    }
+}
+
+@media (max-width: 576px){
+    .o7-details-page-sidebar__title{
+        font-size: 20px;
+    }
+    .o7-details-page-sidebar__item{
+        font-size: 16px;
+    }
+
+}
 /* sidebar End */
-
-
 
 
 
@@ -1401,7 +1448,7 @@
 .o7-details-page-post__sub-title{
     font-size: 56px;
     font-weight: 400;
-    margin: 0 0 50px;
+    margin: 0 0 40px;
 }
 
 
@@ -1412,19 +1459,92 @@
     margin: 0 0 50px;
 }
 
-.o7-details-page-post__details{
-    font-size: 20px;
-    font-weight: 400;
+
+.o7-details-page-post__details-wrapper{
     margin: 50px 0 100px;
 }
 
 
-/* Responsive design */
+.o7-details-page-post__details{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.o7-details-page-post__details--margin-top{
+    margin: 50px 0 0;
+}
+
+
+.o7-details-page-post__details-gap{
+    display: block;
+    margin-top: 25px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1400px){
+    .o7-details-page-post-wrapper{
+        gap: 70px;
+    }
+    .o7-details-page-post__title{
+        font-size: 66px;
+        margin: 0 0 50px;
+    }
+    .o7-details-page-post__sub-title{
+        font-size: 42px;
+        margin: 0 0 20px;
+    }
+}
+
+@media (max-width: 1200px){
+
+    .o7-details-page-post__title{
+        font-size: 56px;
+        margin: 0 0 40px;
+    }
+    .o7-details-page-post__sub-title{
+        font-size: 38px;
+    }
+
+    .o7-details-page-post__image img{
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .o7-details-page-post__details-wrapper{
+        margin: 20px 0 40px;
+    }
+
+    .o7-details-page-post__details--margin-top{
+        margin: 20px 0 0;
+    }
+}
+
+@media (max-width: 1024px){
+    .o7-details-page-post__title{
+        font-size: 48px;
+        margin: 0 0 20px;
+    }
+    .o7-details-page-post__sub-title{
+        font-size: 36px;
+    }
+    .o7-details-page-post__image img{
+        border-radius: 16px;
+    }
+}
+
 @media (max-width: 767px){
+    .o7-details-page-post__title{
+        font-size: 40px;
+    }
+    .o7-details-page-post__sub-title{
+        font-size: 24px;
+    }
+
     .o7-details-page-post-wrapper{
         display: flex;
         flex-direction: column;
-        gap: 180px;
     }
 }
 
@@ -1524,6 +1644,7 @@
 @media (max-width: 1024px){
     .o7-details-explore-more__title{
         font-size: 36px;
+        margin: 0 0 40px;
     }
     .o7-details-explore-more__card-wrapper{
         display: flex;
@@ -1536,6 +1657,11 @@
     .o7-details-explore-more__card-catagory-title{
         font-size: 16px;   
     }
+
+    .o7-details-explore-more__card-title-wrapper {
+        gap: 10px;
+        margin: 20px 10px 0;
+    }
 }
 
 @media (max-width: 767px){
@@ -1543,6 +1669,11 @@
         font-size: 24px;
     }
 
+    .o7-details-explore-more__card-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
 
     .o7-details-explore-more__card-tagline{
         font-size: 20px;   
@@ -1553,11 +1684,9 @@
     }
 }
 
-@media (max-width: 767px){
-    .o7-details-explore-more__card-wrapper{
-        display: flex;
-        flex-direction: column;
-        gap: 60px;
+@media (max-width: 576px){
+    .o7-details-explore-more__title{
+        margin: 0 0 30px;
     }
 }
 
