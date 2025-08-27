@@ -526,6 +526,7 @@
 .o7-service-section__content {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 20px;
 }
 
@@ -551,7 +552,7 @@
     align-items: center;
     gap: 20px;
     border-bottom: 1px solid #E7E7E7;
-    padding: 0 0 10px 0;
+    padding: 0 0 24px 0;
     position: relative;
 }
 
@@ -563,6 +564,7 @@
     font-size: 24px;
     font-weight: 500;
     color: #202020;
+    margin-bottom: 0;
     opacity: 0.7;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -654,7 +656,6 @@
 
     .o7-service-section__link {
         gap: 10px;
-        padding-bottom: 20px;
     }
 
     .o7-service-section__link-label {
@@ -666,10 +667,8 @@
     }
 
     .o7-service-section__link:hover .o7-service-section__link-label {
-        max-width: 85%;
         transform: translateX(50px);
     }
-
 
     .o7-service-section__arrow-wrapper {
         right: 0;
@@ -684,6 +683,10 @@
         padding: 15px;
     }
 
+    .o7-service-section__link {
+        gap: 0;
+    }
+
     .o7-service-section {
         max-width: 100%;
         padding-left: 15px;
@@ -695,7 +698,7 @@
     }
 
     .o7-service-section__wrapper {
-        padding: 50px 15px;
+        padding: 70px 70px;
         border-radius: 16px;
     }
 
@@ -714,22 +717,18 @@
 
     .o7-service-section__link-label {
         max-width: 100%;
-        transform: translateX(50px);
+        transform: translateX(0px);
         opacity: 1;
         font-size: 24px;
     }
 
-    .o7-service-section__icon {
-        max-width: 40px;
-        opacity: 1;
-    }
-
     .o7-service-section__list {
         max-width: 100%;
-        gap: 24px;
+        gap: 17px;
     }
 
-    .o7-service-section__arrow-wrapper {
+    .o7-service-section__arrow-wrapper,
+    .o7-service-section__icon {
         display: none;
     }
 
@@ -737,12 +736,22 @@
         font-size: 24px;
         padding-bottom: 0;
     }
+
+        .o7-service-section__link:hover .o7-service-section__link-label {
+        transform: translateX(0);
+    }
 }
 
 @media (max-width: 767px) {
+
     .o7-service-section__title {
         font-size: 54px;
     }
+
+    .o7-service-section__wrapper {
+        padding: 70px 40px;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -751,9 +760,12 @@
         font-size: 36px;
     }
 
+    .o7-service-section__wrapper {
+        padding: 36px 15px;
+    }
+
     .o7-service-section__link-label {
         max-width: 430px;
-        transform: translateX(36px);
         font-size: 20px;
     }
 
@@ -763,6 +775,27 @@
 }
 
 /* Service list page media query END*/
+
+/* service details page START */
+
+.o7-service-details__page .o7-stepper__page-wrapper {
+    max-width: 1600px;
+}
+
+.o7-service-details__page img {
+    max-width: 1600px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .o7-service-details__page .o7-stepper__page-wrapper {
+        padding: 0 0px 20px 0px;
+        gap: 0;
+    }
+
+}
+
+/* service details page END */
 
 /* ============== Privacy Policy, Terms of Use, DSAR START============== */
 
@@ -798,6 +831,12 @@
     line-height: normal;
     letter-spacing: 0.16px;
     color: #202020;
+}
+
+.o7-stepper__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
 }
 
 .o7-stepper__intro {
@@ -910,7 +949,7 @@
     background-color: #787878;
     border-radius: 50%;
     margin-right: 8px;
-    margin-left: 20px;
+    margin-left: 10px;
     vertical-align: middle;
 }
 
@@ -918,7 +957,7 @@
 
 @media (max-width: 1024px) {
 
-    .o7-stepper__main {
+    .o7-stepper__wrapper {
         flex-direction: column;
     }
 
