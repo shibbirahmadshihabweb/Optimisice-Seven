@@ -1,28 +1,43 @@
 
 /* Script For Accordion*/
 
-const accordionItems = document.querySelectorAll(".accordion__item");
+const accordionItems = document.querySelectorAll(".o7-accordion__item");
+
+// toggleAccordion now accepts the clicked item
+function toggleAccordion(clickedItem) {
+  accordionItems.forEach(item => {
+    const answer = item.querySelector(".o7-accordion__answer");
+
+    if (item !== clickedItem) {
+      item.classList.remove("active");
+      item.setAttribute("aria-expanded", "false");
+      answer.hidden = true;
+    } else {
+      const isActive = item.classList.toggle("active");
+      item.setAttribute("aria-expanded", String(isActive));
+      answer.hidden = !isActive;
+    }
+  });
+}
 
 accordionItems.forEach(item => {
-  const title = item.querySelector(".accordion__question");
-  const content = item.querySelector(".accordion__answer");
+  const question = item.querySelector(".o7-accordion__question");
+  question.addEventListener("click", () => toggleAccordion(item));
 
-  title.addEventListener("click", () => {
-    for (i = 0; i < accordionItems.length; i++) {
-      if(accordionItems[i] != item){
-        accordionItems[i].classList.remove("active");
-      }else{
-        // toggle the accordion item
-        item.classList.toggle("active");
-      }
+  item.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") {
+      e.preventDefault();
+      toggleAccordion(item);
     }
-
   });
 });
 
 
+
+
+
 /* Script For add class in sticky header*/
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   const header = document.querySelector(".site-main-header__container");
   header.classList.toggle("sticky-header", window.scrollY > 0);
 });
@@ -63,7 +78,7 @@ responsiveMenuLogo.addEventListener('click', () => {
 document.querySelectorAll(".main-menu-responsive .main-menu__link").forEach(link => {
   link.addEventListener("click", () => {
     responsiveMenu.classList.remove("active");
-   document.body.classList.remove("no-scroll");
+    document.body.classList.remove("no-scroll");
   });
 });
 
@@ -94,15 +109,15 @@ filterButtons.forEach(filterBtn => {
 
 
 // -------------------- card slider --------------------
-document.querySelectorAll(".scrolling__card-container").forEach(container => {
-  const cards = container.querySelectorAll(".scrolling-snap");
+document.querySelectorAll(".section__card-wrapper--scroll-x").forEach(container => {
+  const cards = container.querySelectorAll(".o7-content-card--scrolling-snap");
   let index = 0;
 
   const section = container.closest("section");
 
   // prev/next buttons section
-  const prevBtns = section.querySelectorAll(".prev__button");
-  const nextBtns = section.querySelectorAll(".next__button");
+  const prevBtns = section.querySelectorAll(".o7-slider-control__prev-button");
+  const nextBtns = section.querySelectorAll(".o7-slider-control__next-button");
 
   function showCard(i) {
     const cardWidth = cards[0].offsetWidth + 40; // card width + gap
