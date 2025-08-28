@@ -1791,4 +1791,234 @@
 .semi-bold{
     font-weight: 600;
 }
-/* ========== Case Study Details Page Start ========== */
+/* ========== Case Study Details Page End ========== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== Blog Post Page Start ========== */
+/* Blog Post Start */
+.o7-blog-post{
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+.o7-blog-post__title{
+    font-size: 56px;
+    font-weight: 500;
+    margin: 0;
+}
+.o7-blog-post__platfrom-wrapper{
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;   
+}
+.o7-blog-post__platfrom{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+.o7-blog-post__author-name-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 0 30px;   
+}
+
+.o7-blog-post__author-name{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+.o7-blog-post__date{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: #606060;
+}
+.o7-blog-post__banner-image img{
+    width: 100%;
+    border-radius: 25px;
+    margin: 0 0 30px;
+}
+.o7-blog-post__description{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+.o7-blog-post__description-gap{
+    display: block;
+    margin-top: 25px;
+}
+.o7-blog-post__key-point-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 60px 0 0;
+}
+.o7-blog-post__key-point-title{
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+}
+.o7-blog-post__key-point{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+.o7-blog-post__image img{
+    width: 70%;
+    border-radius: 25px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1400px){
+    .o7-blog-post__title{
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 1200px){
+    .o7-blog-post__title{
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 1024px){
+    .o7-blog-post__title{
+        font-size: 36px;
+    }
+    .o7-blog-post__platfrom-wrapper{
+        margin: 20px 0;   
+    }
+    .o7-blog-post__platfrom{
+        font-size: 20px;
+    }
+    .o7-blog-post__author-name{
+        font-size: 16px;
+    }
+    .o7-blog-post__date{
+        font-size: 14px;
+    }
+    .o7-blog-post__banner-image img {
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    .o7-blog-post__image img {
+        width: 100%;
+        border-radius: 16px;
+    }
+    .o7-blog-post__key-point-title {
+        font-size: 28px;
+    }
+}
+/* Blog Post End */
+
+
+
+
+
+/* Blog Comment Start */
+.o7-blog-post__comment-section {
+    max-width: 730px;
+    margin: 120px auto 0;
+}
+.o7-blog-post__comment-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 0 50px 0;
+}
+
+/* Input Box */
+.o7-blog-post__comment-input-box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+.o7-blog-post__comment-input-box input {
+    flex: 1;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #F5F5F5;
+}
+/* Comment Card */
+.o7-blog-post__comment-card {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+}
+.o7-blog-post__comment-avatar-wrapper{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+.o7-blog-post__comment-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 0;
+}
+.o7-blog-post__comment-avatar img {
+    width: 100%;
+    height: 100%;
+}
+.o7-blog-post__comment-author {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px;
+}
+.o7-blog-post__comment-text {
+    background: #F5F5F5;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #787878;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 767px){
+    .o7-blog-post__comment-input-box {
+        padding: 10px 10px;
+    }
+}
+/* Blog Comment End */
+
+
+
+
+
+/* ========== Blog Post Page End ========== */
+
+
+
