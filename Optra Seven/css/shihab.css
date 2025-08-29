@@ -488,7 +488,9 @@
 }
 
 .o7-page-banner__image img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
     border-radius: 25px;
 }
 
@@ -785,8 +787,80 @@
 
 
 .o7-service-details__page img {
-    max-width: 1600px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 25px;
+}
+
+.o7-stepper-service__sidebar {
+    max-width: 425px;
     width: 100%;
+    flex-shrink: 0;
+    position: sticky;
+    top: 50px;
+    align-self: flex-start;
+}
+
+.o7-stepper-service__nav-item {
+    padding: 20px 0;
+    border-bottom: 0.5px solid #C7C7C7;
+}
+
+.o7-stepper-service__nav-item.o7-stepper-service__nav-itemm--active {
+    background-color: transparent;
+}
+
+.o7-stepper-service__nav {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.o7-stepper-service__nav-item a {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    color: #202020;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.o7-stepper-service__content-wrapper {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.o7-stepper-service__section-title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.o7-stepper-service__text {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.o7-stepper-service__para .container {
+    max-width: 1060px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.o7-service-para__container {
+    max-width: 1060px;
+    display: block;
+    scroll-margin-top: 50px;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -805,6 +879,8 @@
 .o7-stepper__page-wrapper img {
     max-width: 100%;
     height: auto;
+    display: block;
+    border-radius: 25px;
 }
 
 .o7-stepper__header {
@@ -860,10 +936,6 @@
     max-width: 560px;
 }
 
-.o7-stepper__section-title.o7-stepper__section-title--first {
-    margin-top: 0;
-}
-
 .o7-stepper__section-title {
     font-size: 24px;
     font-weight: 500;
@@ -877,6 +949,7 @@
     font-weight: 500;
     line-height: normal;
     color: #787878;
+    margin: 0;
 }
 
 .o7-stepper__main {
@@ -919,10 +992,6 @@
 
 .o7-stepper__nav-item a:hover {
     text-decoration: none;
-}
-
-.o7-para__container .o7-stepper__text {
-    margin: 0;
 }
 
 .o7-stepper__para .container {
@@ -1058,3 +1127,196 @@
 /* Privacy Policy, Terms of Use, DSAR responsive  END */
 
 /* ============== Privacy Policy, Terms of Use, DSAR END============== */
+
+
+/* ============== About Us START============== */
+
+.o7-about-us__page img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 25px;
+}
+
+.o7-about-header__card--wrapper {
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding: 80px 50px;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.o7-about-header__card--header {
+    max-width: 314px;
+    font-size: 56px;
+    font-weight: 400;
+    margin: 0;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.o7-about-header__card--paragraph {
+    max-width: 1126px;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.o7-about__summary--wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.o7-about-card__header {
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.o7-about-card__title {
+    font-size: 56px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.o7-about__card--wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 60px;
+}
+
+.o7-about__card {
+    max-width: 500px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 66px;
+}
+
+.o7-about__card--title {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+.o7-about-summary {
+    font-size: 100px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+.o7-about__card-number--wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #7CE3AC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.o7-about__card--number {
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.o7-about__card--title {
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.o7-about__card--details {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 36px;
+}
+
+.o7-about__our-talent--card {
+    gap: 0;
+}
+
+.o7-about__our-talent-card--title {
+    text-align: left;
+}
+
+.o7-about-office__image {
+    max-width: 780px !important;
+}
+
+.o7-about-ceo__card--wrapper {
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+}
+
+.o7-about__ceo-card--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.o7-about-ceo__card--title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.o7-about-ceo__card--details {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.o7-about__vector--wrapper svg {
+    max-width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.o7-about-ceo__speech {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.o7-about-ceo__card {
+    max-width: 680px;
+    background-color: #7CE3AC;
+    border-radius: 25px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.o7-about-ceo__name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 17px;
+    margin-bottom: 0;
+}
+
+.o7-about-ceo__title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* ============== About Us END============== */
