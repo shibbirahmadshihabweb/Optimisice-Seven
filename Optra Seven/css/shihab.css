@@ -863,6 +863,43 @@
     padding: 0;
 }
 
+@media (max-width: 1024px) {
+
+    .o7-stepper-service__sidebar {
+        max-width: 100%;
+        width: 100%;
+        position: unset;
+    }
+
+    .o7-stepper-service__para img {
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .o7-stepper-service__nav-item a {
+        font-size: 16px;
+        letter-spacing: 0.3px;
+    }
+
+    .o7-stepper-service__text {
+        font-size: 16px;
+        letter-spacing: 0.3px;
+        margin-bottom: 0;
+    }
+
+    .o7-stepper-service__section-title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    .o7-stepper-service__para img {
+        margin-top: 10px;
+    }
+}
 
 /* service details page END */
 
