@@ -2050,17 +2050,25 @@
 
 
 
+
 /* Explore More */
 .o7-arrow-card__card-wrapper--blog-details{
     display: flex;
     gap: 20px;    
 }
 
-@media (max-width: 767px){
-.o7-arrow-card__card-image-wrapper--blog-details img {
-    max-width: 100%;
+
+@media (max-width: 1024px){
+.o7-arrow-card__card-wrapper--blog-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;    
+
 }
 }
+
+
 /* ========== Blog Post Page End ========== */
 
 
