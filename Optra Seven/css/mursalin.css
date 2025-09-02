@@ -712,8 +712,10 @@
 }
 
 .o7-page-banner__image img{
-    width: 100%;
-    border-radius: 25px;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 25px; 
 }
 .o7-page-banner__image-wrapper{
     position: relative;
@@ -1386,8 +1388,10 @@
 /* ========== Portfolio Details Page Start ========== */
 /* Page Banner Start */
 .o7-details-page-banner__image img{
-    width: 100%;
-    border-radius: 25px;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 25px; 
 }
 
 
@@ -1522,8 +1526,10 @@
 
 
 .o7-details-page-post__image img{
-    width: 100%;
-    border-radius: 25px;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 25px; 
     margin: 0 0 50px;
 }
 
@@ -1567,7 +1573,7 @@
 
 @media (max-width: 1200px){
     .o7-details-page-post-wrapper{
-        gap: 30px;
+        gap: 40px;
     }
     .o7-details-page-post__title{
         font-size: 56px;
@@ -1623,71 +1629,74 @@
 
 
 /* Details Page explore more Start */
-.o7-details-explore-more__title{
+.o7-arrow-card__title{
     text-align: center;
     font-size: 56px;
     font-weight: 400;
     margin: 0 0 60px;
 }
 
-.o7-details-explore-more__card a{
+.o7-arrow-card__card a{
     text-decoration: none;
     color: #202020;    
 }
-.o7-details-explore-more__card-wrapper{
+.o7-arrow-card__card-wrapper{
     display: flex;
     gap: 40px;
 }
 
-.o7-details-explore-more__card-image-wrapper img{
-    width: 100%;
+
+.o7-arrow-card__card-image-wrapper img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 25px; 
 }
 
-.o7-details-explore-more__card-image-wrapper{
-    max-width: 780px;
-    max-height: 400px;
-    border-radius: 25px;
+.o7-arrow-card__card-image-wrapper{
     position: relative;
     overflow: hidden;
 }
-.o7-details-explore-more__card-hover-chip svg{
-    width: 60px;
-    height: 60px;
+.o7-arrow-card__card-hover-chip {
     position: absolute;
     top: -60px;
     right: -60px;
     transition: all 0.4s ease;
 }
+.o7-arrow-card__card-hover-chip svg{
+    width: 60px;
+    height: 60px;
+}
 
-.o7-details-explore-more__card:hover .o7-details-explore-more__card-hover-chip svg{
+.o7-arrow-card__card:hover .o7-arrow-card__card-hover-chip{
     top: 30px;
     right: 30px;
 }
 
-.o7-details-explore-more__card-title-wrapper{
+.o7-arrow-card__card-title-wrapper{
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin: 36px 10px 0;
 }
-.o7-details-explore-more__card-category-wrapper{
+.o7-arrow-card__card-category-wrapper{
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.o7-details-explore-more__card-decorative-dot{
+.o7-arrow-card__card-decorative-dot{
     width: 10px;
     height: 10px;
     border-radius: 50px;
     background-color: #7CE3AC;
 }
 
-.o7-details-explore-more__card-catagory-title{
+.o7-arrow-card__card-catagory-title{
     font-size: 20px;
     font-weight: 400;
     margin: 0;    
 }
-.o7-details-explore-more__card-tagline{
+.o7-arrow-card__card-tagline{
     font-size: 32px;
     font-weight: 500;
     margin: 0;    
@@ -1698,64 +1707,68 @@
 
 /* Responsive Design */
 @media (max-width: 1400px){
-    .o7-details-explore-more__title{
+    .o7-arrow-card__title{
         font-size: 42px;
+    }
+    .o7-arrow-card__card-wrapper{
+        display: flex;
+        gap: 20px;
     }
 }
 
 @media (max-width: 1200px){
-    .o7-details-explore-more__title{
+    .o7-arrow-card__title{
         font-size: 38px;
     }
-    .o7-details-explore-more__card-tagline{
+    .o7-arrow-card__card-image-wrapper img{
+        border-radius: 16px;
+    }
+    .o7-arrow-card__card-tagline{
         font-size: 24px;   
+    }
+    .o7-arrow-card__card-hover-chip {
+       display: none;
     }
 }
 
 @media (max-width: 1024px){
-    .o7-details-explore-more__title{
+    .o7-arrow-card__title{
         font-size: 36px;
         margin: 0 0 40px;
     }
-    .o7-details-explore-more__card-wrapper{
-        display: flex;
-        gap: 20px;
-    }
-    .o7-details-explore-more__card-image-wrapper img{
-        border-radius: 16px;
-    }
 
-    .o7-details-explore-more__card-catagory-title{
+
+    .o7-arrow-card__card-catagory-title{
         font-size: 16px;   
     }
 
-    .o7-details-explore-more__card-title-wrapper {
+    .o7-arrow-card__card-title-wrapper {
         gap: 10px;
         margin: 20px 10px 0;
     }
 }
 
 @media (max-width: 767px){
-    .o7-details-explore-more__title{
+    .o7-arrow-card__title{
         font-size: 24px;
     }
 
-    .o7-details-explore-more__card-wrapper{
+    .o7-arrow-card__card-wrapper{
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
 
-    .o7-details-explore-more__card-tagline{
+    .o7-arrow-card__card-tagline{
         font-size: 20px;   
     }
-    .o7-details-explore-more__card-catagory-title{
+    .o7-arrow-card__card-catagory-title{
         font-size: 14px;   
     }
 }
 
 @media (max-width: 576px){
-    .o7-details-explore-more__title{
+    .o7-arrow-card__title{
         margin: 0 0 30px;
     }
 }
@@ -1868,8 +1881,10 @@
     color: #606060;
 }
 .o7-blog-post__banner-image img{
-    width: 100%;
-    border-radius: 25px;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 25px; 
     margin: 0 0 30px;
 }
 .o7-blog-post__description{
@@ -2033,6 +2048,19 @@
 }
 /* Blog Comment End */
 
+
+
+/* Explore More */
+.o7-arrow-card__card-wrapper--blog-details{
+    display: flex;
+    gap: 20px;    
+}
+
+@media (max-width: 767px){
+.o7-arrow-card__card-image-wrapper--blog-details img {
+    max-width: 100%;
+}
+}
 /* ========== Blog Post Page End ========== */
 
 
@@ -2050,5 +2078,16 @@
 
 
 /* ========== Contact Us Page Start ========== */
-
+/* Contact address */
+.o7-contact-container{
+    display: flex;
+}
+.o7-contact-container__details-address-wrapper{
+    display: flex;
+    gap: 20px;
+}
+.o7-contact-container__details-icon svg{
+    width: 25px;
+    height: 25px;
+}
 /* ========== Contact Us Page End ========== */
