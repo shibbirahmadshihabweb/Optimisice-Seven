@@ -675,7 +675,6 @@
 
 
 
-
 /* Page Banner Start */
 .o7-page-banner{
     padding: 60px 40px;
@@ -792,6 +791,9 @@
     .o7-page-banner__image img {
         border-radius: 10px;
     }
+    .o7-page-banner__image-overlay{
+        border-radius: 10px;
+    }
 }
 /* Page Banner End */
 
@@ -879,14 +881,14 @@
     display: flex;
     flex-direction: column;
     gap: 150px;
-    max-width: 50%;
+    flex: 1;
 }
 
 .o7-list-page-filter__column-right {
     display: flex;
     flex-direction: column;
     gap: 150px;
-    max-width: 50%;
+    flex: 1;
     margin-top: 220px;
 }
 
@@ -899,16 +901,16 @@
 }
 
 .o7-list-page-filter__card-image-wrapper{
-    max-width: 780px;
-    max-height: 680px;
-    border-radius: 25px; 
     position: relative;
     overflow: hidden;
    
 }
 
 .o7-list-page-filter__card-image-wrapper img{
-    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 25px; 
 }
 
 
@@ -951,7 +953,7 @@
     .o7-list-page-filter__data-list {
         gap: 20px;
     }
-    .o7-list-page-filter__card-image-wrapper {
+    .o7-list-page-filter__card-image-wrapper img {
         border-radius: 16px;
     }
     .o7-list-page-filter__card__title-wrapper {
@@ -1256,7 +1258,7 @@
 /* ========== Case Study List Page Start ========== */
 /* Hover icon design for case-study page */
 .o7-hover-icon--case-study .o7-hover-icon__bg{
-    display: none;
+    visibility: hidden;
 }
 .o7-hover-icon--case-study{
     position: absolute;
@@ -1317,16 +1319,8 @@
 
 
 /* ========== Blog List Page Start ========== */
+
 /* Filter Data List Start */
-.o7-list-page-filter__card-image-wrapper--blog-list{
-    max-width: 780px;
-    max-height: 480px;
-    border-radius: 25px;
-    position: relative;
-    overflow: hidden;     
-}
-
-
 .o7-list-page-filter__card-catagory-title--blog-list{
     display: none;
 }
@@ -1363,7 +1357,7 @@
     } 
 }
 @media (max-width: 1024px){
-    .o7-list-page-filter__card-image-wrapper--blog-list{
+    .o7-list-page-filter__card-image-wrapper--blog-list img{
         border-radius: 16px;   
     }
 }
@@ -1489,11 +1483,6 @@
     margin-bottom: 0;
 }
 
-    /* .o7-details-page-sidebar{
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 40px;
-    } */
 }
 @media (max-width: 576px){
 .o7-details-page-sidebar__item-wrapper {
@@ -1510,7 +1499,7 @@
 .o7-details-page-post-wrapper{
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 60px;
 }
 
 .o7-details-page-post{
