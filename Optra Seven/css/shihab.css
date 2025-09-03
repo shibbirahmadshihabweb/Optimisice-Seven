@@ -1211,6 +1211,7 @@
     max-width: 780px;
     height: auto;
     display: block;
+    border-radius: 25px;
 }
 
 .o7-our-culture-card-wrapper {
@@ -1310,8 +1311,8 @@
 }
 
 .elastic-button:hover {
- background-color: #202020;
- color: #F5F5F5;
+    background-color: #202020;
+    color: #F5F5F5;
 }
 
 .elastic-button:hover .fee-icon {
@@ -1331,6 +1332,7 @@
     }
 
     .o7-card__header {
+        max-width: 315px;
         font-size: 24px;
     }
 
@@ -1363,8 +1365,12 @@
     .o7-card {
         padding: 30px;
         min-height: 300px;
+        align-items: center;
     }
 
+    .o7-card__left--align {
+        align-items: flex-start;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1439,11 +1445,6 @@
         border-radius: 16px;
         min-height: 220px;
         gap: 15px;
-        align-items: center;
-    }
-
-    .o7-card__left--align {
-        align-items: flex-start;
     }
 
     .o7-card__header {
@@ -1468,6 +1469,7 @@
 
     .o7-content-image {
         max-width: 94%;
+        border-radius: 16px;
     }
 
     .o7-section-header__title--small {
@@ -1513,11 +1515,6 @@
         max-width: 450px;
         min-height: 250px;
         gap: 15px;
-        align-items: center;
-    }
-
-    .o7-card__left--align {
-        align-items: flex-start;
     }
 
     .o7-card__header {
