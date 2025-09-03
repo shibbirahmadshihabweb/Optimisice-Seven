@@ -274,8 +274,8 @@
 .o7-list-page-filter__card-title-wrapper{
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin: 36px 10px 0px 10px;
+    gap: 10px;
+    margin: 40px 0 0;
 }
 
 .o7-list-page-filter__card-category-wrapper{
@@ -300,7 +300,8 @@
 
 .o7-list-page-filter__card-tagline{
     font-size: 32px;
-    font-weight: 500;  
+    font-weight: 500; 
+    margin: 0; 
 }
 
 
@@ -313,12 +314,8 @@
     .o7-list-page-filter__card-image-wrapper img {
         border-radius: 16px;
     }
-    .o7-list-page-filter__card__title-wrapper {
-        gap: 5px;
-        margin: 20px 10px 0px 10px;
-    }
 
-    .o7-list-page-filter__card__catagory-title {
+    .o7-list-page-filter__card-catagory-title {
         font-size: 16px;
     }
     .o7-list-page-filter__card-tagline {
@@ -356,6 +353,10 @@
         gap: 60px;
         margin: 0;
         max-width: 100%;
+    }
+    .o7-list-page-filter__card-title-wrapper{
+        gap: 8px;
+        margin: 36px 0 0;
     }
     .o7-list-page-filter__card-catagory-title {
         font-size: 14px;
@@ -782,12 +783,12 @@
 
 .o7-details-page-sidebar__title{
     font-size: 24px;
-    font-weight: 400; 
+    font-weight: 500; 
     margin: 0 0 15px;  
 }
 .o7-details-page-sidebar__item{
     font-size: 20px;
-    font-weight: 600; 
+    font-weight: 400; 
     margin: 0 0 5px;    
 }
 
@@ -833,6 +834,7 @@
 
 .o7-details-page-sidebar__btn-wrapper {
     width: 100%;
+    justify-items: center;
 }
 }
 @media (max-width: 767px){
@@ -1031,8 +1033,8 @@
 .o7-arrow-card__card-title-wrapper{
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin: 36px 10px 0;
+    gap: 10px;
+    margin: 40px 0 0;
 }
 .o7-arrow-card__card-category-wrapper{
     display: flex;
@@ -1097,10 +1099,6 @@
         font-size: 16px;   
     }
 
-    .o7-arrow-card__card-title-wrapper {
-        gap: 10px;
-        margin: 20px 10px 0;
-    }
 }
 
 @media (max-width: 767px){
@@ -1113,7 +1111,10 @@
         flex-direction: column;
         gap: 40px;
     }
-
+    .o7-arrow-card__card-title-wrapper{
+        gap: 8px;
+        margin: 36px 0 0;
+    }
     .o7-arrow-card__card-tagline{
         font-size: 20px;   
     }
@@ -1245,6 +1246,7 @@
 .o7-blog-post__description{
     font-size: 20px;
     font-weight: 400;
+    line-height: 1.6;
     margin: 0;
 }
 .o7-blog-post__description-gap{
@@ -1257,6 +1259,15 @@
     gap: 30px;
     margin: 60px 0 0;
 }
+
+.o7-blog-post__key-point-wrapper ol li{
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+.o7-blog-post__key-point-wrapper ul li{
+    line-height: 1.6;
+}
+
 .o7-blog-post__key-point-title{
     font-size: 32px;
     font-weight: 500;
@@ -1265,6 +1276,7 @@
 .o7-blog-post__key-point{
     font-size: 20px;
     font-weight: 400;
+    line-height: 1.6;
     margin: 0;
 }
 .o7-blog-post__image img{
