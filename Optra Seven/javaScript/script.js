@@ -188,3 +188,4 @@ document.querySelectorAll(".section__card-wrapper--scroll-x").forEach(container 
   container.addEventListener("mouseup", () => { isDragging = false; container.classList.remove("dragging"); });
   container.addEventListener("mouseleave", () => { isDragging = false; container.classList.remove("dragging"); });
 });
+
