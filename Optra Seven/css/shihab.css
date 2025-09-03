@@ -454,47 +454,6 @@
 
 /* service list page START */
 
-/* Page Banner Start */
-.o7-page-banner {
-    padding: 60px 40px;
-    border-radius: 25px;
-    background-color: #E7E7E7;
-}
-
-.o7-page-banner__heading {
-    display: flex;
-    flex-direction: column;
-}
-
-.o7-page-banner__title {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.o7-page-banner__decorative-dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: #7CE3AC;
-    border-radius: 50%;
-    margin: 0 10px 0 0;
-}
-
-.o7-page-banner__sub-title {
-    font-size: 56px;
-    font-weight: 400;
-}
-
-.o7-page-banner__image img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 25px;
-}
-
-/* Page Banner End */
 
 /* service page card section START */
 
@@ -1238,16 +1197,18 @@
 
 .o7-card__header--left {
     text-align: left;
+    margin-top: 40px;
 }
 
 .o7-card__paragraph {
     font-size: 16px;
     font-weight: 400;
     margin: 0;
+    margin-top: 37px;
 }
 
 .o7-content-image {
-    max-width: 50%;
+    max-width: 780px;
     height: auto;
     display: block;
 }
@@ -1331,14 +1292,30 @@
 
 /* quot card  */
 .o7-quote-card {
-    max-width: 680px;
     background-color: #7CE3AC;
     border-radius: 25px;
-    padding: 30px;
+    padding: 20px 30px 25px 30px;
     margin-top: 50px;
+    position: relative;
 }
 
 /* quot card  END */
+
+/* about us page ceo card button */
+.elastic-button {
+    position: absolute;
+    right: 0;
+    bottom: -51px;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.o7-quote-card:hover .elastic-button {
+    bottom: 0;
+    opacity: 1;
+}
+
+/* about us page ceo card button END*/
 
 /* About us responsive START */
 
@@ -1382,6 +1359,7 @@
 
     .o7-card {
         padding: 30px;
+        min-height: 300px;
     }
 
 }
@@ -1403,6 +1381,7 @@
 
     .o7-card {
         padding: 20px;
+        min-height: 250px;
     }
 
     .o7-card__summary {
@@ -1457,10 +1436,17 @@
         border-radius: 16px;
         min-height: 220px;
         gap: 15px;
+        align-items: center;
+    }
+
+    .o7-card__left--align {
+        align-items: flex-start;
     }
 
     .o7-card__header {
+        max-width: 242px;
         font-size: 20px;
+        margin-top: 0;
     }
 
     .o7-card__summary {
@@ -1469,6 +1455,7 @@
 
     .o7-card__paragraph {
         font-size: 14px;
+        margin-top: 0;
     }
 
     .o7-our-culture-content-wrapper {
