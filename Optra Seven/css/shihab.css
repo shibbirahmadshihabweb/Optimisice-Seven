@@ -1305,14 +1305,17 @@
 .elastic-button {
     position: absolute;
     right: 0;
-    bottom: -51px;
+    bottom: 0;
     transition: all 0.3s ease;
-    opacity: 0;
 }
 
-.o7-quote-card:hover .elastic-button {
-    bottom: 0;
-    opacity: 1;
+.elastic-button:hover {
+ background-color: #202020;
+ color: #F5F5F5;
+}
+
+.elastic-button:hover .fee-icon {
+    fill: #F5F5F5;
 }
 
 /* about us page ceo card button END*/
