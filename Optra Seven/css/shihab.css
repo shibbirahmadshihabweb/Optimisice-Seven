@@ -1156,7 +1156,7 @@
     border-radius: 25px;
 }
 
-.o7-about-header__card--wrapper {
+.o7-our-journey-container {
     background-color: #FFFFFF;
     border-radius: 25px;
     padding: 80px 50px;
@@ -1166,7 +1166,7 @@
     justify-content: space-between;
 }
 
-.o7-about-header__card--header {
+.o7-our-journey__herader {
     max-width: 314px;
     font-size: 56px;
     font-weight: 400;
@@ -1175,7 +1175,7 @@
     flex-shrink: 0;
 }
 
-.o7-about-header__card--paragraph {
+.o7-our-journey__paragraph {
     max-width: 1126px;
     font-size: 32px;
     font-weight: 300;
@@ -1187,29 +1187,16 @@
     flex-direction: column;
 }
 
-.o7-about-card__header {
-    font-size: 24px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
-
-.o7-about-card__title {
-    font-size: 56px;
-    font-weight: 400;
-    margin: 0;
-}
-
-.o7-about__card--wrapper {
+.o7-card-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 24px;
     margin-top: 60px;
 }
 
-.o7-about__card {
+.o7-card {
     max-width: 500px;
+    min-height: 350px;
     width: 100%;
     background-color: #FFFFFF;
     border-radius: 25px;
@@ -1217,24 +1204,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 66px;
+    flex-grow: 1;
 }
 
-.o7-about__card--title {
+.o7-card__header {
     font-size: 32px;
     font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: center;
-    margin: 0;
 }
 
-.o7-about-summary {
+.o7-card__summary {
     font-size: 100px;
     font-weight: 500;
     text-align: center;
     margin: 0;
 }
 
-.o7-about__card-number--wrapper {
+.o7-card__number {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -1242,48 +1230,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.o7-about__card--number {
     font-size: 30px;
     font-weight: 600;
     color: #FFFFFF;
     margin: 0;
 }
 
-.o7-about__card--title {
-    font-size: 32px;
-    font-weight: 400;
-    margin-top: 40px;
-    margin-bottom: 0;
-}
-
-.o7-about__card--details {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 0;
-    margin-top: 36px;
-}
-
-.o7-about__our-talent--card {
-    gap: 0;
-}
-
-.o7-about__our-talent-card--title {
+.o7-card__header--left {
     text-align: left;
 }
 
-.o7-about-office__image {
-    max-width: 780px !important;
+.o7-card__paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
 }
 
-.o7-about-ceo__card--wrapper {
+.o7-content-image {
+    max-width: 50%;
+    height: auto;
+    display: block;
+}
+
+.o7-our-culture-card-wrapper {
     max-width: 680px;
     display: flex;
     flex-direction: column;
 }
 
-.o7-about__ceo-card--wrapper {
+.o7-our-culture-content-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1297,14 +1272,14 @@
     margin-bottom: 0;
 }
 
-.o7-about-ceo__card--details {
+.o7-our-culture-para {
     font-size: 16px;
     font-weight: 400;
     margin-top: 50px;
     margin-bottom: 0;
 }
 
-.o7-about__vector--wrapper svg {
+.o7-our-culture-svg-wrapper svg {
     max-width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -1316,7 +1291,46 @@
     margin-bottom: 0;
 }
 
-.o7-about-ceo__card {
+
+
+.o7-ceo__name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 17px;
+    margin-bottom: 0;
+}
+
+.o7-ceo__title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* Section Title Block */
+
+.o7-section-header__sub-title--small {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* Section Title Block END */
+
+/* Content Card */
+
+/* .o7-content-card--full-no-link {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    cursor: unset;
+    justify-content: space-between;
+    gap: 24px;
+} */
+
+/* Content Card END */
+
+/* quot card  */
+.o7-quote-card {
     max-width: 680px;
     background-color: #7CE3AC;
     border-radius: 25px;
@@ -1324,17 +1338,220 @@
     margin-top: 50px;
 }
 
-.o7-about-ceo__name {
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 17px;
-    margin-bottom: 0;
+/* quot card  END */
+
+/* About us responsive START */
+
+@media (max-width: 1400px) {
+
+
+    .o7-our-journey-container {
+        padding: 40px 25px;
+        gap: 20px;
+    }
+
+    .o7-card__header {
+        font-size: 24px;
+    }
+
+    .o7-card__summary {
+        font-size: 86px;
+    }
+
+    .o7-our-culture-para,
+    .o7-quote-card {
+        margin-top: 30px;
+    }
+
+    .o7-about-ceo__speech {
+        font-size: 20px;
+    }
+
+    .o7-content-image {
+        max-width: 40%;
+    }
+
+    .o7-section-header__sub-title--small {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .o7-section-header__title--small {
+        font-size: 16px;
+    }
+
+    .o7-card {
+        padding: 30px;
+    }
+
 }
 
-.o7-about-ceo__title {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 0;
+@media (max-width: 1200px) {
+
+    .o7-our-journey-container {
+        padding: 30px 20px;
+        gap: 15px;
+    }
+
+    .o7-our-journey__herader {
+        font-size: 36px;
+    }
+
+    .o7-our-journey__paragraph {
+        font-size: 24px;
+    }
+
+    .o7-card {
+        padding: 20px;
+    }
+
+    .o7-card__summary {
+        font-size: 80px;
+    }
+
+    .o7-card__number {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    .o7-card__header {
+        font-size: 22px;
+    }
+
+    .o7-content-image {
+        max-width: 50%;
+    }
+
+    .o7-our-culture-para {
+        margin-top: 20px;
+    }
+
+    .o7-quote-card {
+        padding: 20px;
+        margin-top: 20px;
+    }
 }
 
+@media (max-width: 1024px) {
+
+    .o7-our-journey__herader {
+        font-size: 30px;
+    }
+
+    .o7-our-journey__paragraph {
+        font-size: 20px;
+    }
+
+    .o7-our-culture-card-wrapper {
+        max-width: 100%;
+    }
+
+    .o7-card-wrapper {
+        gap: 14px;
+        margin-top: 40px;
+    }
+
+    .o7-card {
+        padding: 15px;
+        border-radius: 16px;
+        min-height: 220px;
+        gap: 15px;
+    }
+
+    .o7-card__header {
+        font-size: 20px;
+    }
+
+    .o7-card__summary {
+        font-size: 62px;
+    }
+
+    .o7-card__paragraph {
+        font-size: 14px;
+    }
+
+    .o7-our-culture-content-wrapper {
+        gap: 40px;
+        flex-direction: column-reverse;
+    }
+
+    .o7-content-image {
+        max-width: 94%;
+    }
+
+    .o7-section-header__title--small {
+        font-size: 22px;
+    }
+
+    .o7-section-header__sub-title--small {
+        font-size: 24px;
+    }
+
+    .o7-our-culture-para {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .o7-quote-card {
+        max-width: 100%;
+        padding: 20px 30px;
+        margin-top: 30px;
+    }
+
+    .o7-about-ceo__speech {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .o7-our-journey-container {
+        flex-direction: column;
+        padding: 20px 15px;
+        gap: 10px;
+    }
+
+    .o7-card-wrapper {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .o7-card {
+        border-radius: 12px;
+        max-width: 450px;
+        min-height: 250px;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .o7-card__left--align {
+        align-items: flex-start;
+    }
+
+    .o7-card__header {
+        max-width: 390px;
+        font-size: 32px;
+    }
+
+    .o7-card__summary {
+        font-size: 80px;
+    }
+
+    .o7-card__header--left {
+        font-size: 24px;
+    }
+
+    .o7-card__paragraph {
+        font-size: 20px;
+    }
+
+    .o7-content-image {
+        max-width: 100%;
+    }
+
+}
+
+/* About us responsive END */
 /* ============== About Us END============== */
