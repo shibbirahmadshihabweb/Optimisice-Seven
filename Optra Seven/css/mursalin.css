@@ -401,6 +401,7 @@
 .o7-hover-chip__icon {
     width: 15px;
     height: 15px;
+    fill: #f5f5f5;
 }
 
 .o7-hover-chip__bg-span {
@@ -415,6 +416,7 @@
     width: 15px;
     height: 15px;
     position: absolute;
+    fill: #f5f5f5;
     right: 0;
 }
 
@@ -514,6 +516,7 @@
 .o7-hover-icon__icon {
     width: 25px;
     height: 25px;
+    fill: #f5f5f5;
 }
 
 .o7-hover-icon__bg-span {
@@ -531,6 +534,7 @@
 .o7-hover-icon__bg-span-icon {
     width: 25px;
     height: 25px;
+    fill: #f5f5f5;
     position: relative;
     top: 65px;
 }
@@ -1015,15 +1019,27 @@
     overflow: hidden;
 }
 .o7-arrow-card__card-hover-chip {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 50px;
+    background-color: #E7E7E7;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: -60px;
     right: -60px;
     transition: all 0.4s ease;
 }
-.o7-arrow-card__card-hover-chip svg{
-    width: 60px;
-    height: 60px;
+
+
+.o7-arrow-card__card-hover-icon{
+    width: 40px;
+    height: 40px;
+    fill: #202020;
 }
+
 
 .o7-arrow-card__card:hover .o7-arrow-card__card-hover-chip{
     top: 30px;
@@ -1484,6 +1500,31 @@
 
 
 /* ========== Footer Start ========== */
+
+/* Icon fill start */
+.o7-footer__icon-chip-bg-icon{
+    fill: #f5f5f5;
+}
+.o7-footer__icon-chip-bg-span-icon{
+    fill: #f5f5f5;
+}
+.o7-footer__button-chip-bg-span-icon{
+    fill: #f5f5f5;
+}
+
+.o7-footer__address-icon{
+    fill: #f5f5f5;    
+}
+
+
+.o7-footer__icon-chip-icon-box:hover .o7-footer__icon-chip-icon {
+    fill: #202020;
+}
+/* Icon fill End */
+
+
+
+
 /* Footer Container Start */
 .o7-footer-container{
     padding: 0 20px;
