@@ -522,6 +522,10 @@
     position: relative;
 }
 
+.o7-service-section--dark .o7-service-section__link {
+    border-bottom: 1px solid #E7E7E799;
+}
+
 .o7-service-section__link:hover {
     text-decoration: none;
 }
@@ -594,6 +598,84 @@
 }
 
 /* service page card section END */
+
+/* service list page responsive START */
+
+@media (max-width: 1024px) {
+
+    .container-list-and-image,
+    .container-list-and-image.black-bg {
+        flex-direction: column;
+        order: 1;
+        transition: all 0.3s ease;
+    }
+
+    .container-list-wrapper {
+        order: 2;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 0.3s ease;
+    }
+
+    .container-list-and-image {
+        gap: 40px;
+        margin-top: 30px;
+    }
+
+    .service-cart-image-wrapper,
+    .service-cart-arrow-icon-wrapper {
+        opacity: 1 !important;
+        visibility: visible !important;
+        position: static;
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .container-list {
+        gap: 20px;
+    }
+
+    .container-list a {
+        transform: none !important;
+        margin-left: 0;
+    }
+
+    .service-cart-image,
+    .service-cart-image-arrow {
+        width: 30px;
+    }
+
+    .service-cart-arrow-icon-wrapper {
+        margin-left: auto;
+    }
+
+    .service-cart-image,
+    .service-cart-image-arrow {
+        width: 30px;
+    }
+
+    .container-list a:active,
+    .black-bg a:active {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .hero-title-wrap {
+        transition: all 0.3s ease;
+        padding: 60px 15px 40px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero-title-wrap {
+        padding: 60px 10px 15px;
+    }
+}
+
+/* service list page responsive END */
 
 /* service list page END */
 
@@ -1108,12 +1190,7 @@
 
 /* ============== About Us START============== */
 
-.o7-about-us__page img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 25px;
-}
+/* our journery START */
 
 .o7-our-journey-container {
     background-color: #FFFFFF;
@@ -1125,7 +1202,7 @@
     justify-content: space-between;
 }
 
-.o7-our-journey__herader {
+.o7-our-journey__header {
     max-width: 314px;
     font-size: 56px;
     font-weight: 400;
@@ -1141,12 +1218,12 @@
     margin: 0;
 }
 
-.o7-about__summary--wrapper {
-    display: flex;
-    flex-direction: column;
-}
+/* our journery END */
 
-.o7-card-wrapper {
+
+/* what we do START */
+
+.o7-what-we-do__card-wrapper {
     display: flex;
     justify-content: space-between;
     gap: 24px;
@@ -1195,7 +1272,7 @@
     margin: 0;
 }
 
-.o7-card__header--left {
+.o7-card__header-small {
     text-align: left;
     margin-top: 40px;
 }
@@ -1214,6 +1291,16 @@
     border-radius: 25px;
 }
 
+/* our talent START */
+
+.o7-our-talent__card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 60px;
+    align-items: flex-start;
+}
+
 .o7-our-culture-card-wrapper {
     max-width: 680px;
     display: flex;
@@ -1226,6 +1313,9 @@
     align-items: center;
     gap: 24px;
 }
+
+/* our talent END */
+
 
 .o7-about-ceo__card--title {
     font-size: 24px;
@@ -1367,10 +1457,7 @@
         min-height: 300px;
         align-items: center;
     }
-
-    .o7-card__left--align {
-        align-items: flex-start;
-    }
+    
 }
 
 @media (max-width: 1200px) {
@@ -1380,7 +1467,7 @@
         gap: 15px;
     }
 
-    .o7-our-journey__herader {
+    .o7-our-journey__header {
         font-size: 36px;
     }
 
@@ -1423,7 +1510,7 @@
 
 @media (max-width: 1024px) {
 
-    .o7-our-journey__herader {
+    .o7-our-journey__header {
         font-size: 30px;
     }
 

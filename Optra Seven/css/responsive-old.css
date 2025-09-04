@@ -512,65 +512,7 @@
 
 
 
-    /* ================Service Page START================ */
 
-    .container-list-and-image,
-    .container-list-and-image.black-bg {
-        flex-direction: column;
-        order: 1;
-        transition: all 0.3s ease;
-    }
-
-    .container-list-wrapper {
-        order: 2;
-        margin-left: auto;
-        margin-right: auto;
-        transition: all 0.3s ease;
-    }
-
-    .container-list-and-image {
-        gap: 40px;
-        margin-top: 30px;
-    }
-
-    .service-cart-image-wrapper,
-    .service-cart-arrow-icon-wrapper {
-        opacity: 1 !important;
-        visibility: visible !important;
-        position: static;
-        width: 20px;
-        margin-right: 10px;
-    }
-
-    .container-list {
-        gap: 20px;
-    }
-
-    .container-list a {
-        transform: none !important;
-        margin-left: 0;
-    }
-
-    .service-cart-image,
-    .service-cart-image-arrow {
-        width: 30px;
-    }
-
-    .service-cart-arrow-icon-wrapper {
-        margin-left: auto;
-    }
-
-    .service-cart-image,
-    .service-cart-image-arrow {
-        width: 30px;
-    }
-
-    .container-list a:active,
-    .black-bg a:active {
-        opacity: 1;
-    }
-
-    /* ================Service Page END================ */
 }
 
 @media only screen and (max-width: 992px) {
@@ -855,14 +797,7 @@
     /* news letter END */
 
 
-    /* service page START */
 
-    .hero-title-wrap {
-        transition: all 0.3s ease;
-        padding: 60px 15px 40px;
-    }
-
-    /* service page END */
 
     /* portfolio details page START */
 
@@ -1288,13 +1223,4 @@
     }
 
     /*Section Footer End */
-
-
-    /* ================Service Page START================ */
-
-    .hero-title-wrap {
-        padding: 60px 10px 15px;
-    }
-
-    /* ================Service Page END================ */
 }
