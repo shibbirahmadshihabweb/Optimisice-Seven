@@ -10,6 +10,10 @@ p {
     margin: 0 auto;
 }
 
+.container-fluid{
+    max-width: 100%;
+}
+
 .relative {
     position: relative !important;
 }
@@ -161,41 +165,47 @@ p {
     border-bottom-left-radius: 0px;
 }
 
-.o7-input-group-prepend .choices__list--dropdown .choices__item--selectable.is-highlighted::after, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted::after {
-        content: "" !important;
-        font-size: 12px;
-        opacity: 0;
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
+.o7-input-group-prepend .choices__list--dropdown .choices__item--selectable.is-highlighted::after,
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted::after {
+    content: "" !important;
+    font-size: 12px;
+    opacity: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.o7-input-group-prepend .choices__list--dropdown .choices__item--selectable[data-select-text], .choices__list[aria-expanded] .choices__item--selectable[data-select-text] {
+.o7-input-group-prepend .choices__list--dropdown .choices__item--selectable[data-select-text],
+.choices__list[aria-expanded] .choices__item--selectable[data-select-text] {
     padding-right: 0px !important;
 }
-
-.o7-input-group-prepend .choices__inner{
-    height: 100%;
-    align-items: center;
+.o7-input-form .choices__inner{
+    background-color: transparent !important;
+    border-radius: 8px !important;
+    border: 1px solid #C7C7C7 !important;
 }
+.o7-input-group-prepend .choices__inner {
+    height: 100% !important;
+    align-content: center !important;
+    min-width: 120px;
+    background-color: #EBEBEB !important;
+    border-color: #C7C7C7;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+}
+.o7-input-group-prepend .choices__item.choices__item--selectable{
+    color: #787878 !important;
+}
+
 /* Base Single Components END */
 
 /* Base Blocks - Header, Footer */
 /* Global Layout Blocks - Footer Header */
 
 /* Footer Start */
-.o7-section-footer {
-    margin: 100px auto 0;
-    max-width: 1840px;
-    background-color: #202020;
-    border-radius: 25px;
-    margin-bottom: 40px;
-}
 
-.o7-section-footer__wrapper {
-    position: relative;
-}
+
 
 
 
@@ -565,12 +575,6 @@ p {
 
 @media (max-width: 767px) {
 
-    /*Section Footer Start */
-    .o7-section-footer {
-        border-radius: 16px;
-        margin-bottom: 40px;
-    }
-
     .o7-footer__menu-container {
         justify-content: center;
         column-gap: 125px;
@@ -816,7 +820,6 @@ a.main-menu__link:focus-visible {
     padding: 14px 20px;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .megamenu__link-card--service:hover {
@@ -969,6 +972,7 @@ a.main-menu__link:focus-visible {
     border-radius: 0 0 25px 25px;
     background-color: #f5f5f5;
 }
+
 /* Curve Icon Positioning */
 .o7-hero__curve-icon {
     width: 15px;

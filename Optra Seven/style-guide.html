@@ -401,14 +401,14 @@
             <div class="o7-input-group">
                 <input type="text" id="input-" class="o7-input-field" placeholder="Enter text">
             </div>
-            <label for="input-select">Dropdown Prepend</label>
+            <label class="o7-input-label" for="input-select">Dropdown Prepend</label>
 
             <div class="o7-input-group">
                 <div class="o7-input-group-prepend">
-                    <select id="test-select"  data-placeholder="This is a placeholder">
-                        <option value="apple">UK</option>
-                        <option value="banana">USA</option>
-                        <option value="cherry">BN</option>
+                    <select id="test-select" data-placeholder="This is a placeholder">
+                        <option value="apple" data-img="🍎" selected>🍎 Apple</option>
+                        <option value="banana" data-img="🍌">Banana</option>
+                        <option value="cherry" data-img="🍒">Cherry</option>
                     </select>
                 </div>
                 <input type="text" id="input-text" class="o7-input-field" placeholder="Enter text">
@@ -418,6 +418,13 @@
                     </span>
                 </div>
             </div>
+            <form class="o7-input-form" action="" method="post">
+                <select id="test-select-2">
+                    <option value="apple" data-img="🍎" selected>🍎 Apple</option>
+                    <option value="banana" data-img="🍌">Banana</option>
+                    <option value="cherry" data-img="🍒">Cherry</option>
+                </select>
+            </form>
             <div class="form-group">
                 <label for="input-select">Dropdown</label>
                 <!-- <select id="test-select" data-placeholder="This is a placeholder">
