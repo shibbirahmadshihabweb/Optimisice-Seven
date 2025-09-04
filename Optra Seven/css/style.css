@@ -2120,7 +2120,7 @@ a.main-menu__link:focus-visible {
 
     .o7-hero__curver-icon-top {
         bottom: 173px;
-        left: 452px;
+        left: 456px;
     }
 
     .o7-hero__curve-icon-middle {
@@ -2142,6 +2142,7 @@ a.main-menu__link:focus-visible {
 
     .o7-hero__button-wrapper {
         height: 52px;
+        max-width: 139px;
     }
 
     .o7-hero__button {
@@ -2194,13 +2195,13 @@ a.main-menu__link:focus-visible {
     }
 
     .o7-hero__curver-icon-top {
-        bottom: 106px;
-        left: 222px;
+        bottom: 107px;
+        left: 223px;
     }
 
     .o7-hero__curve-icon-middle {
-        bottom: 77px;
-        left: 101px;
+        bottom: 78px;
+        left: 103px;
     }
 
     .o7-hero__curve-icon-bottom {
