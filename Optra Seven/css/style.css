@@ -4795,6 +4795,562 @@ a.main-menu__link:focus-visible {
 
 /* Service List  END */
 
+/* ============== About Us ============== */
+
+.o7-card {
+    max-width: 500px;
+    min-height: 350px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.o7-card__header {
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.o7-card__summary {
+    font-size: 100px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+.o7-card__number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #7CE3AC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.o7-card--align-left {
+    align-items: flex-start;
+}
+
+.o7-card__header--small {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.o7-card__paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 37px;
+}
+
+@media (max-width: 1400px) {
+
+    .o7-card__header {
+        max-width: 315px;
+        font-size: 24px;
+    }
+
+    .o7-card__summary {
+        font-size: 86px;
+    }
+
+    .o7-card {
+        padding: 30px;
+        min-height: 300px;
+        align-items: center;
+    }
+
+    .o7-card--align-left {
+        flex-grow: 1;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .o7-card {
+        padding: 20px;
+        min-height: 250px;
+    }
+
+    .o7-card__summary {
+        font-size: 80px;
+    }
+
+    .o7-card__number {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    .o7-card__header {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .o7-card {
+        padding: 24px;
+        border-radius: 16px;
+        min-height: 220px;
+        gap: 15px;
+    }
+
+    .o7-card__header {
+        max-width: 242px;
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .o7-card__summary {
+        font-size: 50px;
+    }
+
+    .o7-card__paragraph {
+        font-size: 14px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .o7-card {
+        max-width: 100%;
+        padding: 15px 35px;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+
+    .o7-card--align-left {
+        border-radius: 12px;
+        max-width: 100%;
+        min-height: 220px;
+        gap: 10px;
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .o7-card__header {
+        max-width: 330px;
+        font-size: 25px;
+        text-align: right;
+    }
+
+    .o7-card__summary {
+        font-size: 60px;
+    }
+
+    .o7-card__header--left {
+        font-size: 24px;
+    }
+
+    .o7-card__paragraph {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .o7-card {
+        padding: 24px;
+        flex-direction: column;
+    }
+
+    .o7-card--align-left {
+        min-height: 230px;
+        gap: 10px;
+    }
+
+    .o7-card__header {
+        text-align: center;
+    }
+}
+
+.o7-our-journey__container {
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding: 80px 50px;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.o7-our-journey__header {
+    max-width: 314px;
+    font-size: 56px;
+    font-weight: 400;
+    margin: 0;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.o7-our-journey__paragraph {
+    max-width: 1126px;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.o7-what-we-do__card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.o7-content-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 25px;
+}
+
+.o7-our-talent__card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 20px;
+    align-items: stretch;
+}
+
+.o7-our-culture-card-wrapper {
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.o7-our-culture-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.o7-our-culture-para {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.o7-our-culture-svg-wrapper svg {
+    max-width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.o7-quote__text {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.o7-quote__header {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 17px;
+    margin-bottom: 0;
+}
+
+.o7-quote__title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.o7-section-header__sub-title--small {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.o7-quote {
+    background-color: #7CE3AC;
+    border-radius: 25px;
+    padding: 20px 30px 25px 30px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.o7-quote__button:hover {
+    background-color: #202020;
+    color: #F5F5F5;
+}
+
+.o7-quote__button:hover .fee-icon {
+    fill: #F5F5F5;
+}
+
+.o7-our-culture__image-wrapper {
+    max-width: 50%;
+    position: relative;
+    flex: 1;
+}
+
+.o7-qoute-button-chip {
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+}
+
+.o7-qoute-button-chip__bg {
+    position: relative;
+    display: flex;
+}
+
+.o7-icon.o7-qoute-button-chip__icon {
+    width: 17px;
+    height: 17px;
+    rotate: 90deg;
+    position: relative;
+    top: 60px;
+    right: -1px;
+    fill: #f5f5f5;
+}
+
+.o7-qoute-button-chip__placeholder-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.o7-icon.o7-qoute-button-chip__placeholder-icon {
+    width: 17px;
+    height: 17px;
+    transform: scaleX(-1);
+    position: relative;
+    left: 243px;
+    bottom: -1px;
+    fill: #f5f5f5;
+}
+
+.o7-qoute-button-chip__placeholder {
+    display: block;
+    width: 260px;
+    height: 60px;
+    background-color: #f5f5f5;
+    border-radius: 25px 0 0 0;
+}
+
+.o7-quote__button {
+    position: absolute;
+    top: 28px;
+    right: 0;
+}
+
+.o7-our-culture-image-chip {
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+}
+
+.o7-our-culture-image-chip__bg {
+    position: relative;
+    display: flex;
+}
+
+.o7-our-culture-image-chip__icon {
+    width: 17px;
+    height: 17px;
+    rotate: 90deg;
+    position: relative;
+    top: 89px;
+    right: -1px;
+    fill: #f5f5f5;
+}
+
+.o7-our-culture-image-chip__placeholder-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.o7-our-culture-image-chip__placeholder-icon {
+    width: 17px;
+    height: 17px;
+    transform: scaleX(-1);
+    position: relative;
+    left: 102px;
+    bottom: -1px;
+    fill: #f5f5f5;
+}
+
+.o7-our-culture-image-chip__placeholder {
+    display: block;
+    width: 118px;
+    height: 90px;
+    background-color: #f5f5f5;
+    border-radius: 25px 0 0 0;
+}
+
+@media (max-width: 1400px) {
+
+
+    .o7-our-journey__container {
+        padding: 40px 25px;
+        gap: 20px;
+    }
+
+    .o7-our-culture-para,
+    .o7-quote {
+        margin-top: 30px;
+    }
+
+    .o7-quote__text {
+        font-size: 20px;
+    }
+
+    .o7-section-header__sub-title--small {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .o7-section-header__title--small {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .o7-our-journey__container {
+        padding: 30px 20px;
+        gap: 70px;
+    }
+
+    .o7-our-journey__header {
+        font-size: 36px;
+    }
+
+    .o7-our-journey__paragraph {
+        font-size: 24px;
+    }
+
+    .o7-our-culture-para {
+        margin-top: 20px;
+    }
+
+    .o7-quote {
+        padding: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .o7-our-journey__header {
+        font-size: 30px;
+    }
+
+    .o7-our-journey__paragraph {
+        font-size: 20px;
+    }
+
+    .o7-our-culture-card-wrapper {
+        max-width: 100%;
+    }
+
+    .o7-our-culture-content-wrapper {
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .o7-content-image {
+        border-radius: 16px;
+    }
+
+    .o7-section-header__title--small {
+        font-size: 22px;
+    }
+
+    .o7-section-header__sub-title--small {
+        font-size: 24px;
+    }
+
+    .o7-our-culture-para {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .o7-quote {
+        max-width: 100%;
+        padding: 20px 30px;
+        margin-top: 30px;
+    }
+
+    .o7-quote__text {
+        font-size: 22px;
+    }
+
+    .o7-our-culture__image-wrapper {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .o7-our-journey__container {
+        flex-direction: column;
+        padding: 24px;
+        gap: 10px;
+    }
+
+    .o7-what-we-do__card-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .o7-our-talent__card-wrapper {
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .o7-content-image {
+        max-width: 100%;
+    }
+
+    .o7-our-culture-image-chip__placeholder {
+        width: 80px;
+        height: 50px;
+    }
+
+    .o7-our-culture-image-chip__icon {
+        top: 49px;
+    }
+
+    .o7-our-culture-image-chip__placeholder-icon {
+        left: 63px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .o7-quote__title {
+        margin-bottom: 45px;
+    }
+
+}
+
+/* ============== About Us END============== */
+
+
 
 /* ------------------------- Blocks END ---------------------- */
 
