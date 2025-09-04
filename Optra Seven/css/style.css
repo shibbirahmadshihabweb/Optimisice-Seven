@@ -130,6 +130,7 @@ p {
     font-weight: 400;
     color: var(--dark-color);
     /* margin: 0 0 1rem; */
+    margin: 0;
 }
 
 /* Typography utilities */
@@ -525,13 +526,6 @@ template {
     }
 }
 
-
-@media (max-width: 767px) {
-    .section {
-        margin: 60px auto 0;
-        padding: 0 15px;
-    }
-}
 
 @media (max-width: 576px) {
     .section {
@@ -1900,6 +1894,7 @@ a.main-menu__link:focus-visible {
 .o7-hero__content-holder {
     position: relative;
     bottom: 56px;
+    left: -1px;
 }
 
 .o7-hero__title-wrapper {
@@ -1940,25 +1935,25 @@ a.main-menu__link:focus-visible {
 
 .o7-hero__curve-icon-top-right {
     position: relative;
-    bottom: 348px;
+    bottom: 347px;
     left: 940px;
 }
 
 .o7-hero__curver-icon-top {
     position: relative;
     bottom: 246px;
-    left: 756px;
+    left: 757px;
 }
 
 .o7-hero__curve-icon-middle {
     position: relative;
-    bottom: 155px;
-    left: 413px;
+    bottom: 154px;
+    left: 414px;
 }
 
 .o7-hero__curve-icon-bottom {
     position: relative;
-    bottom: 64px;
+    bottom: 63px;
     left: 123px;
 }
 
@@ -2053,7 +2048,7 @@ a.main-menu__link:focus-visible {
     }
 
     .o7-hero__content-holder {
-        bottom: 60px;
+        bottom: 41px;
     }
 
     .o7-hero__title {
@@ -2083,7 +2078,7 @@ a.main-menu__link:focus-visible {
 
     .o7-hero__curver-icon-top {
         bottom: 173px;
-        left: 452px;
+        left: 456px;
     }
 
     .o7-hero__curve-icon-middle {
