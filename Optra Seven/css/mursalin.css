@@ -747,7 +747,7 @@
 
 /* ========== Portfolio Details Page Start ========== */
 /* Page Banner Start */
-.o7-details-page-banner__image img{
+.o7-details-page-hero__image img{
     max-width: 100%;
     display: block;
     height: auto;
@@ -757,7 +757,7 @@
 
 /* Responsive Design */
 @media (max-width: 1024px){
-.o7-details-page-banner__image img{
+.o7-details-page-hero__image img{
     width: 100%;
     border-radius: 16px;
 }
@@ -865,6 +865,7 @@
     display: flex;
     justify-content: space-between;
     gap: 60px;
+    margin-top: 60px;
 }
 
 .o7-details-page-post{
@@ -883,7 +884,9 @@
     font-weight: 400;
     margin: 0 0 40px;
 }
-
+.o7-details-page-post__title--mobile{
+    display: none;
+}
 
 
 .o7-details-page-post__image img{
@@ -966,6 +969,15 @@
         font-size: 48px;
         margin: 0 0 20px;
     }
+
+    .o7-details-page-post__title--mobile{
+        display: block;
+    }
+
+    .o7-details-page-post__title--pc{
+        display: none;
+    }
+
     .o7-details-page-post__sub-title{
         font-size: 36px;
     }
@@ -979,9 +991,14 @@
         font-size: 40px;
     }
     .o7-details-page-post__sub-title{
-        font-size: 24px;
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .o7-details-page-post-wrapper {
+        margin-top: 30px;
     }
 }
+
 
 /* Details Page post End */
 
@@ -1501,6 +1518,12 @@
 
 /* ========== Footer Start ========== */
 
+
+
+
+
+
+
 /* Icon fill start */
 .o7-footer__icon-chip-bg-icon{
     fill: #f5f5f5;
@@ -1540,10 +1563,21 @@
 
 
 /* Section Footer Start */
-.o7-section-footer {
+
+.o7-footer {
     margin: 100px auto 20px;
+    max-width: 1840px;
+    background-color: #202020;
     border-radius: 25px;
 }
+
+
+.o7-footer__inner {
+    position: relative;
+}
+
+
+
 
 @media (max-width: 1026px){
     .o7-section-footer {
