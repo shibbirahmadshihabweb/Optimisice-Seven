@@ -172,7 +172,7 @@
 
 .o7-stepper-service-details__sidebar {
     max-width: 450px;
-
+    flex-shrink: 1;
 }
 
 .o7-stepper-service-details__nav-item a {
