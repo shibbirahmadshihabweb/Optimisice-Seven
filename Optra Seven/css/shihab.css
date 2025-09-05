@@ -1,6 +1,220 @@
-/* bloks START */
+/* ============== Privacy Policy, Terms of Use, DSAR START============== */
 
-/* bloks END */
+.o7-stepper__header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.o7-stepper__article-wrapper {
+    max-width: 1000px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.o7-stepper__page-header {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: normal;
+    color: #202020;
+}
+
+.o7-stepper__subtitle {
+    max-width: 1440px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.08px;
+    color: #202020;
+}
+
+.o7-stepper-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.o7-stepper-intro {
+    display: flex;
+    gap: 64px;
+}
+
+.o7-stepper-intro__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #787878;
+}
+
+.o7-stepper-intro__text-one {
+    max-width: 530px;
+}
+
+.o7-stepper-intro__text-two {
+    max-width: 560px;
+}
+
+.o7-stepper-article__para-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+    color: #202020;
+    margin-top: 50px;
+    margin-bottom: 0;
+    scroll-margin-top: 50px;
+}
+
+.o7-stepper-article__para-title--first {
+    margin-top: 0;
+}
+
+.o7-stepper-article__para {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #787878;
+    margin-top: 20px;
+}
+
+.o7-stepper__sidebar {
+    max-width: 350px;
+    width: 100%;
+    flex-shrink: 0;
+    position: sticky;
+    top: 50px;
+    align-self: flex-start;
+}
+
+.o7-stepper__nav {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.o7-stepper__nav-item {
+    padding: 14px 0;
+    border-bottom: 0.5px solid #C7C7C7;
+}
+
+.o7-stepper__nav-item a {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: #202020;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+}
+
+.o7-stepper__nav-item a:hover {
+    text-decoration: none;
+}
+
+.o7-stepper__nav-bullet--white {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    border: 0.5px solid #7CE3AC;
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+
+.o7-stepper__nav-item.o7-stepper__nav-item--active {
+    background-color: transparent;
+}
+
+.o7-stepper__nav-item.o7-stepper__nav-item--active .o7-stepper__nav-bullet--white {
+    background-color: #7CE3AC;
+}
+
+.o7-stepper-article__list {
+    margin-top: 10px;
+}
+
+.o7-stepper-article__list-item {
+    font-size: 16px;
+    font-weight: 400;
+    color: #787878;
+    line-height: 1.6;
+}
+
+
+/* Privacy Policy, Terms of Use, DSAR responsive START */
+
+@media (max-width: 1024px) {
+
+    .o7-stepper-wrapper {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .o7-stepper__subtitle {
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.20px;
+        color: #202020;
+    }
+
+    .o7-stepper__intro {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .o7-stepper__header-content {
+        gap: 30px;
+    }
+
+    .o7-stepper__article-wrapper {
+        gap: 24px;
+    }
+
+    .o7-stepper-intro {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .o7-stepper-intro__text-one,
+    .o7-stepper-intro__text-two {
+        max-width: 100%;
+    }
+    .o7-stepper__sidebar {
+        max-width: 100%;
+        width: 100%;
+        position: unset;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .o7-stepper__subtitle {
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    .o7-stepper__header-content {
+        gap: 20px;
+    }
+
+    .o7-stepper__intro {
+        gap: 0px;
+    }
+
+    .o7-stepper-wrapper {
+        gap: 60px;
+    }
+}
+
+/* Privacy Policy, Terms of Use, DSAR responsive  END */
+
+/* ============== Privacy Policy, Terms of Use, DSAR END============== */
 
 
 /* service details page START */
@@ -135,216 +349,3 @@
 }
 
 /* service details page END */
-
-/* ============== Privacy Policy, Terms of Use, DSAR START============== */
-
-.o7-stepper__header-content {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.o7-stepper__content-wrapper {
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.o7-stepper__page-title {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: normal;
-    color: #202020;
-}
-
-.o7-stepper__subtitle {
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 56px;
-    letter-spacing: 0.25px;
-    color: #202020;
-}
-
-.o7-stepper__wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-}
-
-.o7-stepper__intro {
-    display: flex;
-    gap: 64px;
-}
-
-.o7-stepper__intro-text--one {
-    max-width: 530px;
-}
-
-.o7-stepper__intro-text--two {
-    max-width: 560px;
-}
-
-.o7-stepper__section-title {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: normal;
-    color: #202020;
-    margin: 0;
-}
-
-.o7-stepper__text {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
-    color: #787878;
-    margin: 0;
-}
-
-.o7-stepper__sidebar {
-    max-width: 350px;
-    width: 100%;
-    flex-shrink: 0;
-    position: sticky;
-    top: 50px;
-    align-self: flex-start;
-}
-
-.o7-stepper__nav {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.o7-stepper__nav-item {
-    padding: 14px 0;
-    border-bottom: 0.5px solid #C7C7C7;
-}
-
-.o7-stepper__nav-item a {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.16px;
-    color: #202020;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.o7-stepper__nav-item a:hover {
-    text-decoration: none;
-}
-
-.o7-stepper__para .container {
-    max-width: 1110px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.o7-para__container {
-    display: block;
-    scroll-margin-top: 50px;
-    margin: 0;
-    padding: 0;
-}
-
-.o7-stepper__nav-bullet--white {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #f5f5f5;
-    border: 0.5px solid #7CE3AC;
-    display: inline-block;
-    margin-right: 8px;
-}
-
-
-.o7-stepper__nav-item.o7-stepper__nav-item--active {
-    background-color: transparent;
-}
-
-.o7-stepper__nav-item.o7-stepper__nav-item--active .o7-stepper__nav-bullet--white {
-    background-color: #7CE3AC;
-}
-
-.o7-stepper-text__list {
-    font-size: 16px;
-    font-weight: 400;
-    color: #787878;
-    line-height: 1.6;
-}
-
-
-/* Privacy Policy, Terms of Use, DSAR responsive START */
-
-@media (max-width: 1024px) {
-
-    .o7-stepper__wrapper {
-        flex-direction: column;
-        gap: 80px;
-    }
-
-    .o7-stepper__subtitle {
-        font-size: 28px;
-        line-height: 40px;
-        letter-spacing: 0.20px;
-        color: #202020;
-    }
-
-    .o7-stepper__intro {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .o7-stepper__header-content {
-        gap: 30px;
-    }
-
-    .o7-stepper__para .container {
-        gap: 15px;
-    }
-
-    .o7-stepper__content-wrapper {
-        gap: 24px;
-    }
-
-    .o7-stepper__text.o7-stepper__intro-text--one,
-    .o7-stepper__text.o7-stepper__intro-text--two {
-        max-width: 100%;
-    }
-
-    .o7-stepper__sidebar {
-        max-width: 100%;
-        width: 100%;
-        position: unset;
-    }
-}
-
-@media (max-width: 576px) {
-
-    .o7-stepper__subtitle {
-        font-size: 22px;
-        line-height: 36px;
-    }
-
-    .o7-stepper__header-content {
-        gap: 20px;
-    }
-
-    .o7-stepper__intro {
-        gap: 0px;
-    }
-
-    .o7-stepper__wrapper {
-        gap: 60px;
-    }
-}
-
-/* Privacy Policy, Terms of Use, DSAR responsive  END */
-
-/* ============== Privacy Policy, Terms of Use, DSAR END============== */
