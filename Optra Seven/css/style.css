@@ -2635,7 +2635,7 @@ a.main-menu__link:focus-visible {
     right: 50px;
 }
 
-.o7-content-card__circle--arrow {
+.o7-content-card__circle-arrow {
     width: 30px;
     height: 25px;
     display: flex;
@@ -3007,14 +3007,14 @@ a.main-menu__link:focus-visible {
     align-items: center;
 }
 
-.o7-testimonial__client--name {
+.o7-testimonial__client-name {
     font-size: 20px;
     font-weight: 300;
     text-align: right;
     margin-bottom: 0;
 }
 
-.o7-testimonial__client--title {
+.o7-testimonial__client-title {
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 0;

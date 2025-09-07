@@ -6,14 +6,12 @@
     height: auto;
     display: block;
     border-radius: 25px;
+    object-fit: cover;
+    transition: transform 0.45s ease;
 }
 
-.o7-content-card__image--height-portfolio {
-    max-height: 460px;
-}
-
-.o7-content-card__image--height-case-study {
-    max-height: 682px;
+.o7-content-card__image:hover {
+    transform: scale(1.05);
 }
 
 .o7-content-card__circle {
@@ -35,20 +33,25 @@
     right: 50px;
 }
 
+.o7-content-card__image-wrapper {
+    border-radius: 25px;
+    overflow: hidden;
+}
+
 /* testimonial */
 
-.o7-testimonial__client--nameplate {
+.o7-testimonial__client-nameplate {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-h3.o7-testimonial__client--name-wrapper {
+.o7-testimonial__client-name-wrapper {
     margin: 0;
     font-size: 20px;
 }
 
-.o7-testimonial__client--name {
+.o7-testimonial__client-name {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -103,7 +106,7 @@ h3.o7-testimonial__client--name-wrapper {
         right: 30px;
     }
 
-    .o7-content-card__circle--arrow {
+    .o7-content-card__circle-arrow {
         width: 16px;
         height: 20px;
     }
