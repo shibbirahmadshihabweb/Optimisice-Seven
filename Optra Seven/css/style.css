@@ -693,6 +693,12 @@ template {
     border: 1px solid transparent;
 }
 
+.btn--semi-rounder-full {
+    border-radius: 8px;
+    width: 100%;
+    max-width: unset;
+}
+
 .btn--x-small {
     padding: 5px 15px;
 }

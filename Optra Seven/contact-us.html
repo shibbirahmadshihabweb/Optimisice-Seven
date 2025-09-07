@@ -1,36 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- meta tag -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <!-- google font manrope linkup -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-        <!-- google font manrope linkup -->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-        <!-- google font manrope linkup -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-        <!-- google font manrope linkup -->
         <link
             href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
             rel="stylesheet"
         />
-
-        <!-- CSS reboot file linkup -->
         <link rel="stylesheet" href="./css/reboot.css" />
-
-        <!-- style File linkup -->
         <link rel="stylesheet" href="./css/style.css" />
-
-
-        <!-- murlalin File linkup -->
         <link rel="stylesheet" href="./css/mursalin-two.css" />
-
-        <!-- Page Tag -->
         <title>Contact Us</title>
     </head>
 
@@ -81,42 +63,34 @@
 
                         <div class="o7-contact-container__form">
                                 <form aria-label="contact form">
-                                  <!-- Full Name -->
                                   <div class="o7-input-group">
-                                    <label class="o7-input-label" for="name">Full Name</label>
-                                    <input class="o7-input-field" type="text" id="contact-name" placeholder="John Lenon">
+                                    <label class="o7-input-label" for="contact-name">Full Name</label>
+                                    <input class="o7-input-field" name="contact-name" type="text" id="contact-name" placeholder="John Lenon">
                                   </div>
-                                
-                                  <!-- Email & WhatsApp -->
+
                                   <div class="o7-input-group-flex">
                                     <div class="o7-input-group">
-                                      <label class="o7-input-label" for="email">Email</label>
-                                      <input class="o7-input-field" type="email" id="contact-email" placeholder="johnlenon@gmail.com">
+                                      <label class="o7-input-label" for="contact-email">Email</label>
+                                      <input class="o7-input-field" name="contact-email" type="email" id="contact-email" placeholder="johnlenon@gmail.com">
                                     </div>
                                     <div class="o7-input-group">
-                                      <label class="o7-input-label" for="whatsapp">Whats App <span style="color: gray; font-size: 12px;">(Optional)</span></label>
-                                      <input class="o7-input-field" type="tel" id="contact-whatsapp" placeholder="(+88) 017 3221 3222">
+                                      <label class="o7-input-label" for="contact-whatsapp">Whats App <span style="color: gray; font-size: 12px;">(Optional)</span></label>
+                                      <input class="o7-input-field" type="tel" name="contact-whatsapp" id="contact-whatsapp" placeholder="(+88) 017 3221 3222">
                                     </div>
                                   </div>
-                                
-                                  <!-- Subject -->
+
                                   <div class="o7-input-group">
-                                    <label class="o7-input-label" for="subject">Subject</label>
-                                    <input class="o7-input-field" type="text" id="contact-subject" placeholder="Ui Design">
+                                    <label class="o7-input-label" for="contact-subject">Subject</label>
+                                    <input class="o7-input-field" type="text" name="contact-subject" id="contact-subject" placeholder="Ui Design">
                                   </div>
-                                
-                                  <!-- Project Details -->
+
                                   <div class="o7-input-group">
-                                    <label class="o7-input-label" for="details">Project Details</label>
-                                    <textarea class="o7-input-textarea" type="data" id="contact-details"  placeholder="I want to re-build my Shopify store..."></textarea>
+                                    <label class="o7-input-label" for="contact-message">Project Details</label>
+                                    <textarea class="o7-input-textarea" type="text"  name="contact-message" id="contact-message"  placeholder="I want to re-build my Shopify store..."></textarea>
                                   </div>
-                                
-                                  <!-- Button -->
-                                    <button class="btn btn--secondary btn--medium">
+
+                                    <button class="btn btn--secondary btn--medium btn--semi-rounder-full">
                                         Submit
-                                        <svg class="fee-icon">
-                                            <use href="./svg/svg-icon-sprite.svg#arrow-up-right"></use>
-                                        </svg>
                                     </button>
                                 </form>
                         
