@@ -1710,8 +1710,8 @@ a.main-menu__link:focus-visible {
 /* Social Icon Chip */
 .o7-footer__icon-chip {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: -1px;
+    left: -1px;
 }
 
 .o7-footer__icon-chip-bg {
@@ -1728,8 +1728,8 @@ a.main-menu__link:focus-visible {
 
 .o7-footer__icon-chip-bg-icon {
     position: absolute;
-    top: 0;
-    left: 60px;
+    top: 0px;
+    left: 59px;
     width: 25px;
     height: 25px;
 }
@@ -1737,7 +1737,7 @@ a.main-menu__link:focus-visible {
 .o7-footer__icon-chip-bg-span {
     display: block;
     width: 60px;
-    height: 385px;
+    height: 393px;
     background-color: #f5f5f5;
     border-radius: 0 0 25px 0;
 }
@@ -1817,7 +1817,7 @@ a.main-menu__link:focus-visible {
 .o7-footer__button-chip-bg-span-icon {
     position: absolute;
     top: 60px;
-    right: 0px;
+    right: -1px;
     width: 25px;
     height: 25px;
     transform: rotate(90deg);
@@ -1954,7 +1954,7 @@ a.main-menu__link:focus-visible {
 .o7-hero__curve-icon-middle {
     position: relative;
     bottom: 154px;
-    left: 414px;
+    left: 413px;
 }
 
 .o7-hero__curve-icon-bottom {
@@ -2153,6 +2153,7 @@ a.main-menu__link:focus-visible {
 
     .o7-hero__button {
         height: 40px;
+        padding: 16px;
     }
 
     .o7-hero__curve-icon-top-right {
@@ -2171,7 +2172,8 @@ a.main-menu__link:focus-visible {
     }
 
     .o7-hero__curve-icon-bottom {
-        bottom: 48px;
+        bottom: 49px;
+        left: 82px;
     }
 }
 
@@ -2207,7 +2209,7 @@ a.main-menu__link:focus-visible {
 
     .o7-hero__curve-icon-middle {
         bottom: 78px;
-        left: 103px;
+        left: 102px;
     }
 
     .o7-hero__curve-icon-bottom {
@@ -2515,6 +2517,22 @@ a.main-menu__link:focus-visible {
     padding-top: 30px;
 }
 
+.o7-accordion__icon-wrapper {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+    border-radius: 50%;
+}
+
+.o7-accordion__icon {
+    width: 18px;
+    height: 18px;
+    fill: #f5f5f5;
+}
+
 @media (max-width:1200px) {
     .o7-accordion__question {
         gap: 20px;
@@ -2557,10 +2575,6 @@ a.main-menu__link:focus-visible {
         font-weight: 400;
     }
 
-    .o7-accordion__icon {
-        width: 30px;
-        height: 30px;
-    }
 }
 
 /* Accordion END */
@@ -2690,7 +2704,7 @@ a.main-menu__link:focus-visible {
 
 .o7-content-card__blog-para {
     max-width: 490px;
-    margin: 16px 0 0 10px;
+    margin: 16px 0 0 0;
 }
 
 
@@ -2711,13 +2725,22 @@ a.main-menu__link:focus-visible {
     .o7-content-card__circle {
         width: 40px;
         height: 40px;
-        top: 30px;
-        right: 30px;
+        top: -40px;
+        right: -40px;
     }
 
     .o7-content-card__circle-arrow {
         width: 16px;
         height: 20px;
+    }
+
+    .o7-content-card:hover .o7-content-card__circle {
+        top: 30px;
+        right: 30px;
+    }
+
+    .o7-content-card--blogs {
+        flex: 0 0 auto;
     }
 
 }
@@ -2743,6 +2766,15 @@ a.main-menu__link:focus-visible {
 
     .o7-content-card--scrolling-snap {
         flex: 0 0 calc(50% - 20px);
+    }
+
+    .o7-content-card__circle {
+        top: 30px;
+        right: 30px;
+    }
+
+    .o7-content-card__image-wrapper {
+        border-radius: 16px;
     }
 }
 
@@ -2837,6 +2869,11 @@ a.main-menu__link:focus-visible {
     flex-shrink: 0;
 }
 
+.slider__arrow {
+    width: 16px;
+    height: 16px;
+}
+
 .o7-slider-control.slider__button--visible {
     display: none;
 }
@@ -2880,11 +2917,12 @@ a.main-menu__link:focus-visible {
     width: 15px;
     height: 15px;
     fill: #f5f5f5;
+    right: -1px;
 }
 
 .o7-hover-chip__bg-span {
     display: block;
-    width: 320px;
+    width: 319px;
     height: 38px;
     background-color: #f5f5f5;
     border-radius: 0 0 0 25px;
@@ -2894,7 +2932,7 @@ a.main-menu__link:focus-visible {
     width: 15px;
     height: 15px;
     position: absolute;
-    right: 0;
+    right: -1px;
     fill: #f5f5f5;
 }
 
@@ -3095,6 +3133,13 @@ a.main-menu__link:focus-visible {
     margin: 0 auto;
 }
 
+.o7-testimonial__para--left-vector,
+.o7-testimonial__para--right-vector {
+    width: 30px;
+    height: 30px;
+    fill: #7CE3AC;
+}
+
 .o7-testimonial__para--right-vector {
     float: right;
 }
@@ -3119,12 +3164,18 @@ a.main-menu__link:focus-visible {
 @media (max-width: 576px) {
 
     .o7-testimonial {
-        padding: 20px 15px;
+        padding: 30px 15px;
     }
 
     .o7-testimonial__card {
-        padding: 30px 30px;
+        padding: 20px 15px;
 
+    }
+
+    .o7-testimonial__client-image {
+        width: 30%;
+        height: auto;
+        display: block;
     }
 }
 
@@ -3874,9 +3925,10 @@ a.main-menu__link:focus-visible {
     align-items: flex-start;
     max-width: 220px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
     margin: 260px 0 0;
+    position: sticky;
+    top: 50px;
+    align-self: flex-start;
 }
 
 
@@ -4650,8 +4702,8 @@ a.main-menu__link:focus-visible {
 }
 
 .o7-service-card__arrow-icon {
-    width: 16px;
-    height: 12px;
+    width: 20px;
+    height: 20px;
     filter: invert(100%);
 }
 
@@ -4755,6 +4807,10 @@ a.main-menu__link:focus-visible {
 
     .o7-service-card__image-wrap {
         max-width: 100%;
+    }
+
+    .o7-service-card__image {
+        border-radius: 16px;
     }
 
     .o7-service-card__wrapper {
@@ -5784,7 +5840,7 @@ a.main-menu__link:focus-visible {
 }
 
 .o7-blog-section__card-container {
-    max-width: 70%;
+    max-width: 1080px;
     display: flex;
     gap: 40px;
     justify-content: space-between;
@@ -5797,6 +5853,11 @@ a.main-menu__link:focus-visible {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 10px;
+    flex-shrink: 0;
+}
+
+.o7-section-header-tab-visible {
+    display: none;
 }
 
 .o7-blog-section__slider-container {
@@ -5819,20 +5880,25 @@ a.main-menu__link:focus-visible {
 
 }
 
-.button__mobile--visible {
+.button__mobile--visible,
+.button__mobile--visible-mobile,
+.button__tab--visible {
     display: none;
-
 }
 
 @media (max-width: 1200px) {
     .o7-faq__block-left {
-        max-width: 425px;
+        max-width: 355px;
+    }
+
+    .o7-section-blog-header {
+        max-width: 337px;
     }
 }
 
 @media (max-width: 1024px) {
     .section-infinity-logo-slider {
-        margin: 80px auto 0;
+        margin: 60px auto 0;
     }
 
     .o7-faq__container {
@@ -5853,26 +5919,32 @@ a.main-menu__link:focus-visible {
         max-width: 100%;
     }
 
-    .o7-blog-section__slider-container {
-        margin-top: 30px;
-        align-self: flex-end;
+    .o7-section-blog-header,
+    .o7-accordion-header {
+        display: none;
     }
 
-    .o7-section-blog-header {
-        flex-direction: row;
-        max-width: 100%;
-        justify-content: space-between;
+    .o7-section-header-tab-visible {
+        display: block;
     }
-}
 
-@media (max-width: 767px) {
-
-    .button__mobile--visible {
+    .button__tab--visible {
         display: flex;
         text-align: center;
         margin: 40px auto 0 auto;
     }
 
+
+}
+
+@media (max-width: 767px) {
+
+    .button__mobile--visible-mobile,
+    .button__mobile--visible {
+        display: flex;
+        align-items: center;
+        margin: 30px auto 0 auto;
+    }
 
     .button__mobile--invisible {
         display: none;
