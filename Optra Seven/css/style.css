@@ -3566,6 +3566,8 @@ a.main-menu__link:focus-visible {
     width: 25px;
     height: 25px;
     fill: #f5f5f5;
+    position: relative;
+    top: 1px;
 }
 
 .o7-hover-icon__bg-span {
@@ -3624,8 +3626,8 @@ a.main-menu__link:focus-visible {
 }
 
 .o7-list-page-filter__card:hover .o7-hover-icon--bottom-left {
-    bottom: 0px;
-    left: 0px;
+    bottom: -1px;
+    left: -1px;
 }
 
 @media (max-width: 1200px) {
