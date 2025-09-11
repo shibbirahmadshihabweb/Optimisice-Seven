@@ -405,3 +405,163 @@
 }
 
 /* Get a Quote END */
+
+
+/* contacu us details START */
+
+.o7-contact-us__form-address-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.o7-contact-us__address-wrapper {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.o7-contact-us__header {
+    font-size: 56px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.o7-contact-us__form-address-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.o7-contact-us__form-address-content {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.o7-contact-us__form-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.o7-contact-us__form-address {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.o7-contact-us__form-address-header {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* contacu us details END */
+
+/* contact us form START */
+
+.o7-contact-us__header--tablet {
+    display: none;
+}
+
+.o7-contact-us__form-wrapper {
+    max-width: 610px;
+    width: 100%;
+}
+
+.o7-contact-us-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.o7-contact-us__input-field {
+    width: 100%;
+}
+
+.o7-contact-us__input-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.o7-contact-us__input-wrapper--in-group {
+    width: 50%;
+}
+
+.o7-contact-us__massage-input {
+    min-height: 120px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #787878;
+    resize: none;
+}
+
+.o7-contact-us__whatsapp-optional {
+    font-weight: 300;
+}
+
+/* contact us form END */
+
+/* contact us responsiv */
+
+@media (max-width: 1200px) {
+
+    .o7-contact-us__address-wrapper {
+        max-width: 330px;
+
+    }
+
+    .o7-contact-us__header {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .o7-contact-us__form-address-wrapper {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .o7-contact-us__header {
+        display: none;
+    }
+
+    .o7-contact-us__header--tablet {
+        display: inline;
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+
+    .o7-contact-us__form-wrapper {
+        max-width: 100%;
+    }
+
+    .o7-contact-us-form {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .o7-contact-us__header--tablet {
+        font-size: 26px;
+    }
+
+    .o7-contact-us__input-container {
+        gap: 10px;
+        align-items: baseline;
+    }
+
+    .o7-contact-us__whatsapp-optional {
+        font-size: 14px;
+    }
+
+    .o7-input-field {
+        padding: 10px 8px;
+    }
+}

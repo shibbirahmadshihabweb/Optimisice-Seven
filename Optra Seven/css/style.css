@@ -5819,6 +5819,11 @@ a.main-menu__link:focus-visible {
     margin: 120px auto 0;
 }
 
+.section-infinity-logo-slider__container {
+    max-width: 1840px;
+    margin: 0 auto;
+}
+
 .o7-faq__container {
     display: flex;
     justify-content: space-between;
@@ -5890,7 +5895,7 @@ a.main-menu__link:focus-visible {
 
 @media (max-width: 1200px) {
     .o7-faq__block-left {
-        max-width: 355px;
+        max-width: 425px;
     }
 
     .o7-section-blog-header {
@@ -5945,7 +5950,7 @@ a.main-menu__link:focus-visible {
     .button__mobile--visible {
         display: flex;
         align-items: center;
-        margin: 30px auto 0 auto;
+        margin: 40px auto 0 auto;
     }
 
     .button__mobile--invisible {
