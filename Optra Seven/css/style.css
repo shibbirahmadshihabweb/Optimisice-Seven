@@ -716,10 +716,6 @@ template {
     border-radius: 34px;
 }
 
-.button:hover .button_arrow {
-    filter: brightness(0) invert(1);
-}
-
 .btn .fee-icon {
     width: 16px;
     height: 16px;
@@ -2523,6 +2519,7 @@ a.main-menu__link:focus-visible {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     background-color: #202020;
     border-radius: 50%;
 }
@@ -5950,6 +5947,7 @@ a.main-menu__link:focus-visible {
     .button__mobile--visible {
         display: flex;
         align-items: center;
+        justify-content: center;
         margin: 40px auto 0 auto;
     }
 
