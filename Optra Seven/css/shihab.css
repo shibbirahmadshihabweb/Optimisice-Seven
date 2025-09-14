@@ -623,6 +623,7 @@
 
     .o7-contact-us__form-address-wrapper {
         padding: 20px;
+        border-radius: 16px;
     }
 
     .o7-contact-us__header--tablet {
