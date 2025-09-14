@@ -643,3 +643,204 @@
         padding: 10px 8px;
     }
 }
+
+/* world map  */
+
+.o7-map__world-map {
+    width: 100%;
+    height: auto;
+    background-color: #4B4B4B;
+    -webkit-mask-image: url("../");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+    mask-image: url("../images/map-svg/world.svg");
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+
+}
+
+.o7-map-container {
+    position: relative;
+}
+
+/* location card  */
+
+.o7-map__office-location-1st-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #7CE3AC4C;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.o7-map__office-location-2nd-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #7CE3AC;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.o7-map__office-location-3rd-circle {
+    width: 10px;
+    height: 10px;
+    background-color: #D9EAD3;
+    border-radius: 50%;
+}
+
+.o7-map-pin {
+    transform: translate(10%, -20%);
+    animation: pulse 1.3s ease-in-out infinite;
+}
+
+.o7-map__address-card {
+    min-width: 230px;
+    width: 100%;
+    background-color: #7CE3AC;
+    padding: 22px;
+    border-radius: 25px;
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    border: 2px solid #66B88C;
+}
+
+.o7-map__address-header {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+}
+
+.o7-map__addreess {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+}
+
+.o7-map__whatsapp {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    margin-top: 15px;
+}
+
+.o7-map__whatsapp-number {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 8px 20px;
+    border: 1px solid #202020;
+    border-radius: 8px;
+}
+
+.o7-map__office-location {
+    position: relative;
+}
+
+/* location card  */
+
+/* bangladesh */
+
+.o7-map__card-bangladesh {
+    position: absolute;
+    bottom: 38%;
+    right: 30%;
+}
+
+/* america */
+
+.o7-map__card-america {
+    position: absolute;
+    top: 34%;
+    left: 12%;
+}
+
+.o7-map__moblile-visible--card {
+    display: none;
+}
+
+@keyframes pulse {
+    100% {
+        opacity: 0;
+        transform: translate(0, 0) scale(2);
+    }
+}
+
+@media (max-width: 1200px) {
+    .o7-map__card-bangladesh {
+        bottom: 37%;
+        right: 29%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .o7-map__card-bangladesh {
+        bottom: 35%;
+        right: 28%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .o7-map__card-bangladesh {
+        bottom: 32%;
+        right: 27%;
+    }
+
+    .o7-map__address-card {
+        display: none;
+    }
+
+    .o7-map__moblile-visible--card {
+        min-width: 100%;
+        display: block;
+        position: unset;
+        max-width: 100%;
+        border-radius: 16px;
+    }
+
+    .o7-map__moblile-visible-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .o7-map__address-header {
+        text-align: left;
+    }
+
+    .o7-map__addreess {
+        text-align: left;
+    }
+
+    .o7-map__whatsapp {
+        text-align: left;
+    }
+
+    .o7-map__whatsapp-number {
+        max-width: 156px;
+        text-align: left;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .o7-map__card-bangladesh {
+        bottom: 32%;
+        right: 27%;
+    }
+}
+
+/* world map  */
