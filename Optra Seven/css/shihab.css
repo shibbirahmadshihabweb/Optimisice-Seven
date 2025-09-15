@@ -1032,7 +1032,6 @@
     gap: 20px;
     position: absolute;
     top: 0;
-    outline: none;
 }
 
 .o7-footer__icon-chip-bg-icon-one {
@@ -1054,7 +1053,6 @@
 }
 
 .o7-footer__back-to-top-button {
-    border: none;
     border-radius: 0 0 0 25px;
     display: flex;
     align-items: center;
@@ -1064,6 +1062,12 @@
     color: #000000;
     background-color: #f5f5f5;
     padding: 14px 10px 14px 30px;
+    cursor: pointer;
+}
+
+.o7-footer__back-to-top-button:hover {
+    text-decoration: none;
+    color: #010101;
 }
 
 .o7-footer__back-to-top-icon-wrapper {
@@ -1105,4 +1109,5 @@
     right: 0;
     bottom: -25px;
 }
+
 /* footer */
