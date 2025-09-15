@@ -701,6 +701,11 @@
     animation: pulse 1.3s ease-in-out infinite;
 }
 
+.o7-map__address-card-link,
+.o7-map__address-card-link:hover {
+    text-decoration: none;
+}
+
 .o7-map__address-card {
     min-width: 230px;
     width: 100%;
@@ -755,7 +760,7 @@
 .o7-map__card-bangladesh {
     position: absolute;
     bottom: 38%;
-    right: 30%;
+    right: 27%;
 }
 
 /* america */
@@ -780,14 +785,14 @@
 @media (max-width: 1200px) {
     .o7-map__card-bangladesh {
         bottom: 37%;
-        right: 29%;
+        right: 26%;
     }
 }
 
 @media (max-width: 1024px) {
     .o7-map__card-bangladesh {
         bottom: 35%;
-        right: 28%;
+        right: 25%;
     }
 }
 
@@ -829,7 +834,7 @@
     }
 
     .o7-map__whatsapp-number {
-        max-width: 156px;
+        max-width: 160px;
         text-align: left;
     }
 
