@@ -875,6 +875,7 @@
     border-radius: 0 0 25px 0;
     background-color: #f5f5f5;
     position: relative;
+    display: inline-block;
 }
 
 .o7-hero__curve-icon {
@@ -891,13 +892,13 @@
 
 .o7-hero__curve-icon-middle {
     position: absolute;
-    top: 10px;
+    top: -1px;
     right: -15px;
 }
 
 .o7-hero__curve-icon-bottom {
     position: absolute;
-    top: 11px;
+    top: -1px;
     right: -15px;
 }
 
@@ -907,14 +908,13 @@
     max-width: 180px;
     height: 65px;
     padding-bottom: 10px;
-    margin-top: 9px;
     border-radius: 0 0 25px 25px;
     background-color: #f5f5f5;
 }
 
 .o7-hero__curver-icon-top {
     position: absolute;
-    top: 0;
+    top: -1px;
     right: -15px;
 }
 
@@ -923,6 +923,7 @@
     max-width: 180px;
     background-color: #f5f5f5;
     border-radius: 0 0 25px 25px;
+    margin-top: -2px;
 }
 
 .o7-hero__curve-icon-bottom-1024 {
@@ -933,7 +934,6 @@
 @media (max-width: 1024px) {
 
     .o7-hero__button-wrapper {
-        margin-top: 8px;
         border-radius: 0 0 25px 0;
         height: 52px;
     }
@@ -949,7 +949,7 @@
 @media (max-width: 576px) {
 
     .o7-hero__button-chip-wrapper {
-        max-width: 120px;
+        max-width: 130px;
     }
 
     .o7-hero__title-span {
@@ -962,20 +962,17 @@
         height: 52px;
     }
 
-    .o7-hero__curve-icon-middle {
-        top: 8px;
-        right: -14px;
-    }
-
     .o7-hero__curve-icon-bottom {
-        top: 8px;
         right: -14px;
     }
 
     .o7-hero__curver-icon-top {
-        rotate: -8deg;
+        rotate: -1deg;
     }
 
+    .hero__title-span--mobile{
+        padding-right: 30px;
+    }
 
 }
 
@@ -986,21 +983,28 @@
     }
 
     .o7-hero__title-span {
-        padding: 0 5px 26px 0;
-    }
-
-    .o7-hero__curve-icon-middle {
-        top: 24px;
-        right: -12px;
+        padding: 0 10px 10px 0;
     }
 
     .o7-hero__button-wrapper {
         justify-content: flex-start;
-        height: 50px;
+        height: unset;
     }
+
 
     .o7-hero__curver-icon-top {
         rotate: 0deg;
+    }
+
+    .o7-hero__button-chip-wrapper{
+        max-width: 124px;
+    }
+
+    .hero__title-span--mobile{
+        padding-right: 50px;
+    }
+    .o7-hero__button{
+        margin-top: 0;
     }
 }
 
