@@ -649,22 +649,6 @@
 .o7-map__world-map {
     width: 100%;
     height: auto;
-    background-color: #4B4B4B;
-    -webkit-mask-image: url("../images/map-svg/world.svg");
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: cover;
-    -webkit-mask-position: center;
-    mask-image: url("../images/map-svg/world.svg");
-    mask-repeat: no-repeat;
-    mask-size: cover;
-    mask-position: center;
-
-}
-
-/* second map */
-.o7-map__world-map-two {
-    width: 100%;
-    height: auto;
     background-color: #787878;
     -webkit-mask-image: url("../images/map-svg/World_map_with_points.svg");
     -webkit-mask-repeat: no-repeat;
@@ -676,7 +660,7 @@
     mask-position: center;
 }
 
-/* second map */
+/* world map */
 
 .o7-map-container {
     position: relative;
@@ -776,16 +760,16 @@
 
 .o7-map__card-bangladesh {
     position: absolute;
-    bottom: 38%;
-    right: 27%;
+    bottom: 44%;
+    right: 22%;
 }
 
 /* america */
 
 .o7-map__card-america {
     position: absolute;
-    top: 34%;
-    left: 12%;
+    top: 28%;
+    left: 7%;
 }
 
 .o7-map__moblile-visible--card {
@@ -869,7 +853,7 @@
 
 
 /* hero index */
-
+/* 
 .o7-hero__title-span {
     padding: 0 20px 12px;
     border-radius: 0 0 25px 0;
@@ -1007,13 +991,13 @@
         margin-top: 0;
     }
 }
-
+ */
 
 /* hero index */
 
 
 /* footer */
-
+/* 
 .o7-footer__icon-chip-bg-icon-one,
 .o7-footer__icon-chip-bg-icon-two,
 .o7-footer__button-chip-bg-span-icon,
@@ -1050,6 +1034,7 @@
 }
 
 /* back to top button */
+/*
 .o7-footer__button-chip {
     position: absolute;
     top: 0;
@@ -1112,6 +1097,6 @@
     rotate: 90deg;
     right: 0;
     bottom: -25px;
-}
+} */
 
 /* footer */
