@@ -3911,6 +3911,7 @@ a.main-menu__link:focus-visible {
         gap: 30px;
         justify-content: flex-start;
         margin: 0;
+        position: static;
     }
 
     .o7-details-page-sidebar__item-wrapper {
