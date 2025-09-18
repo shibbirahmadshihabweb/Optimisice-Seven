@@ -2542,11 +2542,6 @@ a.main-menu__link:focus-visible {
     align-items: center;
 }
 
-.o7-content-card__title--mini {
-    font-size: 20px;
-    margin-left: 5px;
-}
-
 .o7-content-card__header {
     font-size: 32px;
     font-weight: 500;
@@ -2631,10 +2626,6 @@ a.main-menu__link:focus-visible {
 
 
 @media (max-width: 1200px) {
-    .o7-content-card__title--mini {
-        font-size: 16px;
-
-    }
 
     .o7-content-card--scrolling-snap {
         flex: 0 0 calc(50% - 20px);
@@ -2674,11 +2665,6 @@ a.main-menu__link:focus-visible {
 
     .o7-content-card__title {
         margin-top: 20px;
-    }
-
-    .o7-content-card__title--mini {
-        font-size: 14px;
-
     }
 
     .o7-content-card__titles-container {
