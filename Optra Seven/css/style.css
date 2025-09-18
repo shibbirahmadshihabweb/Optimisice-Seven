@@ -3000,13 +3000,6 @@ a.main-menu__link:focus-visible {
     align-items: center;
 }
 
-.o7-testimonial__client-name {
-    font-size: 20px;
-    font-weight: 300;
-    text-align: right;
-    margin-bottom: 0;
-}
-
 .o7-testimonial__client-title {
     font-size: 15px;
     font-weight: 500;
@@ -3031,6 +3024,7 @@ a.main-menu__link:focus-visible {
     font-style: normal;
     font-weight: 500;
     margin-bottom: 0;
+    text-align: right;
 }
 
 .o7-testimonial__blockquote {
@@ -5760,6 +5754,203 @@ a.main-menu__link:focus-visible {
 /* ============== Stepper END ============== */
 
 
+/* world map  */
+
+.o7-map__world-map {
+    width: 100%;
+    height: auto;
+    background-color: #787878;
+    -webkit-mask-image: url("../images/map-svg/World_map_with_points.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
+    mask-image: url("../images/map-svg/World_map_with_points.svg");
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+}
+
+.o7-map-container {
+    position: relative;
+}
+
+.o7-map__office-location-1st-circle {
+    width: 50px;
+    height: 50px;
+    background-color: #7CE3AC4C;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.o7-map__office-location-2nd-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #7CE3AC;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.o7-map__office-location-3rd-circle {
+    width: 10px;
+    height: 10px;
+    background-color: #D9EAD3;
+    border-radius: 50%;
+}
+
+.o7-map-pin {
+    transform: translate(10%, -20%);
+    animation: pulse 1.3s ease-in-out infinite;
+}
+
+.o7-map__address-card-link,
+.o7-map__address-card-link:hover {
+    text-decoration: none;
+}
+
+.o7-map__address-card {
+    min-width: 230px;
+    width: 100%;
+    background-color: #7CE3AC;
+    padding: 22px;
+    border-radius: 25px;
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    border: 2px solid #66B88C;
+}
+
+.o7-map__address-header {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+}
+
+.o7-map__addreess {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+}
+
+.o7-map__whatsapp {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    margin-top: 15px;
+}
+
+.o7-map__whatsapp-number {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 8px 20px;
+    border: 1px solid #202020;
+    border-radius: 8px;
+}
+
+.o7-map__office-location {
+    position: relative;
+}
+
+.o7-map__card-bangladesh {
+    position: absolute;
+    bottom: 53%;
+    right: 25.5%;
+}
+
+.o7-map__card-america {
+    position: absolute;
+    top: 28%;
+    left: 7%;
+}
+
+.o7-map__moblile-visible--card {
+    display: none;
+}
+
+@keyframes pulse {
+    100% {
+        opacity: 0;
+        transform: translate(0, 0) scale(2);
+    }
+}
+
+@media (max-width: 1200px) {
+    .o7-map__card-bangladesh {
+        bottom: 37%;
+        right: 26%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .o7-map__card-bangladesh {
+        bottom: 35%;
+        right: 25%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .o7-map__card-bangladesh {
+        bottom: 32%;
+        right: 27%;
+    }
+
+    .o7-map__address-card {
+        display: none;
+    }
+
+    .o7-map__moblile-visible--card {
+        min-width: 100%;
+        display: block;
+        position: unset;
+        max-width: 100%;
+        border-radius: 16px;
+    }
+
+    .o7-map__moblile-visible-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .o7-map__address-header {
+        text-align: left;
+    }
+
+    .o7-map__addreess {
+        text-align: left;
+    }
+
+    .o7-map__whatsapp {
+        text-align: left;
+    }
+
+    .o7-map__whatsapp-number {
+        max-width: 160px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 576px) {
+    .o7-map__card-bangladesh {
+        bottom: 32%;
+        right: 27%;
+    }
+}
+
+/* world map  */
+
+
+
 
 /* ------------------------- Blocks END ---------------------- */
 
@@ -5967,5 +6158,522 @@ a.main-menu__link:focus-visible {
 }
 
 /* Blog Post Details END */
+
+/* Contact Us START */
+
+.o7-contact-us__form-address-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 80px 135px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+
+.o7-contact-us__address-wrapper {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.o7-contact-us__header {
+    font-size: 56px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.o7-contact-us__form-address-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.o7-contact-us__form-address-content {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.o7-contact-us__form-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.o7-contact-us__form-address {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.o7-contact-us__form-address-header {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.o7-contact-us__header--tablet {
+    display: none;
+}
+
+.o7-contact-us__form-wrapper {
+    max-width: 610px;
+    width: 100%;
+}
+
+.o7-contact-us-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.o7-contact-us__input-field {
+    width: 100%;
+}
+
+.o7-contact-us__input-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.o7-contact-us__input-wrapper--col-two {
+    width: 50%;
+}
+
+.o7-contact-us__message-input {
+    min-height: 120px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #787878;
+    resize: none;
+}
+
+.o7-contact-us__whatsapp-optional {
+    font-weight: 300;
+}
+
+@media (max-width: 1400px) {
+
+    .o7-contact-us__form-address-wrapper {
+        padding: 80px;
+    }
+
+    .o7-contact-us__address-wrapper {
+        max-width: 330px;
+
+    }
+
+    .o7-contact-us__header {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .o7-contact-us__form-address-wrapper {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .o7-contact-us__form-address-wrapper {
+        flex-direction: column-reverse;
+        gap: 50px;
+        padding: 80px;
+    }
+
+    .o7-contact-us__header {
+        display: none;
+    }
+
+    .o7-contact-us__header--tablet {
+        display: inline;
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+
+    .o7-contact-us__form-wrapper {
+        max-width: 100%;
+    }
+
+    .o7-contact-us-form {
+        margin-top: 50px;
+    }
+
+    .o7-contact-us__form-address-content-wrapper {
+        max-width: 33.33%;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .o7-contact-us__address-wrapper {
+        max-width: 100%;
+        flex-direction: row;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .o7-contact-us__form-address-wrapper {
+        padding: 50px;
+    }
+
+    .o7-contact-us__input-container {
+        flex-direction: column;
+    }
+
+    .o7-contact-us__input-wrapper--col-two {
+        width: 100%;
+    }
+
+    .o7-contact-us__form-address-content-wrapper {
+        max-width: 100%;
+    }
+
+    .o7-contact-us__address-wrapper {
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+    .o7-contact-us__form-address-wrapper {
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .o7-contact-us__header--tablet {
+        font-size: 26px;
+    }
+
+    .o7-contact-us__input-container {
+        gap: 10px;
+        align-items: baseline;
+    }
+
+    .o7-contact-us__whatsapp-optional {
+        font-size: 14px;
+    }
+
+    .o7-input-field {
+        padding: 10px 8px;
+    }
+}
+
+/* Contact Us END */
+
+
+/* Get a Quote START */
+
+.o7-get-the-quote__container-title {
+    display: none;
+}
+
+.o7-get-the-quote__content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.o7-get-the-quote__form-details-container {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.o7-get-the-quote__form-title {
+    font-size: 56px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.o7-get-the-quote__info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.o7-get-the-quote__address-wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.o7-get-the-quote__address-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.o7-get-the-quote__location {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.o7-get-the-quote__address {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.o7-get-the-quote-form {
+    max-width: 980px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.o7-get-the-quote__input-label {
+    font-size: 16px;
+    font-weight: 700;
+    color: #202020;
+}
+
+.o7-get-the-quote__input-field-wrapper {
+    max-width: 980px;
+}
+
+.o7-get-the-quote__full-width {
+    width: 100%;
+}
+
+.o7-get-the-quote__input-row-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 25px;
+}
+
+.o7-get-the-quote__input-wrapper {
+    max-width: 50%;
+    width: 100%;
+}
+
+.o7-get-the-quote__prepend-input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.o7-input-group-prepend {
+    max-width: 80px;
+}
+
+.o7-get-the-quote__country-code-select {
+    max-width: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #787878;
+    border: none;
+    background-color: #EBEBEB;
+}
+
+.o7-get-the-quote__input-url,
+.o7-get-the-quote__input-cash {
+    border-radius: 8px 0 0 8px;
+}
+
+.o7-get-the-quote__input-website,
+.o7-get-the-quote__input-budget,
+.o7-get-the-quote__input-phone-number {
+    border-radius: 0 8px 8px 0;
+}
+
+.o7-get-the-quote__select-service {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: 1px solid #C7C7C7;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 400;
+    color: #787878;
+}
+
+.o7-get-the-quote__input-cash-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.o7-get-the-quote__cash-input-wrapper {
+    max-width: 43%;
+}
+
+.o7-get-the-quote__budget-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #787878;
+}
+
+.o7-get-the-quote__input-date {
+    font-size: 16px;
+    font-weight: 400;
+    color: #787878;
+}
+
+.o7-get-the-quote__select-country {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: 1px solid #C7C7C7;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 400;
+    color: #787878;
+}
+
+.o7-get-the-quote__input-file {
+    font-size: 10px;
+    color: #787878;
+}
+
+.o7-get-the-quote__input-text {
+    width: 100%;
+    min-height: 120px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #787878;
+    background-color: #f5f5f5;
+    border: 1px solid #C7C7C7;
+    border-radius: 8px;
+    resize: none;
+    margin-bottom: 25px;
+    padding: 14px 20px;
+}
+
+.o7-get-the-quote__text-area-wrapper {
+    margin-top: 25px;
+}
+
+.o7-get-the-quote__contact {
+    display: none;
+}
+
+@media (max-width: 1400px) {
+
+    .o7-get-the-quote__form-details-container {
+        max-width: 330px;
+    }
+
+    .o7-get-the-quote__form-title {
+        font-size: 36px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .o7-get-the-quote__content-container {
+        flex-direction: column-reverse;
+    }
+
+    .o7-get-the-quote__form-title {
+        display: none;
+    }
+
+    .o7-get-the-quote-form {
+        max-width: 100%;
+    }
+
+    .o7-get-the-quote__input-field-wrapper {
+        max-width: 100%;
+    }
+
+    .o7-get-the-quote__form-details-container {
+        max-width: 100%;
+        margin-top: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .o7-get-the-quote__form-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .o7-get-the-quote__container-title {
+        display: inline;
+        font-size: 56px;
+        font-weight: 400;
+    }
+
+    .o7-get-the-quote__input-row-wrapper {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 0;
+    }
+
+    .o7-get-the-quote__input-wrapper {
+        max-width: 100%;
+        margin-top: 16px;
+    }
+
+    .o7-get-the-quote__cash-input-wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .o7-get-the-quote__info {
+        max-width: 33.33%;
+        width: 100%;
+    }
+
+    .o7-get-the-quote__contact {
+        display: inline;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .o7-get-the-quote__cash-input-wrapper {
+        width: 100%;
+    }
+
+    .o7-input-group-text {
+        padding: 14px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .o7-get-the-quote__form-details-container {
+        flex-direction: column;
+    }
+
+    .o7-get-the-quote__info {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .o7-get-the-quote__container-title {
+        max-width: 346px;
+        font-size: 32px;
+    }
+
+    .o7-get-the-quote__input-cash-wrapper {
+        gap: 10px;
+    }
+
+    .o7-input-group-text {
+        padding: 14px 10px;
+    }
+}
+
+/* Get a Quote END */
 
 /* ------------------------- Page CSS END---------------------- */
