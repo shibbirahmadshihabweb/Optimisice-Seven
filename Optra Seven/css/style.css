@@ -1552,17 +1552,16 @@ a.main-menu__link:focus-visible {
 }
 
 .megamenu__content-wrapper--service {
-    left: -300px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .megamenu__content {
     position: relative;
     background-color: #ffffff;
     padding: 40px;
-    width: 100%;
-    max-width: 775px;
-    min-width: 775px;
-    height: 376px;
+    width: 775px;
+    min-height: 376px;
     top: 12px;
     border-radius: 25px;
     z-index: 1;
@@ -1572,7 +1571,7 @@ a.main-menu__link:focus-visible {
 
 .megamenu__triangle-head {
     position: absolute;
-    left: 43%;
+    left: calc(50% - 8.5px);
     top: 6px;
     width: 12px;
     height: 12px;
@@ -1586,11 +1585,13 @@ a.main-menu__link:focus-visible {
 }
 
 .megamenu__content-container-left--service {
-    width: 58.33333%;
+    flex: 1 1 auto;
 }
 
 .megamenu__content-container-right {
-    width: calc(100% - 58.33333%);
+    width: 255px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .megamenu__link-card {
@@ -1645,23 +1646,46 @@ a.main-menu__link:focus-visible {
     height: 22px;
     height: 22px;
 }
-
-.megamenu__service-view-all-title-wrapper {
+a.megamenu__service-view-all-card {
     border-radius: 16px;
     padding: 20px;
     background-color: #e7e7e7;
+    display: block;
+    text-decoration: none;
+    transition: all 300ms ease-out 0s;
+}
+a.megamenu__service-view-all-card:hover {
+    box-shadow: 3px 3px 0 0 rgba(0,0,0, .4);
+}
+.megamenu__service-view-all-title-wrapper {
+    display: flex;
+    gap: 0 20px;
+    justify-content: space-between;
+    margin: 0 0 10px;
 }
 
 .megamenu__service-view-all-title {
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin: 0;
 }
-
-.megamenu__service-view-all-subtitle {
+.megamenu__service-view-all-title-wrapper .megamenu__link-card-icon {
+    width: 22px;
+    height: 22px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.megamenu__service-view-all-description {
     font-size: 14px;
 }
+figure.megamenu__service-view-all-image-wrapper {
+    margin: 34px 0 0;
+}
 
+.megamenu__service-view-all-image {
+    max-width: 100%;
+    border-radius: 16px;
+}
 .megamenu:focus-within .megamenu__content-wrapper,
 .main-menu__link:focus+.megamenu__content-wrapper {
     display: block;
